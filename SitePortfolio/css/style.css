@@ -42,7 +42,7 @@
     min-height: 100vh;
     position: relative;
   }
-  
+
   .parallax-main {
     background-image: url("../assets/img/JusantDLC.png");
   }
@@ -95,7 +95,7 @@
     padding: 2rem;
     box-sizing: border-box;
   }
-  
+
   /* Projet SpooderDance */
 .spooderdance {
     background-image: url("../assets/img/projects/spooderdance.png");
@@ -107,6 +107,6 @@
   }
 
 /* Scryptalking */
-.revengefantasy {
+.scryptalking {
     background-image: url("../assets/img/projects/scryptalking.png");
   }
