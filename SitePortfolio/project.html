@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Détail du projet</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <h1>Emile L. Projects</h1>
+    <ul>
+      <li><a href="index.html" class="juicy-hover ripple-button press-button">Accueil</a></li>
+      <li><a href="about.html" class="juicy-hover ripple-button press-button">À propos</a></li>
+      <li><a href="projects.html" class="juicy-hover ripple-button press-button">Projets</a></li>
+      <li><a href="contact.html" class="juicy-hover ripple-button press-button">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="project-container" class="project-page"></div>
+  </main>
+
+  <footer>
+    <p>© Emile L. - 2025</p>
+  </footer>
+
+  <script type="module" src="js/project.js"></script>
+
+  <script>
+    document.querySelectorAll('.ripple-button').forEach(button => {
+      button.addEventListener('click', function (e) {
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+  
+        const rect = button.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        ripple.style.width = ripple.style.height = `${size}px`;
+        ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
+        ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
+  
+        this.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+  </script>
+</body>
+</html>

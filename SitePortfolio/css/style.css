@@ -1,73 +1,221 @@
+/* Base */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN TYPO */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f1f1f;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* CONTAINERS */
+main, header, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* NAV */  
+nav {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+nav ul li a.juicy-hover {
+  background-color: #f0f0f0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 0.25s ease-in-out;
+  font-weight: 600;
+}
+
+nav ul li a.juicy-hover:hover {
+  background-color: #e0e0e0;
+  border-color: #0077cc;
+  color: #0077cc;
+}
+
+/* Effect for link */
+/* Liens classiques dans le contenu */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Soulignement anime au survol */
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #0077cc;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  color: #005fa3;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* ---------------- Overlay de texte amélioré ---------------- */
+.parallax .overlay,
+.fullscreen .overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem 3rem;
+  text-align: center;
+  border-radius: 12px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Au survol, on ajoute un léger halo lumineux autour de l'overlay */
+.parallax .overlay:hover,
+.fullscreen .overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* ---------------- Parallax de base ---------------- */
+.parallax,
+.fullscreen {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: outline 0.4s ease; /* pour un effet de contour doux */
+}
+
+/* Effet de hover plus subtil : contour au lieu de zoom */
+.parallax:hover,
+.fullscreen:hover {
+  outline: 4px solid rgba(0, 119, 204, 0.4); /* contour coloré subtil */
+  outline-offset: -10px;
+}
+
+/* ---------------- Assombrissement subtil via pseudo-élément ---------------- */
+.parallax::after,
+.fullscreen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0); /* transparent par défaut */
+  transition: background-color 0.4s ease;
+  z-index: 1;
+}
+
+.parallax:hover::after,
+.fullscreen:hover::after {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* ---------------- Lien contenant une section parallax ---------------- */
+a > section.parallax {
+  transition: filter 0.4s ease;
+  display: block;
+}
+
+a > section.parallax:hover {
+  filter: brightness(1.05); /* léger éclaircissement sans scale */
+  cursor: pointer;
+}
+
+
+/* Exemple si tu veux une image de fond spécifique */
+.parallax-main {
+  background-image: url("../assets/img/jusantDLC.png");
+}
   
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
-  }
-  
-  nav ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  /* Section Parallax */
-  
-  .parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    position: relative;
+  /* Video */
+  video {
+    max-width: 100%;
+    margin: 2rem auto;
+    display: block;
   }
 
-  .parallax-main {
-    background-image: url("../assets/img/jusantDLC.png");
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 */
+    height: 0;
+    margin: 2rem 0;
   }
   
-  .parallax .overlay {
+  .video-container iframe,
+  .video-container video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    text-align: center;
-    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-  
-  section {
-    padding: 4rem 2rem;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 2rem;
-    background: #eee;
-  }
+
+  .video-container iframe:hover,
+.video-container video:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Project */
 
   .project-gallery {
     display: flex;
@@ -96,6 +244,141 @@
     box-sizing: border-box;
   }
 
+  /* Projects */
+  .project-detail {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .project-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+  
+  .project-detail a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .project-card {
+    text-decoration: none;
+    color: inherit;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-card .info {
+    padding: 1rem;
+  }
+
+  /* Section */
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .section .text {
+    flex: 1 1 300px;
+  }
+  
+  .section img {
+    max-width: 100%;
+    border-radius: 12px;
+    flex: 1 1 300px;
+    object-fit: cover;
+  }
+
+/* Container des boutons */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+/* Bouton de filtre */
+.filters button {
+  padding: 0.6rem 1.2rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover visuel plus doux */
+.filters button:hover {
+  background-color: #e0e0e0;
+  border-color: #0077cc;
+  color: #0077cc;
+}
+
+/* Bouton actif : état sélectionné (tu l'ajoutes en JS) */
+.filters button.active {
+  background-color: #0077cc;
+  color: white;
+  border-color: #005fa3;
+  box-shadow: 0 4px 12px rgba(0, 119, 204, 0.3);
+  transform: translateY(-2px);
+}
+
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  footer a {
+    color: #0077cc;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }  
+  
+
   /* Projet SpooderDance */
 .spooderdance {
     background-image: url("../assets/img/projects/spooderdance.png");
@@ -110,3 +393,51 @@
 .scryptalking {
     background-image: url("../assets/img/projects/scryptalking.png");
   }
+
+  /* Projects full description */
+  .filters {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  /* Juicy Button (desactivated per default */
+  .juicy-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .juicy-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Appuie réaliste : on remplace scale par translateY */
+  .press-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ripple */
+  .ripple-button {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ripple-button .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0);
+    animation: ripple-animation 600ms ease-out;
+    pointer-events: none;
+  }
+  
+  @keyframes ripple-animation {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+  

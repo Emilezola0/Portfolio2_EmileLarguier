@@ -8,74 +8,87 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-      <nav>
-        <h1>Emile</h1>
-        <ul>
-          <li><a href="about.html">À propos</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="projects.html">Projets</a></li>
-        </ul>        
-      </nav>
-  
-      <section class="parallax" style="background-image: url('assets/img/projects/jusantDLC.png')">
-        <div class="overlay">
-          <h2>Bienvenue sur mon Portfolio!</h2>
-          <p>Découvrez mes projets en scrollant ou en naviguant via le menu.</p>
-        </div>
-      </section>
-  
-    <section id="about">
-      <h2>À propos de moi</h2>
-      <p>Ici tu écris ta présentation...</p>
-    </section>
-  
-    <section id="cv">
-      <h2>Mon CV</h2>
-      <a href="assets/pdf/cv.pdf" target="_blank">Télécharger mon CV</a>
-    </section>
-  
-    <section id="projects">
-        <h2>Mes projets</h2>
-        <div class="project-gallery">
-      
-          <div class="project parallax spooderdance">
-            <div class="project-info">
-              <h3>SpooderDance</h3>
-              <p>Un jeu musical dans lequel on contrôle une araignée qui doit faire des poses.</p>
-            </div>
-          </div>
-      
-          <div class="project parallax revengefantasy">
-            <div class="project-info">
-              <h3>RevengeFantasy</h3>
-              <p>Fast FPS.</p>
-            </div>
-          </div>
 
-          <div class="project parallax scryptalking">
-            <div class="project-info">
-              <h3>Scryptalking</h3>
-              <p>Discuter, raisonner, convaincre</p>
-            </div>
-          </div>
-      
-        </div>
-      </section>
-      
-  
-      <footer>
-        <p>© Emile L. - 2025</p>
-        <p>
-          <a href="mailto:emile@example.com">📧 emile@example.com</a> — 06 xx xx xx xx<br/>
-          <a href="https://linkedin.com/in/tonprofil">LinkedIn</a> |
-          <a href="https://itch.io/profile">itch.io</a>
-        </p>
-      </footer>      
+  <nav>
+    <h1>Emile</h1>
+    <ul>
+      <li><a href="about.html" class="juicy-hover ripple-button press-button">À propos</a></li>
+      <li><a href="cv.html" class="juicy-hover ripple-button press-button">CV</a></li>
+      <li><a href="projects.html" class="juicy-hover ripple-button press-button">Tous les projets</a></li>
+    </ul>        
+  </nav>
+
+  <!-- SECTION D'INTRO -->
+<a href="project.html?id=JusantDLC">
+  <section class="parallax fullscreen" style="background-image: url('assets/img/projects/jusantDLC.png')">
+    <div class="overlay">
+      <h2>SpooderDance</h2>
+      <p>Un jeu musical avec une araignée qui danse !</p>
     </div>
+  </section>
+</a>
+
+  <!-- PROJET 1 -->
+<a href="project.html?id=spooderdance">
+  <section class="parallax fullscreen spooderdance">
+    <div class="overlay">
+      <h2>SpooderDance</h2>
+      <p>Un jeu musical avec une araignée qui danse !</p>
+    </div>
+  </section>
+</a>
+
+<!-- PROJET 2 -->
+<a href="project.html?id=revengefantasy">
+  <section class="parallax fullscreen revengefantasy">
+    <div class="overlay">
+      <h2>RevengeFantasy</h2>
+      <p>Un fast-FPS énergique et stylé.</p>
+    </div>
+  </section>
+</a>
+
+<!-- PROJET 3 -->
+<a href="project.html?id=scryptalking">
+  <section class="parallax fullscreen scryptalking">
+    <div class="overlay">
+      <h2>Scryptalking</h2>
+      <p>Discuter. Raisonner. Convaincre.</p>
+    </div>
+  </section>
+</a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© Emile L. - 2025</p>
+    <p>
+      <a href="mailto:emile@example.com">📧 emile@example.com</a> — 06 xx xx xx xx<br/>
+      <a href="https://linkedin.com/in/tonprofil">LinkedIn</a> |
+      <a href="https://emilezola.itch.io/">itch.io</a>
+    </p>
+  </footer>
 
     <!-- Audio -->
     <audio id="clickSound" src="assets/sounds/clickButton.mp3" preload="auto"></audio>
     <!-- Script -->
     <script type="module" src="js/main.js"></script>
+
+    <script>
+      document.querySelectorAll('.ripple-button').forEach(button => {
+        button.addEventListener('click', function (e) {
+          const ripple = document.createElement('span');
+          ripple.classList.add('ripple');
+    
+          const rect = button.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          ripple.style.width = ripple.style.height = `${size}px`;
+          ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
+          ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
+    
+          this.appendChild(ripple);
+          setTimeout(() => ripple.remove(), 600);
+        });
+      });
+    </script>
 </body>
 </html>

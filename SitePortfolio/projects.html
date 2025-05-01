@@ -7,50 +7,65 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Emile L.</h1>
-      <ul>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="index.html">Accueil</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div id="project-container" class="project-page"></div>
 
-  <main>
-    <section>
-      <h2>Mes projets</h2>
-      <div class="project-gallery">
-        <a href="project.html?id=spooderdance">
-          <div class="project spooderdance">
-            <div class="project-info">
-              <h3>SpooderDance</h3>
-              <p>Un jeu musical avec une araignée.</p>
-            </div>
-          </div>
-        </a>
-        <a href="project.html?id=revengefantasy">
-          <div class="project revengefantasy">
-            <div class="project-info">
-              <h3>RevengeFantasy</h3>
-              <p>Un fast FPS pixel art.</p>
-            </div>
-          </div>
-        </a>
-        <!-- Ajoute d'autres projets ici -->
-      </div>
-    </section>
-  </main>
+    <header>
+      <nav>
+        <h1>Emile L.</h1>
+        <ul>
+          <li><a href="index.html" class="juicy-hover ripple-button press-button">Accueil</a></li>
+          <li><a href="about.html" class="juicy-hover ripple-button press-button">À propos</a></li>
+          <li><a href="contact.html" class="juicy-hover ripple-button press-button">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <section>
+        <h2>Mes projets</h2>
+  
+        <!-- Filtres -->
+        <div class="filters">
+          <button class="juicy-hover ripple-button press-button" data-filter="all">All</button>
+          <button class="juicy-hover ripple-button press-button" data-filter="jam">Game Jam</button>
+          <button class="juicy-hover ripple-button press-button" data-filter="school">School</button>
+          <button class="juicy-hover ripple-button press-button" data-filter="perso">Perso</button>
+        </div>
+  
+        <!-- Grille de projets -->
+        <div class="project-grid" id="project-grid">
+          <!-- JS injectera les projets ici -->
+        </div>
+      </section>
+    </main>
 
   <footer>
     <p>Contact : emile@example.com — 06 xx xx xx xx</p>
     <p>
       <a href="https://linkedin.com/in/tonprofil">LinkedIn</a> |
-      <a href="https://itch.io/profile">itch.io</a> |
+      <a href="https://emilezola.itch.io/">itch.io</a> |
       <a href="mailto:emile@example.com">Email</a>
     </p>
   </footer>
+
+  <script type="module" src="js/projects.js"></script>
+
+  <script>
+    document.querySelectorAll('.ripple-button').forEach(button => {
+      button.addEventListener('click', function (e) {
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+  
+        const rect = button.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        ripple.style.width = ripple.style.height = `${size}px`;
+        ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
+        ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
+  
+        this.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+  </script>
 </body>
 </html>
