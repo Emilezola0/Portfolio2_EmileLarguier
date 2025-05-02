@@ -90,5 +90,33 @@
         });
       });
     </script>
+    
+    <script>
+      let lastScrollTop = 0;
+      const nav = document.querySelector("nav");
+      
+      window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop) {
+          // Scroll vers le bas -> cache le nav
+          nav.classList.add("nav-hidden");
+        } else {
+          // Scroll vers le haut -> montre le nav
+          nav.classList.remove("nav-hidden");
+        }
+        
+        // Ajoute ou retire flou + ombre selon la position
+        if (scrollTop > 10) {
+          nav.classList.add("nav-scrolled");
+        } else {
+          nav.classList.remove("nav-scrolled");
+        }
+        
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
+
+    </script>
+
 </body>
 </html>

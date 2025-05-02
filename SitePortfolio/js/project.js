@@ -119,12 +119,15 @@ if (data) {
   });
 
   // 4. Bouton vers le lien externe (itch.io)
-  const linkBtn = document.createElement("a");
-  linkBtn.href = data.link;
-  linkBtn.target = "_blank";
-  linkBtn.className = "button";
-  linkBtn.textContent = "Voir sur itch.io";
-  container.appendChild(linkBtn);
+  if (data.link) {
+    const linkBtn = document.createElement("a");
+    linkBtn.href = data.link;
+    linkBtn.target = "_blank";
+    linkBtn.className = "button";
+    linkBtn.textContent = "Voir sur itch.io";
+    container.appendChild(linkBtn);
+  }
+  
 } else {
   container.innerHTML = `<p>Projet introuvable.</p>`;
 }

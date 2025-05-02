@@ -21,7 +21,7 @@ main, header, footer {
   padding: 2rem;
 }
 
-/* NAV */  
+/* NAV */ 
 nav {
   background-color: #ffffff;
   padding: 1rem 2rem;
@@ -31,7 +31,25 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   margin-bottom: 2rem;
+
+  /* Ajout sticky */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
 }
+
+/* Classe ajoutée dynamiquement via JS */
+.nav-hidden {
+  transform: translateY(-100%);
+}
+
+.nav-scrolled {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 12px rgb(0.3, 0.3, 0.3);
+  background-color: rgba(255, 255, 255, 0.95); /* transparent blanc */
+}
+
 
 nav h1 {
   font-size: 1.8rem;
@@ -73,6 +91,7 @@ nav ul li a.juicy-hover:hover {
   color: #0077cc;
 }
 
+
 /* Effect for link */
 /* Liens classiques dans le contenu */
 a {
@@ -84,7 +103,7 @@ a {
 }
 
 /* Soulignement anime au survol */
-a::after {
+a:not(.juicy-hover)::after {
   content: "";
   position: absolute;
   left: 0;
@@ -280,11 +299,15 @@ a > section.parallax:hover {
     background: #f9f9f9;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.2s ease;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   }
   
   .project-card:hover {
     transform: scale(1.03);
+    border-color: #0077cc;
+    box-shadow: 0 0 12px rgba(0, 119, 204, 0.4), 0 0 24px rgba(0, 119, 204, 0.2);
   }
   
   .project-card img {

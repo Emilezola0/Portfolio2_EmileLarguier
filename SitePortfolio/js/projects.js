@@ -53,6 +53,13 @@ const projects = [
 
     const filterButtons = document.querySelectorAll(".filters button");
     
+    // Button All already selected
+    const allButton = document.querySelector('[data-filter="all"]');
+    if (allButton) {
+      allButton.classList.add("active");
+    }
+    
+    // Select the button you click and put the DA
     filterButtons.forEach(btn => {
       btn.addEventListener("click", () => {
         // Supprime l’état actif des autres
