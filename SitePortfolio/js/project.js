@@ -10,12 +10,12 @@ const projects = {
       {
         title: "Concept",
         text: "SpooderDance est un jeu de rythme...",
-        image: "assets/img/spooderdance/spooderDanceConcept.png"
+        image: "assets/img/ProjDesc/SpooderDance/spooderDanceConcept.png"
       },
       {
         title: "Développement",
         text: "Fait en 48h pendant une Game Jam avec Unreal Engine",
-        image: "assets/img/spooderdance/spooderDanceConcept.png"
+        image: "assets/img/ProjDesc/SpooderDance/spooderDanceConcept.png"
       }
     ],
     link: "https://emilezola.itch.io/spooder-dance"
@@ -28,17 +28,17 @@ const projects = {
       {
         title: "Concept",
         text: "Jusant est un jeu d'escalade",
-        image: "assets/img/JusantDLC/jusantDLC.png"
+        image: "assets/img/ProjDecs/JusantDLC/jusantDLC.png"
       },
       {
         title: "Développement",
         text: "Fait sur Unreal Engine en 2 mois lors de mon Mastère 1",
-        image: "assets/img/JusantDLC/jusantEmbrun.png"
+        image: "assets/img/ProjDesc/JusantDLC/jusantEmbrun.png"
       },
       {
         title: "Ce que j'ai fait",
         text: "Je me suis occupé du Game Design, Level Design (LD), System Design et Gameplay Programming (Escalade, Prises), ainsi que certains tools pour faciliter la mise en place du LD",
-        image: "assets/img/JusantDLC/jusantEmbrun.png"
+        image: "assets/img/ProjDesc/JusantDLC/jusantEmbrun.png"
       }
     ],
   },
@@ -49,15 +49,120 @@ const projects = {
       {
         title: "Concept",
         text: "TEXT 1",
-        image: "assets/img/spooderdance/spooderDanceConcept.png"
+        image: "assets/img/ProjDesc/Scryptalking/scryptalking.png"
       },
       {
         title: "Développement",
         text: "Fait sur Unreal Engine en 2 mois lors de mon Bachelor 2 à LISAA",
-        image: "assets/img/spooderdance/spooderDanceConcept.png"
+        image: "assets/img/ProjDesc/Scryptalking/scryptalking.png"
       }
     ],
     link: "https://emilezola.itch.io/spooder-dance"
+  },
+  MaybeDieLess: {
+    title: "Maybe Die Less",
+    description: "METTRE DESCRIPTION",
+    sections: [
+      {
+        title: "Concept",
+        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
+        gif: "assets/img/ProjDesc/MDL/MDL_Gameplay.gif"
+      }
+    ],
+    link: "https://emilezola.itch.io/maybe-die-less"
+  },
+  Weird2: {
+    title: "Weird 2",
+    description: "METTRE DESCRIPTION",
+    sections: [
+      {
+        title: "Concept",
+        text: "TEXT 1",
+        gif: "assets/img/ProjDesc/Weird2/Weird2.gif"
+      },
+      {
+        title: "Développement",
+        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
+        image: "assets/img/ProjDesc/Scryptalking/scryptalking.png"
+      }
+    ],
+  },
+  Deeplace: {
+    title: "Deeplace",
+    description: "METTRE DESCRIPTION",
+    sections: [
+      {
+        title: "Concept",
+        text: "TEXT 1",
+        image: "assets/img/ProjDesc/Deeplace/MapDeeplace.png"
+      },
+      {
+        title: "Développement",
+        text: "Fait sur Unreal Engine en 2 mois lors de mon Bachelor 1 à LISAA",
+        image: "assets/img/ProjDesc/Deeplace/MapDeeplace.png"
+      }
+    ],
+  },
+  SlasherHigh: {
+    title: "Slasher Highschool",
+    description: "METTRE DESCRIPTION",
+    sections: [
+      {
+        title: "Concept",
+        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
+        image: "assets/img/ProjDesc/SlasherHigh/SlasherHigh1.png"
+      },
+      {
+        title: "Images",
+        text: "",
+        image: "assets/img/ProjDesc/SlasherHigh/SlasherHigh2.png"
+      },
+      {
+        title: "Images",
+        text: "",
+        image: "assets/img/ProjDesc/SlasherHigh/SlasherHigh5.png"
+      }
+    ],
+    link: "https://emilezola.itch.io/maybe-die-less"
+  },
+  BaggyBag: {
+    title: "Baggy Bag",
+    description: "METTRE DESCRIPTION",
+    sections: [
+      {
+        title: "Concept",
+        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec une petite équipe de GD (5 personnes)",
+        image: "assets/img/ProjDesc/BaggyBag/BaggyBag_Tittle.png"
+      },
+      {
+        title: "Concept",
+        text: "2 Joueurs contrôle une personnage différent",
+        gif: "assets/img/ProjDesc/BaggyBag/BB_LevitationShort.gif"
+      },
+      {
+        title: "Concept",
+        text: "",
+        gif: "assets/img/ProjDesc/BaggyBag/BB_Loot.gif"
+      },
+      {
+        title: "Concept",
+        text: "",
+        gif: "assets/img/ProjDesc/BaggyBag/BB_ShootShort.gif"
+      }
+    ],
+    link: "https://emilezola.itch.io/baggy-bag"
+  },
+  ArcadeStalker: {
+    title: "Arcade Stalker",
+    description: "METTRE DESCRIPTION",
+    sections: [
+      {
+        title: "Concept",
+        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
+        image: "assets/img/ProjDesc/BaggyBag/BaggyBag_Tittle.png"
+      }
+    ],
+    link: "https://emilezola.itch.io/arcade-stalker"
   },
   // ... autres projets
 };
@@ -107,12 +212,20 @@ if (data) {
     const sectionDiv = document.createElement("div");
     sectionDiv.classList.add("section");
 
+    let media = "";
+
+    if (section.image) {
+      media = `<img src="${section.image}" alt="${section.title}">`;
+    } else if (section.gif) {
+      media = `<img src="${section.gif}" alt="${section.title}" class="gif">`;
+    }
+
     sectionDiv.innerHTML = `
       <div class="text">
         <h3>${section.title}</h3>
         <p>${section.text}</p>
       </div>
-      <img src="${section.image}" alt="${section.title}">
+      ${media}
     `;
 
     container.appendChild(sectionDiv);
@@ -127,7 +240,7 @@ if (data) {
     linkBtn.textContent = "Voir sur itch.io";
     container.appendChild(linkBtn);
   }
-  
+
 } else {
   container.innerHTML = `<p>Projet introuvable.</p>`;
 }

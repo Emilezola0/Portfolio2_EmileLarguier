@@ -276,6 +276,11 @@ a > section.parallax:hover {
     margin: 2rem 0;
   }
   
+  img.gif {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
   .project-detail a {
     display: inline-block;
     margin-top: 1rem;

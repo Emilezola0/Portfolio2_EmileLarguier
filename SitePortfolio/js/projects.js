@@ -26,6 +26,48 @@ const projects = [
       description: "Jeu de persuasion basé sur le dialogue.",
       image: "assets/img/projects/scryptalking.png",
       category: "school"
+    },
+    {
+      id: "MaybeDieLess",
+      title: "Maybe Die Less",
+      description: "METTRE DESCRIPTION",
+      image: "assets/img/projects/mdl.png",
+      category: "jam"
+    },
+    {
+      id: "Weird2",
+      title: "Weird 2",
+      description: "METTRE DESCRIPTION",
+      image: "assets/img/projects/weird2.png",
+      category: "jam"
+    },
+    {
+      id: "Deeplace",
+      title: "Deeplace",
+      description: "METTRE DESCRIPTION",
+      image: "assets/img/projects/deeplace.png",
+      category: "school"
+    },
+    {
+      id: "SlasherHigh",
+      title: "Slasher High",
+      description: "METTRE DESCRIPTION",
+      image: "assets/img/projects/slasherHigh.png",
+      category: "jam"
+    },
+    {
+      id: "Baggy Bag",
+      title: "Baggy Bag",
+      description: "METTRE DESCRIPTION",
+      image: "assets/img/projects/baggyBag.png",
+      category: "jam"
+    },
+    {
+      id: "ArcadeStalker",
+      title: "Arcade Stalker",
+      description: "METTRE DESCRIPTION",
+      image: "assets/img/projects/arcadeStalker.png",
+      category: "jam"
     }
   ];
   
