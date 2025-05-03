@@ -28,7 +28,7 @@ const projects = {
       {
         title: "Concept",
         text: "Jusant est un jeu d'escalade",
-        image: "assets/img/ProjDecs/JusantDLC/jusantDLC.png"
+        image: "assets/img/ProjDesc/JusantDLC/jusantDLC.png"
       },
       {
         title: "Développement",
@@ -39,6 +39,11 @@ const projects = {
         title: "Ce que j'ai fait",
         text: "Je me suis occupé du Game Design, Level Design (LD), System Design et Gameplay Programming (Escalade, Prises), ainsi que certains tools pour faciliter la mise en place du LD",
         image: "assets/img/ProjDesc/JusantDLC/jusantEmbrun.png"
+      },
+      {
+        title: "Narration",
+        text: "On va suivre l'aventure avec Rak",
+        image: "assets/img/ProjDesc/JusantDLC/jusantRak.png"
       }
     ],
   },
