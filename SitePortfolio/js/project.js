@@ -169,6 +169,18 @@ const projects = {
     ],
     link: "https://emilezola.itch.io/arcade-stalker"
   },
+  revengefantasy: {
+    title: "Revenge Fantasy",
+    description: "Projet LISAA sur 1an avec une équipe composée de 12 personnes (4 Game Art, 4 Tech Art et 4 Game Designer)",
+    sections: [
+      {
+        title: "Concept",
+        text: "Le jeu est réalisé sur Unreal Engine, il s'agit d'un Fast FPS où l'on va devoir faire du combat en s'aidant des armes qu'on débloque au fur et à mesure qu'on avance et du plateforming en s'aidant des mécaniques suivante : Jump, Wall Run, Wall Climb mais aussi des capacités secondaires des armes",
+        image: "assets/img/projects/revengeFantasy.png"
+      }
+    ],
+    link: "https://emilezola.itch.io/arcade-stalker"
+  },
   // ... autres projets
 };
 
