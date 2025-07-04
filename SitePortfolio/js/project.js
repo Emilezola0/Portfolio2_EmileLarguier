@@ -5,17 +5,17 @@ const projects = {
   spooderdance: {
     title: "Spooder Dance",
     description: "Un jeu musical avec une araignée.",
-    videoUrl: "https://youtu.be/nnYTXif9Olg",
+    videoUrl: "https://youtu.be/auoZptSXZ7I",
     sections: [
       {
         title: "Concept",
-        text: "SpooderDance est un jeu de rythme...",
-        image: "assets/img/ProjDesc/SpooderDance/spooderDanceConcept.png"
+        text: "SpooderDance est un jeu de rythme où l'on contrôle les pâtes (4 seulement) d'une araignée pour faire correspondre au mouvement de dance d'un humain. L'objectif et que les pâtes soient bien placé avant que la figure soit dans le cercle au centre bas de l'écran",
+        image: "assets/img/ProjDesc/SpooderDance/spooderDanceScreen1.png"
       },
       {
         title: "Développement",
-        text: "Fait en 48h pendant une Game Jam avec Unreal Engine",
-        image: "assets/img/ProjDesc/SpooderDance/spooderDanceConcept.png"
+        text: "Fait en 48h pendant une Game Jam avec Unreal Engine avec une équipe de 7 personnes",
+        image: "assets/img/ProjDesc/SpooderDance/spooderDanceCredit.png"
       }
     ],
     link: "https://emilezola.itch.io/spooder-dance"
@@ -49,16 +49,16 @@ const projects = {
   },
   scryptalking: {
     title: "Scryptalking",
-    description: "METTRE DESCRIPTION",
+    description: "",
     sections: [
       {
         title: "Concept",
-        text: "TEXT 1",
+        text: "Absorbé par un ordinateur alors que vous et des amis étiez à la recherche d'élèves disparus, vous vous retrouvez dans un univers de zéros et de uns dépassant votre entendement. Percez le mystère autour de la disparition des élèves dans ce RPG en vue du dessus grâce au système de persuasion, un jeu de carte basé sur la personnalité de votre personnage",
         image: "assets/img/ProjDesc/Scryptalking/scryptalking.png"
       },
       {
-        title: "Développement",
-        text: "Fait sur Unreal Engine en 2 mois lors de mon Bachelor 2 à LISAA",
+        title: "Développement / Ce que j'ai fait",
+        text: "Fait sur Unreal Engine en 2 mois lors de mon Bachelor 2 à LISAA. Je me suis occupé de la partie Game Design, System Design et Level Design ainsi que l'intégralité de la partie programmation du jeu",
         image: "assets/img/ProjDesc/Scryptalking/scryptalking.png"
       }
     ],
@@ -110,7 +110,8 @@ const projects = {
   },
   SlasherHigh: {
     title: "Slasher Highschool",
-    description: "METTRE DESCRIPTION",
+    description: "Jeu de Jam dans lequel vous devez placer dans des chambres des personnages puis ensuite vous incarner le tueur et vous devrez faire son pacing pour tous les tuer",
+    videoUrl: "https://youtu.be/9Xp4UimFgMk",
     sections: [
       {
         title: "Concept",

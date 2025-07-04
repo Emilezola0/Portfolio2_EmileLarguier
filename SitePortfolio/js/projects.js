@@ -2,8 +2,8 @@ const projects = [
     {
       id: "spooderdance",
       title: "SpooderDance",
-      description: "Un jeu musical avec une araignée.",
-      image: "assets/img/projects/spooderdance.png",
+      description: "Un jeu musical avec une araignée et beaucoup beaucoup d'effet spéciaux",
+      image: "assets/img/projects/spooderDance.png",
       category: "jam"
     },
     {
@@ -16,49 +16,49 @@ const projects = [
     {
       id: "revengefantasy",
       title: "RevengeFantasy",
-      description: "Un fast FPS pixel art.",
+      description: "Un fast FPS avec combat, plateforming dans un style unique",
       image: "assets/img/projects/revengeFantasy.png",
       category: "school"
     },
     {
       id: "scryptalking",
       title: "Scryptalking",
-      description: "Jeu de persuasion basé sur le dialogue.",
+      description: "Un jeu Top View de mystère et d'énigme dans lequel vous essayez de persuader d'étranges personnages en utilisant des mots ou combats de cartes",
       image: "assets/img/projects/scryptalking.png",
       category: "school"
     },
     {
       id: "MaybeDieLess",
       title: "Maybe Die Less",
-      description: "METTRE DESCRIPTION",
+      description: "Un jeu 2D de plateforming ou vous contrôlez un slime",
       image: "assets/img/projects/mdl.png",
       category: "jam"
     },
     {
       id: "Weird2",
       title: "Weird 2",
-      description: "METTRE DESCRIPTION",
+      description: "Découvrez le prologue de Weird 1 dans ce FMV (Full motion video) avec des minis-jeux, produit lors d'un jam",
       image: "assets/img/projects/weird2.png",
       category: "jam"
     },
     {
       id: "Deeplace",
       title: "Deeplace",
-      description: "METTRE DESCRIPTION",
+      description: "Jeu d'horreur en First Person ou vous devez retrouver vos collègues perdu dans ce bunker abandonné où des créatures réside",
       image: "assets/img/projects/deeplace.png",
       category: "school"
     },
     {
       id: "SlasherHigh",
       title: "Slasher High",
-      description: "METTRE DESCRIPTION",
+      description: "Préparer votre scène en installant les archétypes de personne de film d'horreur pour définir leur emplacement et l'odre dans lequel le tueur devra les tuer",
       image: "assets/img/projects/slasherHigh.png",
       category: "jam"
     },
     {
       id: "Baggy Bag",
       title: "Baggy Bag",
-      description: "METTRE DESCRIPTION",
+      description: "Jeu à 2 joueurs l'un contrôle les jambes l'autre le protège",
       image: "assets/img/projects/baggyBag.png",
       category: "jam"
     },
@@ -68,6 +68,13 @@ const projects = [
       description: "METTRE DESCRIPTION",
       image: "assets/img/projects/arcadeStalker.png",
       category: "jam"
+    },
+    {
+      id: "MarbleMadness",
+      title: "Marble Madness",
+      description: "Mini Game à 4 joueurs dans lequel on contrôle une bille dans différent mode de jeu en équipe ou tout seul dans lequel on peut récupérer des pouvoirs",
+      image: "assets/img/projects/marbleMadness.png",
+      category: "perso"
     }
   ];
   
