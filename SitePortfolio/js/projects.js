@@ -14,6 +14,13 @@ const projects = [
       category: "school"
     },
     {
+      id: "TockarTournament",
+      title: "Tockar Tournament",
+      description: "Un jeu multijoueurs où l'on joue avec ses amis pour s'affronter dans des arènes avec différentes armes. Dans ce jeu les dépalcements sont rapides et multiples (Wall Run, Slide, Bumper, Katana)",
+      image: "assets/img/projects/tockarTournament.png",
+      category: "perso"
+    },
+    {
       id: "revengefantasy",
       title: "RevengeFantasy",
       description: "Un fast FPS avec combat, plateforming dans un style unique",
@@ -65,7 +72,7 @@ const projects = [
     {
       id: "ArcadeStalker",
       title: "Arcade Stalker",
-      description: "METTRE DESCRIPTION",
+      description: "Enfermer dans une borne d'arcade vous devez gérer la machine de manière à ce que ça plaise aux personnes pour générer un max de thune et pouvoir être libéré",
       image: "assets/img/projects/arcadeStalker.png",
       category: "jam"
     },

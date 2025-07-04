@@ -182,6 +182,81 @@ const projects = {
     ],
     link: "https://emilezola.itch.io/arcade-stalker"
   },
+  BaggyBag: {
+    title: "Baggy Bag",
+    description: "METTRE DESCRIPTION",
+    sections: [
+      {
+        title: "Concept",
+        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec une petite équipe de GD (5 personnes)",
+        image: "assets/img/ProjDesc/BaggyBag/BaggyBag_Tittle.png"
+      },
+      {
+        title: "Concept",
+        text: "2 Joueurs contrôle une personnage différent",
+        gif: "assets/img/ProjDesc/BaggyBag/BB_LevitationShort.gif"
+      },
+      {
+        title: "Concept",
+        text: "",
+        gif: "assets/img/ProjDesc/BaggyBag/BB_Loot.gif"
+      },
+      {
+        title: "Concept",
+        text: "",
+        gif: "assets/img/ProjDesc/BaggyBag/BB_ShootShort.gif"
+      }
+    ],
+    link: "https://emilezola.itch.io/baggy-bag"
+  },
+  ArcadeStalker: {
+    title: "Arcade Stalker",
+    description: "METTRE DESCRIPTION",
+    sections: [
+      {
+        title: "Concept",
+        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
+        image: "assets/img/ProjDesc/BaggyBag/BaggyBag_Tittle.png"
+      }
+    ],
+    link: "https://emilezola.itch.io/arcade-stalker"
+  },
+  revengefantasy: {
+    title: "Revenge Fantasy",
+    description: "Projet LISAA sur 1an avec une équipe composée de 12 personnes (4 Game Art, 4 Tech Art et 4 Game Designer)",
+    sections: [
+      {
+        title: "Concept",
+        text: "Le jeu est réalisé sur Unreal Engine, il s'agit d'un Fast FPS où l'on va devoir faire du combat en s'aidant des armes qu'on débloque au fur et à mesure qu'on avance et du plateforming en s'aidant des mécaniques suivante : Jump, Wall Run, Wall Climb mais aussi des capacités secondaires des armes",
+        image: "assets/img/projects/revengeFantasy.png"
+      }
+    ],
+    link: "https://emilezola.itch.io/arcade-stalker"
+  },
+  MarbleMadness: {
+    title: "Revenge Fantasy",
+    description: "Projet LISAA sur 1an avec une équipe composée de 12 personnes (4 Game Art, 4 Tech Art et 4 Game Designer)",
+    sections: [
+      {
+        title: "Concept",
+        text: "Projet perso réalisé avec 2-4 personnes. Le jeu est un party game utilisant la physique de bille de marble madness mais avec différent style de mini-jeu connue et des pouvoirs pour donner des effets spéciaux aux billes qui sont rentrées en contact avec",
+        image: "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen2.png"
+      }
+    ],
+    link: "https://emilezola.itch.io/arcade-stalker"
+  },
+  TockarTournament: {
+    title: "Tockar Tournament",
+    description: "Projet perso réalisé sur 1 mois avec 3 personnes",
+    sections: [
+      {
+        title: "Concept",
+        text: "Projet perso réalisé sur 1 mois avec 3 personnes, dans lequel on va pouvoir s'affronter sur différente map. Chaque map possède une volonté de gameplay différent grâce à spawners d'arme différent et d'éléments comme Vide, Wall Run, Bumper et Ascenseur pottentiellement présent",
+        image: "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen1.png"
+      }
+    ],
+    link: "https://emilezola.itch.io/arcade-stalker"
+  },
   // ... autres projets
 };
 
