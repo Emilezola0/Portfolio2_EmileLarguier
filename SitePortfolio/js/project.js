@@ -4,7 +4,7 @@ const id = params.get("id");
 const projects = {
   spooderdance: {
     title: "Spooder Dance",
-    description: "Un jeu musical avec une araignée.",
+    description: "Un jeu de Jam réalisé en 2024/2025",
     videoUrl: "https://youtu.be/auoZptSXZ7I",
     sections: [
       {
@@ -58,7 +58,7 @@ const projects = {
       },
       {
         title: "Développement / Ce que j'ai fait",
-        text: "Fait sur Unreal Engine en 2 mois lors de mon Bachelor 2 à LISAA. Je me suis occupé de la partie Game Design, System Design et Level Design ainsi que l'intégralité de la partie programmation du jeu",
+        text: "Fait sur Unreal Engine en 2 mois en 2022/2023 lors de mon Bachelor 2 à LISAA. Je me suis occupé de la partie Game Design, System Design et Level Design ainsi que l'intégralité de la partie programmation du jeu",
         image: "assets/img/ProjDesc/Scryptalking/scryptalking.png"
       }
     ],
@@ -78,17 +78,16 @@ const projects = {
   },
   Weird2: {
     title: "Weird 2",
-    description: "METTRE DESCRIPTION",
+    description: "Jeu de Jam réalisée en 2023/2024 avec l'équipe d'ABM",
     sections: [
       {
         title: "Concept",
-        text: "TEXT 1",
+        text: "It's a full motion video (FMV) that takes place in the school, in which you have to make choices at the end of the video sequence. These choices are presented by directions and lead to a new sequence interspersed with a mini-game.",
         gif: "assets/img/ProjDesc/Weird2/Weird2.gif"
       },
       {
         title: "Développement",
-        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
-        image: "assets/img/ProjDesc/Scryptalking/scryptalking.png"
+        text: "After the game design part on the idea for the game. I tackled the development of the game, which was a new challenge for me because Unreal Engine was software that we'd only recently learned to use and I was discovering how to use MP4s (video) in Unreal Engine.",
       }
     ],
   },
@@ -110,7 +109,7 @@ const projects = {
   },
   SlasherHigh: {
     title: "Slasher Highschool",
-    description: "Jeu de Jam dans lequel vous devez placer dans des chambres des personnages puis ensuite vous incarner le tueur et vous devrez faire son pacing pour tous les tuer",
+    description: "Fait en 2022/2023, Slasher Highschool est Jeu de Jam dans lequel vous devez placer dans des chambres des personnages puis ensuite vous incarner le tueur et vous devrez faire son pacing pour tous les tuer",
     videoUrl: "https://youtu.be/9Xp4UimFgMk",
     sections: [
       {
@@ -164,7 +163,7 @@ const projects = {
     sections: [
       {
         title: "Concept",
-        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
+        text: "Fait en 2022/2023 sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
         image: "assets/img/ProjDesc/BaggyBag/BaggyBag_Tittle.png"
       }
     ],
@@ -172,7 +171,7 @@ const projects = {
   },
   revengefantasy: {
     title: "Revenge Fantasy",
-    description: "Projet LISAA sur 1an avec une équipe composée de 12 personnes (4 Game Art, 4 Tech Art et 4 Game Designer)",
+    description: "Projet LISAA sur 1an avec une équipe composée de 12 personnes (4 Game Art, 4 Tech Art et 4 Game Designer) fait lors de ma 3ème année de Bachelor à LISAA en 2023/2024",
     sections: [
       {
         title: "Concept",
@@ -188,59 +187,46 @@ const projects = {
     sections: [
       {
         title: "Concept",
-        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec une petite équipe de GD (5 personnes)",
-        image: "assets/img/ProjDesc/BaggyBag/BaggyBag_Tittle.png"
+        text: "Made in 2022/2023 on Unreal Engine in 48 hours during a Jam with a small GD team (5 people)",
+        image: "assets/img/ProjDesc/BaggyBag/BaggyBag_Title.png"
       },
       {
         title: "Concept",
-        text: "2 Joueurs contrôle une personnage différent",
+        text: "A 2-player game in which each player controls a character, but the two are interconnected because one controls the feet (movement) and the other is in charge of shooting. In the example (gif) just below, when the player jumps, he has to press down to glide and control switches to the person in the bag, which encourages coordination when jumping.",
         gif: "assets/img/ProjDesc/BaggyBag/BB_LevitationShort.gif"
       },
       {
         title: "Concept",
-        text: "",
+        text: "If the player in the bag runs out of ammunition, it's up to the player to move or roll it.",
         gif: "assets/img/ProjDesc/BaggyBag/BB_Loot.gif"
       },
       {
-        title: "Concept",
-        text: "",
+        title: "What did I take care of?",
+        text: "I developed the idea of a two-player game, with one character depending on the other, which we reworked as a team. Then, once the game design part was finished, I took care of the FX, the materials and fixed certain bugs.",
         gif: "assets/img/ProjDesc/BaggyBag/BB_ShootShort.gif"
       }
     ],
     link: "https://emilezola.itch.io/baggy-bag"
   },
-  ArcadeStalker: {
-    title: "Arcade Stalker",
-    description: "METTRE DESCRIPTION",
-    sections: [
-      {
-        title: "Concept",
-        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
-        image: "assets/img/ProjDesc/BaggyBag/BaggyBag_Tittle.png"
-      }
-    ],
-    link: "https://emilezola.itch.io/arcade-stalker"
-  },
-  revengefantasy: {
-    title: "Revenge Fantasy",
-    description: "Projet LISAA sur 1an avec une équipe composée de 12 personnes (4 Game Art, 4 Tech Art et 4 Game Designer)",
-    sections: [
-      {
-        title: "Concept",
-        text: "Le jeu est réalisé sur Unreal Engine, il s'agit d'un Fast FPS où l'on va devoir faire du combat en s'aidant des armes qu'on débloque au fur et à mesure qu'on avance et du plateforming en s'aidant des mécaniques suivante : Jump, Wall Run, Wall Climb mais aussi des capacités secondaires des armes",
-        image: "assets/img/projects/revengeFantasy.png"
-      }
-    ],
-    link: "https://emilezola.itch.io/arcade-stalker"
-  },
   MarbleMadness: {
-    title: "Revenge Fantasy",
-    description: "Projet LISAA sur 1an avec une équipe composée de 12 personnes (4 Game Art, 4 Tech Art et 4 Game Designer)",
+    title: "Marble Madness : Party Game",
+    description: "Marble Madness: Party Game is a remake of Marble Madness but with several mini-games instead.",
+    videoUrl: "https://youtu.be/Ibb5-nvUalc",
     sections: [
       {
         title: "Concept",
-        text: "Projet perso réalisé avec 2-4 personnes. Le jeu est un party game utilisant la physique de bille de marble madness mais avec différent style de mini-jeu connue et des pouvoirs pour donner des effets spéciaux aux billes qui sont rentrées en contact avec",
+        text: "Personal project with 2-4 people. The game is a party game using the marble physics of marble madness but with different mini-game styles and powers to give special effects to the marbles that come into contact with them.",
         image: "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen2.png"
+      },
+      {
+        title: "Image",
+        text : "Mini-jeu : TNT Tag like",
+        image: "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen3.png"
+      },
+      {
+        title: "Image",
+        text : "Mini-game: Arena, the aim of which is to expel the player from the arena",
+        image: "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen6.png"
       }
     ],
     link: "https://emilezola.itch.io/arcade-stalker"
@@ -268,6 +254,11 @@ if (data) {
   const title = document.createElement("h2");
   title.textContent = data.title;
   container.appendChild(title);
+
+  // 1.5. Ajout d'une description
+  const description = document.createElement("h3");
+  description.textContent = data.description;
+  container.appendChild(description);
 
   // 2. Ajout de la vidéo (YouTube / Vimeo / direct MP4)
   if (data.videoUrl) {

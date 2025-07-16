@@ -22,7 +22,7 @@ const projects = [
     },
     {
       id: "revengefantasy",
-      title: "RevengeFantasy",
+      title: "Revenge Fantasy",
       description: "Un fast FPS avec combat, plateforming dans un style unique",
       image: "assets/img/projects/revengeFantasy.png",
       category: "school"
@@ -63,7 +63,7 @@ const projects = [
       category: "jam"
     },
     {
-      id: "Baggy Bag",
+      id: "BaggyBag",
       title: "Baggy Bag",
       description: "Jeu à 2 joueurs l'un contrôle les jambes l'autre le protège",
       image: "assets/img/projects/baggyBag.png",
