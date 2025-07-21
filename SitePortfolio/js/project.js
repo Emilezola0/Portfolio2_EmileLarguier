@@ -159,12 +159,12 @@ const projects = {
   },
   ArcadeStalker: {
     title: "Arcade Stalker",
-    description: "METTRE DESCRIPTION",
+    description: "Game Jam 2023",
     sections: [
       {
         title: "Concept",
-        text: "Fait en 2022/2023 sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
-        image: "assets/img/ProjDesc/BaggyBag/BaggyBag_Tittle.png"
+        text: "Made in 2022/2023 on Unreal Engine in 48 hours during a Jam with my ABM team. Locked inside the arcade terminal by the shop manager, the game consists of managing the games inside an arcade terminal to please the person so that he spends a lot of money and allows you to free yourself. You have to be reactive to change and adapt the game and avoid short-circuiting to avoid this you will have to make mini-games.",
+        gif: "assets/img/ProjDesc/ArcadeStalker/ArcadeStalker_GIF.gif"
       }
     ],
     link: "https://emilezola.itch.io/arcade-stalker"
@@ -183,7 +183,7 @@ const projects = {
   },
   BaggyBag: {
     title: "Baggy Bag",
-    description: "METTRE DESCRIPTION",
+    description: "Game Jam 2024",
     sections: [
       {
         title: "Concept",
@@ -242,6 +242,14 @@ const projects = {
       }
     ],
     link: "https://emilezola.itch.io/arcade-stalker"
+  },
+  Weird: {
+    title: "Weird",
+    description: "Game Jam 2022",
+    videoUrl: "https://youtu.be/RfX5XzAFn4Y",
+  },
+  LittleGames: {
+    title: "Little games",
   },
   // ... autres projets
 };
