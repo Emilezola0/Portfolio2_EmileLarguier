@@ -5,7 +5,9 @@ const projects = {
   spooderdance: {
     title: "Spooder Dance",
     description: "Un jeu de Jam réalisé en 2024/2025",
-    videoUrl: "https://youtu.be/auoZptSXZ7I",
+    videoUrls: [
+      "https://youtu.be/auoZptSXZ7I"
+    ],
     sections: [
       {
         title: "Concept",
@@ -18,12 +20,16 @@ const projects = {
         image: "assets/img/ProjDesc/SpooderDance/spooderDanceCredit.png"
       }
     ],
-    link: "https://emilezola.itch.io/spooder-dance"
+    links: [
+      { label: "Itch.io page", url: "https://emilezola.itch.io/spooder-dance" }
+    ]
   },
   JusantDLC: {
     title: "Jusant DLC",
     description: "Escalader accompagné de votre compagnon Rak dans la suite du jeu Jusant proposé par les Mastère 1 de LISAA",
-    videoUrl: "https://youtu.be/VVF55Wm70GU",
+    videoUrls: [
+      "https://youtu.be/VVF55Wm70GU"
+      ],
     sections: [
       {
         title: "Concept",
@@ -49,7 +55,7 @@ const projects = {
   },
   scryptalking: {
     title: "Scryptalking",
-    description: "",
+    description: "School Game made in 2022/2023",
     sections: [
       {
         title: "Concept",
@@ -62,7 +68,9 @@ const projects = {
         image: "assets/img/ProjDesc/Scryptalking/scryptalking.png"
       }
     ],
-    link: "https://emilezola.itch.io/spooder-dance"
+    links: [
+      { label: "Itch.io page", url: "https://emilezola.itch.io/spooder-dance" }
+    ]
   },
   MaybeDieLess: {
     title: "Maybe Die Less",
@@ -74,7 +82,9 @@ const projects = {
         gif: "assets/img/ProjDesc/MDL/MDL_Gameplay.gif"
       }
     ],
-    link: "https://emilezola.itch.io/maybe-die-less"
+    links: [
+      { label: "Itch.io page", url: "https://emilezola.itch.io/maybe-die-less" }
+    ]
   },
   Weird2: {
     title: "Weird 2",
@@ -93,16 +103,16 @@ const projects = {
   },
   Deeplace: {
     title: "Deeplace",
-    description: "METTRE DESCRIPTION",
+    description: "Bachelor 1 Game at LISAA",
     sections: [
       {
         title: "Concept",
-        text: "TEXT 1",
-        image: "assets/img/ProjDesc/Deeplace/MapDeeplace.png"
+        text: "Accelerated Gameplay",
+        videoUrl: "https://youtu.be/_JJQ7WJpuro"
       },
       {
-        title: "Développement",
-        text: "Fait sur Unreal Engine en 2 mois lors de mon Bachelor 1 à LISAA",
+        title: "Developpement",
+        text: "Made on Unreal Engine in 2 months during my Bachelor 1 at LISAA",
         image: "assets/img/ProjDesc/Deeplace/MapDeeplace.png"
       }
     ],
@@ -110,7 +120,9 @@ const projects = {
   SlasherHigh: {
     title: "Slasher Highschool",
     description: "Fait en 2022/2023, Slasher Highschool est Jeu de Jam dans lequel vous devez placer dans des chambres des personnages puis ensuite vous incarner le tueur et vous devrez faire son pacing pour tous les tuer",
-    videoUrl: "https://youtu.be/9Xp4UimFgMk",
+    videoUrls: [
+      "https://youtu.be/9Xp4UimFgMk"
+    ],
     sections: [
       {
         title: "Concept",
@@ -128,34 +140,9 @@ const projects = {
         image: "assets/img/ProjDesc/SlasherHigh/SlasherHigh5.png"
       }
     ],
-    link: "https://emilezola.itch.io/maybe-die-less"
-  },
-  BaggyBag: {
-    title: "Baggy Bag",
-    description: "METTRE DESCRIPTION",
-    sections: [
-      {
-        title: "Concept",
-        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec une petite équipe de GD (5 personnes)",
-        image: "assets/img/ProjDesc/BaggyBag/BaggyBag_Tittle.png"
-      },
-      {
-        title: "Concept",
-        text: "2 Joueurs contrôle une personnage différent",
-        gif: "assets/img/ProjDesc/BaggyBag/BB_LevitationShort.gif"
-      },
-      {
-        title: "Concept",
-        text: "",
-        gif: "assets/img/ProjDesc/BaggyBag/BB_Loot.gif"
-      },
-      {
-        title: "Concept",
-        text: "",
-        gif: "assets/img/ProjDesc/BaggyBag/BB_ShootShort.gif"
-      }
-    ],
-    link: "https://emilezola.itch.io/baggy-bag"
+    links: [
+      { label: "Itch.io page", url: "https://emilezola.itch.io/maybe-die-less" }
+    ]
   },
   ArcadeStalker: {
     title: "Arcade Stalker",
@@ -167,7 +154,9 @@ const projects = {
         gif: "assets/img/ProjDesc/ArcadeStalker/ArcadeStalker_GIF.gif"
       }
     ],
-    link: "https://emilezola.itch.io/arcade-stalker"
+    links: [
+      { label: "Itch.io page", url: "https://emilezola.itch.io/arcade-stalker" }
+    ]
   },
   revengefantasy: {
     title: "Revenge Fantasy",
@@ -206,12 +195,16 @@ const projects = {
         gif: "assets/img/ProjDesc/BaggyBag/BB_ShootShort.gif"
       }
     ],
-    link: "https://emilezola.itch.io/baggy-bag"
+    links: [
+      { label: "Itch.io page", url: "https://emilezola.itch.io/baggy-bag" }
+    ]
   },
   MarbleMadness: {
     title: "Marble Madness : Party Game",
     description: "Marble Madness: Party Game is a remake of Marble Madness but with several mini-games instead.",
-    videoUrl: "https://youtu.be/Ibb5-nvUalc",
+    videoUrls: [
+      "https://youtu.be/Ibb5-nvUalc"
+    ],
     sections: [
       {
         title: "Concept",
@@ -229,7 +222,9 @@ const projects = {
         image: "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen6.png"
       }
     ],
-    link: "https://emilezola.itch.io/arcade-stalker"
+    links: [
+      { label: "Itch.io page", url: "https://emilezola.itch.io/arcade-stalker" }
+    ]
   },
   TockarTournament: {
     title: "Tockar Tournament",
@@ -241,15 +236,33 @@ const projects = {
         image: "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen1.png"
       }
     ],
-    link: "https://emilezola.itch.io/arcade-stalker"
+    links: [
+      { label: "Itch.io page", url: "https://tockar-studio.itch.io/tockar-tournament" }
+    ]
   },
   Weird: {
     title: "Weird",
     description: "Game Jam 2022",
-    videoUrl: "https://youtu.be/RfX5XzAFn4Y",
+    videoUrls: [
+      "https://youtu.be/RfX5XzAFn4Y"
+    ]
   },
   LittleGames: {
     title: "Little games",
+    description: "Games far too small to fit on separate pages",
+    videoUrls: "",
+    sections: [
+      {
+        title: "Dodge Expert",
+        text: "Gameplay : You have to dodge the balls while collecting points by standing in the centre of the tiles.",
+        videoUrl: "https://youtu.be/UyTWprXCLlw"
+      },
+      {
+        title: "Fast Magic",
+        text: "Gameplay",
+        videoUrl: "https://youtu.be/e20FELxGQ_Y"
+      }
+    ]
   },
   // ... autres projets
 };
@@ -268,35 +281,37 @@ if (data) {
   description.textContent = data.description;
   container.appendChild(description);
 
-  // 2. Ajout de la vidéo (YouTube / Vimeo / direct MP4)
-  if (data.videoUrl) {
-    const videoContainer = document.createElement("div");
-    videoContainer.classList.add("video-container");
-  
-    const embedUrl = convertToEmbedUrl(data.videoUrl);
-  
-    if (embedUrl.includes("youtube.com") || embedUrl.includes("vimeo.com")) {
-      videoContainer.innerHTML = `
-        <iframe 
-          width="100%" 
-          height="480" 
-          src="${embedUrl}" 
-          title="Vidéo du projet"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      `;
-    } else {
-      videoContainer.innerHTML = `
-        <video controls width="100%">
-          <source src="${embedUrl}" type="video/mp4">
-          Votre navigateur ne supporte pas la lecture vidéo.
-        </video>
-      `;
-    }
-  
-    container.appendChild(videoContainer);
+  // 2. Ajout des vidéos (supporte plusieurs)
+  if (data.videoUrls && Array.isArray(data.videoUrls)) {
+    data.videoUrls.forEach(videoUrl => {
+      const videoContainer = document.createElement("div");
+      videoContainer.classList.add("video-container");
+
+      const embedUrl = convertToEmbedUrl(videoUrl);
+
+      if (embedUrl.includes("youtube.com") || embedUrl.includes("vimeo.com")) {
+        videoContainer.innerHTML = `
+          <iframe 
+            width="100%" 
+            height="480" 
+            src="${embedUrl}" 
+            title="Vidéo du projet"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        `;
+      } else {
+        videoContainer.innerHTML = `
+          <video controls width="100%">
+            <source src="${embedUrl}" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+        `;
+      }
+
+      container.appendChild(videoContainer);
+    });
   }
 
   // 3. Ajout des sections (texte + image)
@@ -310,6 +325,28 @@ if (data) {
       media = `<img src="${section.image}" alt="${section.title}">`;
     } else if (section.gif) {
       media = `<img src="${section.gif}" alt="${section.title}" class="gif">`;
+    } else if (section.video) {
+      media = `
+        <div class="video-container">
+          <video controls>
+            <source src="${section.video}" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+        </div>
+      `;
+    } else if (section.videoUrl) {
+      const embedUrl = convertToEmbedUrl(section.videoUrl);
+      media = `
+        <div class="video-container">
+          <iframe 
+            src="${embedUrl}" 
+            title="Vidéo de la section"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      `;
     }
 
     sectionDiv.innerHTML = `
@@ -324,13 +361,15 @@ if (data) {
   });
 
   // 4. Bouton vers le lien externe (itch.io)
-  if (data.link) {
-    const linkBtn = document.createElement("a");
-    linkBtn.href = data.link;
-    linkBtn.target = "_blank";
-    linkBtn.className = "button";
-    linkBtn.textContent = "Voir sur itch.io";
-    container.appendChild(linkBtn);
+  if (data.links && Array.isArray(data.links)) {
+    data.links.forEach(linkObj => {
+      const linkBtn = document.createElement("a");
+      linkBtn.href = linkObj.url;
+      linkBtn.target = "_blank";
+      linkBtn.className = "button";
+      linkBtn.textContent = linkObj.label || "Lien externe";
+      container.appendChild(linkBtn);
+    });
   }
 
 } else {

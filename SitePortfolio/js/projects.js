@@ -82,6 +82,13 @@ const projects = [
       description: "Mini Game à 4 joueurs dans lequel on contrôle une bille dans différent mode de jeu en équipe ou tout seul dans lequel on peut récupérer des pouvoirs",
       image: "assets/img/projects/marbleMadness.png",
       category: "perso"
+    },
+    {
+      id: "LittleGames",
+      title: "Little Games",
+      description: "Games far too small to fit on separate pages",
+      image: "assets/img/projects/TestImage1.png",
+      category: "perso"
     }
   ];
   
