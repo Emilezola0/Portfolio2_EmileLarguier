@@ -74,11 +74,11 @@ const projects = {
   },
   MaybeDieLess: {
     title: "Maybe Die Less",
-    description: "METTRE DESCRIPTION",
+    description: "Game Jam organised by LISAA, created with the ABM team on the theme ‘Stuck in a loop’, made on Unreal Engine in 48 hours.",
     sections: [
       {
         title: "Concept",
-        text: "Fait sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
+        text: "I had the idea of having to press a button to die and leave a mark on the level design, which ended up being the main mechanics, since in this game you have to sacrifice yourself in order to leave a platform for the slime that follows." + "<br><br>" +  "In the Jam version, the powers are integrated but not as we wanted, because we were supposed to unlock new powers when we finished the 3 levels with a certain number of deaths. When we exceeded a death threshold, we unlocked a new power so that at the end we could do the platforming without dying and get out of the loop.",
         gif: "assets/img/ProjDesc/MDL/MDL_Gameplay.gif"
       }
     ],
@@ -160,15 +160,34 @@ const projects = {
   },
   revengefantasy: {
     title: "Revenge Fantasy",
-    description: "Projet LISAA sur 1an avec une équipe composée de 12 personnes (4 Game Art, 4 Tech Art et 4 Game Designer) fait lors de ma 3ème année de Bachelor à LISAA en 2023/2024",
+    description: "One-year LISAA project with a team of 12 people (4 Game Artists, 4 Tech Artists and 4 Game Designers) carried out during my third year of my Bachelor's degree at LISAA in 2023/2024.",
     sections: [
       {
         title: "Concept",
-        text: "Le jeu est réalisé sur Unreal Engine, il s'agit d'un Fast FPS où l'on va devoir faire du combat en s'aidant des armes qu'on débloque au fur et à mesure qu'on avance et du plateforming en s'aidant des mécaniques suivante : Jump, Wall Run, Wall Climb mais aussi des capacités secondaires des armes",
-        image: "assets/img/projects/revengeFantasy.png"
+        text: "The game is built on Unreal Engine. It is a fast-paced FPS where you will have to fight using weapons that you unlock as you progress, and perform platforming using the following mechanics: Jump, Wall Run, Wall Climb, as well as secondary weapon abilities.",
+        videoUrl: "https://youtu.be/SPM8yLMVjl0"
+      },
+      {
+        title: "Shooting",
+        text: "The level design features arenas where you will have to fight mobs in order to continue.",
+        gif: "assets/img/ProjDesc/RevengeFantasy/RF_ArenaSlowMo.gif"
+      },
+      {
+        title: "Déplacements",
+        text: "Example of wall running: you can only wall run and wall climb on certain walls, such as the one in the GIF.",
+        gif: "assets/img/ProjDesc/RevengeFantasy/RF_wallRun.gif"
+      },
+      {
+        title: "Chaos",
+        text: "I integrated Chaos to have more interesting and impactful environmental objects with the fast FPS aspect.",
+        gif: "assets/img/ProjDesc/RevengeFantasy/RF_chaos.gif"
+      },
+      {
+        title: "Concept/Transition",
+        text: "The game deals with trauma, so we have divided our gameplay into two parts, one of which is experimental. These two parts are the world of dreams (Party in Fast FPS) and the dreams of short scenes in FMV (full motion video) in which our choices will have a visual and gameplay impact on the next “dream”. The first level is considered a tutorial and has a scripted ending where we lose something, creating a transition to the idea of the “real” world.",
+        gif: "assets/img/ProjDesc/RevengeFantasy/RF_FMV_Transition.gif"
       }
     ],
-    link: "https://emilezola.itch.io/arcade-stalker"
   },
   BaggyBag: {
     title: "Baggy Bag",
