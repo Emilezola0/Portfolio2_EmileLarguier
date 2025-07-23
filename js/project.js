@@ -247,16 +247,31 @@ const projects = {
   },
   TockarTournament: {
     title: "Tockar Tournament",
-    description: "Projet perso réalisé sur 1 mois avec 3 personnes",
+    description: "Personal project completed over one month with three people. I was primarily responsible for game design, balancing, coding, and certain materials.",
     sections: [
       {
         title: "Concept",
-        text: "Projet perso réalisé sur 1 mois avec 3 personnes, dans lequel on va pouvoir s'affronter sur différente map. Chaque map possède une volonté de gameplay différent grâce à spawners d'arme différent et d'éléments comme Vide, Wall Run, Bumper et Ascenseur pottentiellement présent",
+        text: "A personal project carried out over a month with three people, in which we will be able to compete on different maps. Each map has a different gameplay style thanks to different weapon spawners and elements such as Vide, Wall Run, Bumper and Elevator, which may be present. <br><br> I developed the game so that the basic idea of being able to create several mini-games would be feasible, making it easy to integrate different mini-games as part of further development of the game.",
+        image: "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen3.png"
+      },
+      {
+        title: "Map Arena",
+        text: "To ensure that a mini-game can have multiple gameplay options, we will modify the way players fight. In this example, we are in a small arena where we have to collect the only weapon that spawns in the four corners and allows players to push each other into the void.",
+        image: "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen7.png"
+      },
+      {
+        title: "Map",
+        text: "In this other map, I deliberately created a tight space because the only weapon in this map is a knife, so you either have to fight hand-to-hand or throw it. I therefore created lines of sight where you can be the target.",
         image: "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen1.png"
+      },
+      {
+        title: "Modifications",
+        text: "In this game, you can customise the crosshairs, the colours of the characters, and also the emotes they can perform. To create the emotes, I created a material that acts like a flipbook, in which you can also customise the colour.",
+        image: "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen5.png"
       }
     ],
     links: [
-      { label: "Itch.io page", url: "https://tockar-studio.itch.io/tockar-tournament" }
+      { label: "Try it now on the Itch.io page", url: "https://tockar-studio.itch.io/tockar-tournament" }
     ]
   },
   Weird: {
@@ -273,13 +288,30 @@ const projects = {
     sections: [
       {
         title: "Dodge Expert",
-        text: "Gameplay : You have to dodge the balls while collecting points by standing in the centre of the tiles.",
-        videoUrl: "https://youtu.be/UyTWprXCLlw"
+        text: "Made in 1 day on Unity. <br> Gameplay : You have to dodge the balls while collecting points by standing in the centre of the tiles. <br><br>",
+        videoUrl: "https://youtu.be/UyTWprXCLlw",
+        link: {
+          label: "Play 'Dodge Expert' on my Itch.io page",
+          url: "https://emilezola.itch.io/dodgingexpert"
+        }
       },
       {
         title: "Fast Magic",
-        text: "Gameplay",
-        videoUrl: "https://youtu.be/e20FELxGQ_Y"
+        text: "Made in 1 day on Unity. <br> Gameplay : You have four buttons, each performing a different action. The objective is to go as far as possible without getting blocked by the environment. To avoid getting stuck, you must use the right powers at the right time. <br><br>",
+        videoUrl: "https://youtu.be/e20FELxGQ_Y",
+        link: {
+          label: "Play 'Fast Magic' on my Itch.io page",
+          url: "https://emilezola.itch.io/fast-magic"
+        }
+      },
+      {
+        title: "Try Your Luck",
+        text: "Made in 1 day on Unity. <br> Gameplay: Very simple gameplay using probabilities and the desire to go further. The objective is that each time you press the button, the probability of losing increases, so you can save a certain number of times so that if you lose, you can resume where you saved, except that the number of saves is limited. It's up to the player to decide when to stop and look at the “false probabilities” of getting that far or when the time runs out to 0. <br><br>",
+        image: "assets/img/ProjDesc/LittleGames/T_TryYourLuckGameplay.png",
+        link: {
+          label: "Play 'Try your luck' on my Itch.io page",
+          url: "https://emilezola.itch.io/try-your-luck"
+        }
       }
     ]
   },
@@ -368,10 +400,18 @@ if (data) {
       `;
     }
 
+    // Optional section-specific link
+    let sectionLink = "";
+    if (section.link && section.link.url) {
+      const label = section.link.label || "Lien externe";
+      sectionLink = `<a class="button" href="${section.link.url}" target="_blank">${label}</a>`;
+    }
+
     sectionDiv.innerHTML = `
       <div class="text">
         <h3>${section.title}</h3>
         <p>${section.text}</p>
+        ${sectionLink}
       </div>
       ${media}
     `;
