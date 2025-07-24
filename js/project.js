@@ -247,12 +247,19 @@ const projects = {
   },
   TockarTournament: {
     title: "Tockar Tournament",
-    description: "Personal project completed over one month with three people. I was primarily responsible for game design, balancing, coding, and certain materials.",
+    description: "Personal project completed over one month with three people. I was primarily responsible for game design, balancing, coding (gameplay, multiplayers, tools), and certain materials.",
+    videoUrls: [
+      "https://youtu.be/lPnuasO9970"
+    ],
     sections: [
       {
         title: "Concept",
-        text: "A personal project carried out over a month with three people, in which we will be able to compete on different maps. Each map has a different gameplay style thanks to different weapon spawners and elements such as Vide, Wall Run, Bumper and Elevator, which may be present. <br><br> I developed the game so that the basic idea of being able to create several mini-games would be feasible, making it easy to integrate different mini-games as part of further development of the game.",
-        image: "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen3.png"
+        text: "A personal project carried out over a month with three people, in which we will be able to compete on different maps. Each map has a different gameplay style thanks to different weapon spawners and elements such as Vide, Wall Run, Bumper and Elevator, which may be present. <br><br> I developed the game so that the basic idea of being able to create several mini-games would be feasible, making it easy to integrate different mini-games as part of further development of the game. <br><br>",
+        image: "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen3.png",
+        link: {
+          label: "Itch.io page",
+          url: "https://tockar-studio.itch.io/tockar-tournament"
+        }
       },
       {
         title: "Map Arena",
@@ -268,6 +275,11 @@ const projects = {
         title: "Modifications",
         text: "In this game, you can customise the crosshairs, the colours of the characters, and also the emotes they can perform. To create the emotes, I created a material that acts like a flipbook, in which you can also customise the colour.",
         image: "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen5.png"
+      },
+      {
+        title: "Map",
+        text: "This map use only Katana, you can find a Sniper and a Pistol but the main gameplay use Katana",
+        image: "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen2.png"
       }
     ],
     links: [

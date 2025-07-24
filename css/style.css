@@ -107,7 +107,7 @@ a:not(.juicy-hover)::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -5px;
   width: 100%;
   height: 2px;
   background-color: #0077cc;
