@@ -38,6 +38,12 @@
         <li><a href="projects.html" class="juicy-hover ripple-button press-button">Projets</a></li>
         <li><a href="cv.html" class="juicy-hover ripple-button press-button">CV</a></li>
         <li><a href="contact.html" class="juicy-hover ripple-button press-button">Contact</a></li>
+        <li>
+          <div class="language-toggle juicy-hover">
+            <button id="lang-fr" class="lang-btn">FR</button>
+            <button id="lang-en" class="lang-btn">EN</button>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
@@ -157,5 +163,49 @@
       });
     });
   </script>
+
+  <script>
+      let currentLang = localStorage.getItem("lang") || "fr";
+      const langButtons = document.querySelectorAll(".lang-btn");
+
+      function updateLangUI() {
+        langButtons.forEach(btn => {
+          btn.classList.remove("active");
+          const isActive = (btn.id === "lang-fr" && currentLang === "fr") ||
+                          (btn.id === "lang-en" && currentLang === "en");
+          if (isActive) btn.classList.add("active");
+        });
+      }
+
+      function switchLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem("lang", lang);
+        if (typeof renderProjects === "function") {
+          renderProjects(); // will load new language + update project list
+        }
+        updateLangUI();
+      }
+
+      langButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const lang = btn.id === "lang-fr" ? "fr" : "en";
+          switchLanguage(lang);
+        });
+      });
+
+      // On initial load
+      switchLanguage(currentLang);
+
+      // Reload page
+      document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          currentLang = btn.id === "lang-fr" ? "fr" : "en";
+          localStorage.setItem("lang", currentLang);
+          location.reload(); // This reloads the page
+        });
+      });
+      
+    </script>
+
 </body>
 </html>

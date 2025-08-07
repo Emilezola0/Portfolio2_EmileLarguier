@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "name": "Emile",
+    "about": "About",
+    "projects": "Projects",
+    "cv": "Resume",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "copyright": "© Emile L.",
+    "email": "📧 emile@example.com"
+  },
+
+  "projects": [
+    {
+      "id": "spooderdance",
+      "title": "Spooder Dance",
+      "description": "A musical game with a spider and lots and lots of special effects.",
+      "image": "assets/img/projects/spooderDance.png",
+      "category": "jam"
+    },
+    {
+      "id": "JusantDLC",
+      "title": "Jusant DLC",
+      "description": "Play the sequel to Jusant, traverse and climb dangerous places",
+      "image": "assets/img/projects/jusantDLC.png",
+      "category": "school"
+    },
+    {
+      "id": "TockarTournament",
+      "title": "Tockar Tournament",
+      "description": "A multiplayer game where you play with your friends to compete in arenas with different weapons. In this game, movements are fast and varied (Wall Run, Slide, Bumper, Katana)",
+      "image": "assets/img/projects/tockarTournament.png",
+      "category": "perso"
+    },
+    {
+      "id": "revengefantasy",
+      "title": "Revenge Fantasy",
+      "description": "A fast-paced FPS with combat and platforming in a unique style",
+      "image": "assets/img/projects/revengeFantasy.png",
+      "category": "school"
+    },
+    {
+      "id" : "scryptalking",
+      "title": "Scryptalking",
+      "description": "A top-view mystery and puzzle game in which you try to persuade strange characters using words or card battles",
+      "image": "assets/img/projects/scryptalking.png",
+      "category": "school"
+    },
+    {
+      "id": "MaybeDieLess",
+      "title": "Maybe Die Less",
+      "description": "A 2D platform game where you control a slime",
+      "image": "assets/img/projects/mdl.png",
+      "category": "jam"
+    },
+    {
+      "id": "Weird2",
+      "title": "Weird 2",
+      "description": "Discover the prologue to Weird 1 in this FMV (Full Motion Video) featuring mini-games, produced during a jam session",
+      "image": "assets/img/projects/weird2.png",
+      "category": "jam"
+    },
+    {
+      "id": "Deeplace",
+      "title": "Deeplace",
+      "description": "First-person horror game in which you must find your colleagues lost in this abandoned bunker where creatures reside",
+      "image": "assets/img/projects/deeplace.png",
+      "category": "school"
+    },
+    {
+      "id": "SlasherHigh",
+      "title": "Slasher High",
+      "description": "Prepare your scene by setting up the horror film character archetypes to define their locations and the order in which the killer will kill them",
+      "image": "assets/img/projects/slasherHigh.png",
+      "category": "jam"
+    },
+    {
+      "id": "BaggyBag",
+      "title": "Baggy Bag",
+      "description": "2-player game: one player controls the legs, the other protects them",
+      "image": "assets/img/projects/baggyBag.png",
+      "category": "jam"
+    },
+    {
+      "id": "ArcadeStalker",
+      "title": "Arcade Stalker",
+      "description": "Locked inside an arcade machine, you must manage the machine in such a way that people enjoy it, in order to generate as much money as possible and be released",
+      "image": "assets/img/projects/arcadeStalker.png",
+      "category": "jam"
+    },
+    {
+      "id": "MarbleMadness",
+      "title": "Marble Madness",
+      "description": "A 4-player mini game in which you control a ball in different game modes, either in a team or alone, and can collect powers",
+      "image": "assets/img/projects/marbleMadness.png",
+      "category": "perso"
+    },
+    {
+      "id": "LittleGames",
+      "title": "Little Games",
+      "description": "Games far too small to fit on separate pages",
+      "image": "assets/img/projects/TestImage1.png",
+      "category": "perso"
+    }
+
+  ]
+}

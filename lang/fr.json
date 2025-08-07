@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "name": "Emile",
+    "about": "À propos",
+    "projects": "Projets",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "copyright": "© Emile L.",
+    "email": "📧 emile@example.com"
+  },
+
+   "projects": [
+    {
+      "id": "spooderdance",
+      "title": "Spooder Dance FR",
+      "description": "Un jeu musical avec une araignée et beaucoup beaucoup d'effet spéciaux",
+      "image": "assets/img/projects/spooderDance.png",
+      "category": "jam"
+    },
+    {
+      "id": "JusantDLC",
+      "title": "Jusant DLC",
+      "description": "Jouer la suite de Jusant, traverser et escalader des endroits dangereux",
+      "image": "assets/img/projects/jusantDLC.png",
+      "category": "school"
+    },
+    {
+      "id": "TockarTournament",
+      "title": "Tockar Tournament",
+      "description": "Un jeu multijoueur où l'on joue avec ses amis pour s'affronter dans des arènes avec différentes armes. Dans ce jeu les déplacements sont rapides et multiples (Wall Run, Slide, Bumper, Katana)",
+      "image": "assets/img/projects/tockarTournament.png",
+      "category": "perso"
+    },
+    {
+      "id": "revengefantasy",
+      "title": "Revenge Fantasy",
+      "description": "Un fast FPS avec combat, plateforming dans un style unique",
+      "image": "assets/img/projects/revengeFantasy.png",
+      "category": "school"
+    },
+    {
+      "id" : "scryptalking",
+      "title": "Scryptalking",
+      "description": "Un jeu Top View de mystère et d'énigme dans lequel vous essayez de persuader d'étranges personnages en utilisant des mots ou combats de cartes",
+      "image": "assets/img/projects/scryptalking.png",
+      "category": "school"
+    },
+    {
+      "id": "MaybeDieLess",
+      "title": "Maybe Die Less",
+      "description": "Un jeu 2D de plateforming ou vous contrôlez un slime",
+      "image": "assets/img/projects/mdl.png",
+      "category": "jam"
+    },
+    {
+      "id": "Weird2",
+      "title": "Weird 2",
+      "description": "Découvrez le prologue de Weird 1 dans ce FMV (Full motion video) avec des mini-jeux, produit lors d'un jam",
+      "image": "assets/img/projects/weird2.png",
+      "category": "jam"
+    },
+    {
+      "id": "Deeplace",
+      "title": "Deeplace",
+      "description": "Jeu d'horreur en First Person ou vous devez retrouver vos collègues perdu dans ce bunker abandonné où des créatures réside",
+      "image": "assets/img/projects/deeplace.png",
+      "category": "school"
+    },
+    {
+      "id": "SlasherHigh",
+      "title": "Slasher High",
+      "description": "Préparer votre scène en installant les archétypes de personne de film d'horreur pour définir leur emplacement et l'odre dans lequel le tueur devra les tuer",
+      "image": "assets/img/projects/slasherHigh.png",
+      "category": "jam"
+    },
+    {
+      "id": "BaggyBag",
+      "title": "Baggy Bag",
+      "description": "Jeu à 2 joueurs l'un contrôle les jambes l'autre le protège",
+      "image": "assets/img/projects/baggyBag.png",
+      "category": "jam"
+    },
+    {
+      "id": "ArcadeStalker",
+      "title": "Arcade Stalker",
+      "description": "Enfermer dans une borne d'arcade vous devez gérer la machine de manière à ce que ça plaise aux personnes pour générer un max de thune et pouvoir être libéré",
+      "image": "assets/img/projects/arcadeStalker.png",
+      "category": "jam"
+    },
+    {
+      "id": "MarbleMadness",
+      "title": "Marble Madness",
+      "description": "Mini Game à 4 joueurs dans lequel on contrôle une bille dans différent mode de jeu en équipe ou tout seul dans lequel on peut récupérer des pouvoirs",
+      "image": "assets/img/projects/marbleMadness.png",
+      "category": "perso"
+    },
+    {
+      "id": "LittleGames",
+      "title": "Little Games",
+      "description": "Jeux beaucoup trop petits pour tenir sur des pages séparées",
+      "image": "assets/img/projects/TestImage1.png",
+      "category": "perso"
+    }
+
+  ]
+}

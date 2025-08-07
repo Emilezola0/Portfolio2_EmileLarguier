@@ -50,7 +50,6 @@ nav {
   background-color: rgba(255, 255, 255, 0.95); /* transparent blanc */
 }
 
-
 nav h1 {
   font-size: 1.8rem;
   color: #333;
@@ -89,6 +88,29 @@ nav ul li a.juicy-hover:hover {
   background-color: #e0e0e0;
   border-color: #0077cc;
   color: #0077cc;
+}
+
+/* Languages switcher */
+.language-toggle {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #ddd;
+}
+
+.lang-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-btn.active {
+  background-color: #333;
+  color: white;
 }
 
 
