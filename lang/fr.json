@@ -105,5 +105,334 @@
       "category": "perso"
     }
 
-  ]
+  ],
+
+  "projectsDescription": {
+    "spooderdance": {
+      "title": "Spooder Dance",
+      "description": "Un jeu de Jam réalisé en 2024/2025",
+      "videoUrls": [
+        "https://youtu.be/auoZptSXZ7I"
+      ],
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "SpooderDance est un jeu de rythme où l'on contrôle les pâtes (4 seulement) d'une araignée pour faire correspondre au mouvement de dance d'un humain. L'objectif et que les pâtes soient bien placé avant que la figure soit dans le cercle au centre bas de l'écran",
+          "image": "assets/img/ProjDesc/SpooderDance/spooderDanceScreen1.png"
+        },
+        {
+          "title": "Développement",
+          "text": "Fait en 48h pendant une Game Jam avec Unreal Engine avec une équipe de 7 personnes",
+          "image": "assets/img/ProjDesc/SpooderDance/spooderDanceCredit.png"
+        }
+      ],
+      "links": [
+        { "label": "Itch.io page", "url": "https://emilezola.itch.io/spooder-dance" }
+      ]
+    },
+    "JusantDLC": {
+      "title": "Jusant DLC",
+      "description": "Escalader accompagné de votre compagnon Rak dans la suite du jeu Jusant proposé par les Mastère 1 de LISAA",
+      "videoUrls": [
+        "https://youtu.be/VVF55Wm70GU"
+      ],
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "Jusant est un jeu d'escalade",
+          "image": "assets/img/ProjDesc/JusantDLC/jusantDLC.png"
+        },
+        {
+          "title": "Développement",
+          "text": "Fait sur Unreal Engine en 2 mois lors de mon Mastère 1",
+          "image": "assets/img/ProjDesc/JusantDLC/jusantEmbrun.png"
+        },
+        {
+          "title": "Ce que j'ai fait",
+          "text": "Je me suis occupé du Game Design, Level Design (LD), System Design et Gameplay Programming (Escalade, Prises), ainsi que certains tools pour faciliter la mise en place du LD",
+          "image": "assets/img/ProjDesc/JusantDLC/jusantEmbrun.png"
+        },
+        {
+          "title": "Narration",
+          "text": "On va suivre l'aventure avec Rak",
+          "image": "assets/img/ProjDesc/JusantDLC/jusantRak.png"
+        }
+      ]
+    },
+    "scryptalking": {
+      "title": "Scryptalking",
+      "description": "School Game made in 2022/2023",
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "Absorbé par un ordinateur alors que vous et des amis étiez à la recherche d'élèves disparus, vous vous retrouvez dans un univers de zéros et de uns dépassant votre entendement. Percez le mystère autour de la disparition des élèves dans ce RPG en vue du dessus grâce au système de persuasion, un jeu de carte basé sur la personnalité de votre personnage",
+          "image": "assets/img/ProjDesc/Scryptalking/scryptalking.png"
+        },
+        {
+          "title": "Développement / Ce que j'ai fait",
+          "text": "Fait sur Unreal Engine en 2 mois en 2022/2023 lors de mon Bachelor 2 à LISAA. Je me suis occupé de la partie Game Design, System Design et Level Design ainsi que l'intégralité de la partie programmation du jeu",
+          "image": "assets/img/ProjDesc/Scryptalking/scryptalking.png"
+        }
+      ],
+      "links": [
+        { "label": "Itch.io page", "url": "https://emilezola.itch.io/spooder-dance" }
+      ]
+    },
+    "MaybeDieLess": {
+      "title": "Maybe Die Less",
+      "description": "Game Jam organised by LISAA, created with the ABM team on the theme ‘Stuck in a loop’, made on Unreal Engine in 48 hours.",
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "I had the idea of having to press a button to die and leave a mark on the level design, which ended up being the main mechanics, since in this game you have to sacrifice yourself in order to leave a platform for the slime that follows.<br><br>In the Jam version, the powers are integrated but not as we wanted, because we were supposed to unlock new powers when we finished the 3 levels with a certain number of deaths. When we exceeded a death threshold, we unlocked a new power so that at the end we could do the platforming without dying and get out of the loop.",
+          "gif": "assets/img/ProjDesc/MDL/MDL_Gameplay.gif"
+        }
+      ],
+      "links": [
+        { "label": "Itch.io page", "url": "https://emilezola.itch.io/maybe-die-less" }
+      ]
+    },
+    "Weird2": {
+      "title": "Weird 2",
+      "description": "Jeu de Jam réalisée en 2023/2024 avec l'équipe d'ABM",
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "Il s'agit d'une vidéo en plein écran (FMV) qui se déroule dans l'école, dans laquelle vous devez faire des choix à la fin de la séquence vidéo. Ces choix sont présentés sous forme d'instructions et mènent à une nouvelle séquence entrecoupée d'un mini-jeu.",
+          "gif": "assets/img/ProjDesc/Weird2/Weird2.gif"
+        },
+        {
+          "title": "Développement",
+          "text": "Après avoir conçu le jeu à partir de l'idée initiale, je me suis attaqué à son développement, ce qui représentait un nouveau défi pour moi, car nous venions tout juste d'apprendre à utiliser Unreal Engine et je découvrais comment utiliser les MP4 (vidéos) dans ce logiciel."
+        }
+      ]
+    },
+    "Deeplace": {
+      "title": "Deeplace",
+      "description": "Bachelor 1 Game at LISAA",
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "Accelerated Gameplay",
+          "videoUrl": "https://youtu.be/_JJQ7WJpuro"
+        },
+        {
+          "title": "Developpement",
+          "text": "Made on Unreal Engine in 2 months during my Bachelor 1 at LISAA",
+          "image": "assets/img/ProjDesc/Deeplace/MapDeeplace.png"
+        }
+      ]
+    },
+    "SlasherHigh": {
+      "title": "Slasher Highschool",
+      "description": "Fait en 2022/2023, Slasher Highschool est Jeu de Jam dans lequel vous devez placer dans des chambres des personnages puis ensuite vous incarner le tueur et vous devrez faire son pacing pour tous les tuer",
+      "videoUrls": [
+        "https://youtu.be/9Xp4UimFgMk"
+      ],
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "Fait sur Unreal Engine en 48h lors d'un Jam avec mon équipe ABM",
+          "image": "assets/img/ProjDesc/SlasherHigh/SlasherHigh1.png"
+        },
+        {
+          "title": "Images",
+          "text": "",
+          "image": "assets/img/ProjDesc/SlasherHigh/SlasherHigh2.png"
+        },
+        {
+          "title": "Images",
+          "text": "",
+          "image": "assets/img/ProjDesc/SlasherHigh/SlasherHigh5.png"
+        }
+      ],
+      "links": [
+        { "label": "Itch.io page", "url": "https://emilezola.itch.io/maybe-die-less" }
+      ]
+    },
+    "ArcadeStalker": {
+      "title": "Arcade Stalker",
+      "description": "Game Jam 2023",
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "Made in 2022/2023 on Unreal Engine in 48 hours during a Jam with my ABM team. Locked inside the arcade terminal by the shop manager, the game consists of managing the games inside an arcade terminal to please the person so that he spends a lot of money and allows you to free yourself. You have to be reactive to change and adapt the game and avoid short-circuiting to avoid this you will have to make mini-games.",
+          "gif": "assets/img/ProjDesc/ArcadeStalker/ArcadeStalker_GIF.gif"
+        }
+      ],
+      "links": [
+        { "label": "Itch.io page", "url": "https://emilezola.itch.io/arcade-stalker" }
+      ]
+    },
+    "revengefantasy": {
+      "title": "Revenge Fantasy",
+      "description": "One-year LISAA project with a team of 12 people (4 Game Artists, 4 Tech Artists and 4 Game Designers) carried out during my third year of my Bachelor's degree at LISAA in 2023/2024.",
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "The game is built on Unreal Engine. It is a fast-paced FPS where you will have to fight using weapons that you unlock as you progress, and perform platforming using the following mechanics: Jump, Wall Run, Wall Climb, as well as secondary weapon abilities.",
+          "videoUrl": "https://youtu.be/SPM8yLMVjl0"
+        },
+        {
+          "title": "Shooting",
+          "text": "The level design features arenas where you will have to fight mobs in order to continue.",
+          "gif": "assets/img/ProjDesc/RevengeFantasy/RF_ArenaSlowMo.gif"
+        },
+        {
+          "title": "Déplacements",
+          "text": "Example of wall running: you can only wall run and wall climb on certain walls, such as the one in the GIF.",
+          "gif": "assets/img/ProjDesc/RevengeFantasy/RF_wallRun.gif"
+        },
+        {
+          "title": "Chaos",
+          "text": "I integrated Chaos to have more interesting and impactful environmental objects with the fast FPS aspect.",
+          "gif": "assets/img/ProjDesc/RevengeFantasy/RF_chaos.gif"
+        },
+        {
+          "title": "Concept/Transition",
+          "text": "The game deals with trauma, so we have divided our gameplay into two parts, one of which is experimental. These two parts are the world of dreams (Party in Fast FPS) and the dreams of short scenes in FMV (full motion video) in which our choices will have a visual and gameplay impact on the next “dream”. The first level is considered a tutorial and has a scripted ending where we lose something, creating a transition to the idea of the “real” world.",
+          "gif": "assets/img/ProjDesc/RevengeFantasy/RF_FMV_Transition.gif"
+        }
+      ]
+    },
+    "BaggyBag": {
+    "title": "Baggy Bag",
+    "description": "Game Jam 2024",
+    "sections": [
+      {
+        "title": "Concept",
+        "text": "Made in 2022/2023 on Unreal Engine in 48 hours during a Jam with a small GD team (5 people)",
+        "image": "assets/img/ProjDesc/BaggyBag/BaggyBag_Title.png"
+      },
+      {
+        "title": "Concept",
+        "text": "A 2-player game in which each player controls a character, but the two are interconnected because one controls the feet (movement) and the other is in charge of shooting. In the example (gif) just below, when the player jumps, he has to press down to glide and control switches to the person in the bag, which encourages coordination when jumping.",
+        "gif": "assets/img/ProjDesc/BaggyBag/BB_LevitationShort.gif"
+      },
+      {
+        "title": "Concept",
+        "text": "If the player in the bag runs out of ammunition, it's up to the player to move or roll it.",
+        "gif": "assets/img/ProjDesc/BaggyBag/BB_Loot.gif"
+      },
+      {
+        "title": "What did I take care of?",
+        "text": "I developed the idea of a two-player game, with one character depending on the other, which we reworked as a team. Then, once the game design part was finished, I took care of the FX, the materials and fixed certain bugs.",
+        "gif": "assets/img/ProjDesc/BaggyBag/BB_ShootShort.gif"
+      }
+    ],
+    "links": [
+      { "label": "Itch.io page", "url": "https://emilezola.itch.io/baggy-bag" }
+    ]
+    },
+    "MarbleMadness": {
+      "title": "Marble Madness : Party Game",
+      "description": "Marble Madness: Party Game is a remake of Marble Madness but with several mini-games instead.",
+      "videoUrls": [
+        "https://youtu.be/Ibb5-nvUalc"
+      ],
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "Personal project with 2-4 people. The game is a party game using the marble physics of marble madness but with different mini-game styles and powers to give special effects to the marbles that come into contact with them.",
+          "image": "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen2.png"
+        },
+        {
+          "title": "Image",
+          "text": "Mini-jeu : TNT Tag like",
+          "image": "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen3.png"
+        },
+        {
+          "title": "Image",
+          "text": "Mini-game: Arena, the aim of which is to expel the player from the arena",
+          "image": "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen6.png"
+        }
+      ],
+      "links": [
+        { "label": "Itch.io page", "url": "https://emilezola.itch.io/arcade-stalker" }
+      ]
+    },
+    "TockarTournament": {
+      "title": "Tockar Tournament",
+      "description": "Personal project completed over one month with three people. I was primarily responsible for game design, balancing, coding (gameplay, multiplayers, tools), and certain materials.",
+      "videoUrls": [
+        "https://youtu.be/lPnuasO9970"
+      ],
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "A personal project carried out over a month with three people, in which we will be able to compete on different maps. Each map has a different gameplay style thanks to different weapon spawners and elements such as Vide, Wall Run, Bumper and Elevator, which may be present. <br><br> I developed the game so that the basic idea of being able to create several mini-games would be feasible, making it easy to integrate different mini-games as part of further development of the game. <br><br>",
+          "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen3.png",
+          "link": {
+            "label": "Itch.io page",
+            "url": "https://tockar-studio.itch.io/tockar-tournament"
+          }
+        },
+        {
+          "title": "Map Arena",
+          "text": "To ensure that a mini-game can have multiple gameplay options, we will modify the way players fight. In this example, we are in a small arena where we have to collect the only weapon that spawns in the four corners and allows players to push each other into the void.",
+          "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen7.png"
+        },
+        {
+          "title": "Map",
+          "text": "In this other map, I deliberately created a tight space because the only weapon in this map is a knife, so you either have to fight hand-to-hand or throw it. I therefore created lines of sight where you can be the target.",
+          "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen1.png"
+        },
+        {
+          "title": "Modifications",
+          "text": "In this game, you can customise the crosshairs, the colours of the characters, and also the emotes they can perform. To create the emotes, I created a material that acts like a flipbook, in which you can also customise the colour.",
+          "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen5.png"
+        },
+        {
+          "title": "Map",
+          "text": "This map use only Katana, you can find a Sniper and a Pistol but the main gameplay use Katana",
+          "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen2.png"
+        }
+      ],
+      "links": [
+        { "label": "Try it now on the Itch.io page", "url": "https://tockar-studio.itch.io/tockar-tournament" }
+      ]
+    },
+    "Weird": {
+      "title": "Weird",
+      "description": "Game Jam 2022",
+      "videoUrls": [
+        "https://youtu.be/RfX5XzAFn4Y"
+      ]
+    },
+    "LittleGames": {
+      "title": "Little games",
+      "description": "Games far too small to fit on separate pages",
+      "videoUrls": "",
+      "sections": [
+        {
+          "title": "Dodge Expert",
+          "text": "Made in 1 day on Unity. <br> Gameplay : You have to dodge the balls while collecting points by standing in the centre of the tiles. <br><br>",
+          "videoUrl": "https://youtu.be/UyTWprXCLlw",
+          "link": {
+            "label": "Play 'Dodge Expert' on my Itch.io page",
+            "url": "https://emilezola.itch.io/dodgingexpert"
+          }
+        },
+        {
+          "title": "Fast Magic",
+          "text": "Made in 1 day on Unity. <br> Gameplay : You have four buttons, each performing a different action. The objective is to go as far as possible without getting blocked by the environment. To avoid getting stuck, you must use the right powers at the right time. <br><br>",
+          "videoUrl": "https://youtu.be/e20FELxGQ_Y",
+          "link": {
+            "label": "Play 'Fast Magic' on my Itch.io page",
+            "url": "https://emilezola.itch.io/fast-magic"
+          }
+        },
+        {
+          "title": "Try Your Luck",
+          "text": "Made in 1 day on Unity. <br> Gameplay: Very simple gameplay using probabilities and the desire to go further. The objective is that each time you press the button, the probability of losing increases, so you can save a certain number of times so that if you lose, you can resume where you saved, except that the number of saves is limited. It's up to the player to decide when to stop and look at the “false probabilities” of getting that far or when the time runs out to 0. <br><br>",
+          "image": "assets/img/ProjDesc/LittleGames/T_TryYourLuckGameplay.png",
+          "link": {
+            "label": "Play 'Try your luck' on my Itch.io page",
+            "url": "https://emilezola.itch.io/try-your-luck"
+          }
+        }
+      ]
+    }
+  }
+
 }
