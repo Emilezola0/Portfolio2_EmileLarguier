@@ -10,20 +10,21 @@
     <div id="project-container" class="project-page"></div>
 
     <header>
+      <!-- Navigation using button IDs to change their text according to their languages -->
       <nav>
-        <h1>Emile L.</h1>
+        <h1 id="nav-name">Emile</h1>
         <ul>
-          <li><a href="index.html" class="juicy-hover ripple-button press-button">Accueil</a></li>
-          <li><a href="about.html" class="juicy-hover ripple-button press-button">À propos</a></li>
-          <li><a href="cv.html" class="juicy-hover ripple-button press-button">CV</a></li>
-          <li><a href="contact.html" class="juicy-hover ripple-button press-button">Contact</a></li>
+          <li><a id="nav-home" href="index.html" class="juicy-hover ripple-button press-button">Acceuil</a></li>
+          <li><a id="nav-about" href="about.html" class="juicy-hover ripple-button press-button">À propos de moi</a></li>
+          <li><a id="nav-cv" href="cv.html" class="juicy-hover ripple-button press-button">CV</a></li>
+          <!-- <li><a href="contact.html" class="juicy-hover ripple-button press-button">Contact</a></li> -->
           <li>
             <div class="language-toggle juicy-hover">
               <button id="lang-fr" class="lang-btn">FR</button>
               <button id="lang-en" class="lang-btn">EN</button>
             </div>
           </li>
-        </ul>
+        </ul>       
       </nav>
     </header>
   
@@ -116,6 +117,29 @@
         });
       });
 
+    </script>
+
+    <!-- Button like Home, About, Projects, etc. And change their languages -->
+    <script>
+    async function loadNav() {
+      const currentLang = localStorage.getItem("lang") || "fr";
+      try {
+        const res = await fetch(`lang/${currentLang}.json`);
+        if (!res.ok) throw new Error(`Erreur chargement traduction: ${res.status}`);
+        const translations = await res.json();
+
+        // Mise à jour des éléments de navigation
+        document.getElementById("nav-name").textContent = translations.nav.name;
+        document.getElementById("nav-home").textContent = translations.nav.HomePage;
+        document.getElementById("nav-about").textContent = translations.nav.about;
+        document.getElementById("nav-cv").textContent = translations.nav.cv;
+
+      } catch (err) {
+        console.error("Erreur chargement nav:", err);
+      }
+    }
+
+    loadNav();
     </script>
 
 </body>

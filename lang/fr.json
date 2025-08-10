@@ -1,7 +1,9 @@
 {
+
   "nav": {
     "name": "Emile",
-    "about": "À propos",
+    "HomePage": "Accueil",
+    "about": "À propos de moi",
     "projects": "Projets",
     "cv": "CV",
     "contact": "Contact"
