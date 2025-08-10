@@ -13,6 +13,7 @@
       <!-- Navigation using button IDs to change their text according to their languages -->
       <nav>
         <h1 id="nav-name">Emile</h1>
+        <h1 id="nav-currentPage"></h1>
         <ul>
           <li><a id="nav-home" href="index.html" class="juicy-hover ripple-button press-button">Acceuil</a></li>
           <li><a id="nav-about" href="about.html" class="juicy-hover ripple-button press-button">À propos de moi</a></li>
@@ -129,6 +130,7 @@
         const translations = await res.json();
 
         // Mise à jour des éléments de navigation
+        document.getElementById("nav-currentPage").innerHTML = `${translations.nav.projects}`;
         document.getElementById("nav-name").textContent = translations.nav.name;
         document.getElementById("nav-home").textContent = translations.nav.HomePage;
         document.getElementById("nav-about").textContent = translations.nav.about;
