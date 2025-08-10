@@ -433,6 +433,41 @@
         }
       ]
     }
+  },
+
+  "AboutMe": {
+  "Title": "About Me",
+  "Paragraphs": [
+    "My name is Emile Larguier. I have been studying Game Design at LISAA for four years, which has allowed me to develop skills in certain areas.<br><br>",
+    "The skills I have developed are:",
+    "<br>I developed these skills through multiple projects, whether academic, jam sessions, or personal projects!",
+    "At the moment, I am continuing to work on several projects, both personal and academic.",
+    "<br><strong>Here are the software programs I know:</strong>"
+  ],
+  "Skills": [
+    "<strong>Level Design</strong>",
+    "<strong>UX design</strong>",
+    "<strong>System Design</strong>",
+    "<strong>Programmation UE5 nodale/blueprint</strong>",
+    "<strong>Narrative Design</strong>",
+    "<strong>Economic Design</strong>"
+  ],
+  "Software": [
+    { "name": "Unity", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" },
+    { "name": "Unreal Engine", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" },
+    { "name": "Miro", "icon": "assets/img/aboutMe/MiroIcon.png" },
+    { "name": "ClickUp", "icon": "assets/img/aboutMe/ClickUpIcon.png" },
+    { "name": "Trello", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" },
+    { "name": "Jira", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
+    { "name": "Photoshop", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" },
+    { "name": "Figma", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+    { "name": "Excel", "icon": "assets/img/aboutMe/GoogleSheetIcon.png" },
+    { "name": "Word", "icon": "assets/img/aboutMe/WordIcon.png" },
+    { "name": "PowerPoint", "icon": "assets/img/aboutMe/PPTIcon.png" },
+    { "name": "Visual Studio Code", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+    { "name": "3ds Max", "icon": "https://www.svgrepo.com/show/303505/3ds-max-full-logo.svg" },
+    { "name": "Blender", "icon": "assets/img/aboutMe/BlenderIcon.png" }
+  ]
   }
 
 }

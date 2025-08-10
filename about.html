@@ -49,92 +49,7 @@
   </header>
   
   <main>
-    <section>
-      <h2>À propos de moi</h2>
-      <br>
-      <p><strong>Je m'appelle Emile Larguier, ça fait 4 ans que j'étudie le Game Design à LISAA ce qui ma permis de développer des skills</strong></p>
-      <p> <br> <strong>Les skills que j'ai pue développer sont : </strong>
-      <ul>
-        <li>Level Design</li>
-        <li>UX design</li>
-        <li>System Design</li>
-        <li>Programmation UE5 nodale/blueprint</li>
-        <li>Narrative Design</li>
-        <li>Economic Design</li>
-      </ul>
-      <p> <br> J'ai développé ces skills à l'aide des multiples projets que ce soit scolaire, jam ou projets personnel !</p>
-      <p>En ce moment je continue a travailler sur plusieurs projets que ce soit perso ou scolaire.</p>
-      <br>
-      <p><strong>Here are the software programs I know:</strong></p>
-      <br>
-      <div class="software-container">
-        <!-- Game Engines -->
-        <div class="software-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity">
-          <span>Unity</span>
-        </div>
-        <div class="software-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="Unreal Engine">
-          <span>Unreal Engine</span>
-        </div>
-
-        <!-- Collaboration Tools with alternative sources -->
-        <div class="software-item">
-          <img src="assets/img/aboutMe/MiroIcon.png" alt="Miro">
-          <span>Miro</span>
-        </div>
-        <div class="software-item">
-          <img src="assets/img/aboutMe/ClickUpIcon.png" alt="ClickUp">
-          <span>ClickUp</span>
-        </div>
-        <div class="software-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello">
-          <span>Trello</span>
-        </div>
-        <div class="software-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira">
-          <span>Jira</span>
-        </div>
-
-        <!-- Design Tools -->
-        <div class="software-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
-          <span>Photoshop</span>
-        </div>
-        <div class="software-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
-          <span>Figma</span>
-        </div>
-
-        <!-- Office Suite Replacements -->
-        <div class="software-item">
-          <img src="assets/img/aboutMe/GoogleSheetIcon.png" alt="Excel">
-          <span>Excel</span>
-        </div>
-        <div class="software-item">
-          <img src="assets/img/aboutMe/WordIcon.png" alt="Word">
-          <span>Word</span>
-        </div>
-        <div class="software-item">
-          <img src="assets/img/aboutMe/PPTIcon.png" alt="PowerPoint">
-          <span>PowerPoint</span>
-        </div>
-
-        <!-- Code & 3D Tools -->
-        <div class="software-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
-          <span>Visual Studio Code</span>
-        </div>
-        <div class="software-item">
-          <img src="https://www.svgrepo.com/show/303505/3ds-max-full-logo.svg" alt="3ds Max">
-          <span>3ds Max</span>
-        </div>
-        <div class="software-item">
-          <img src="assets/img/aboutMe/BlenderIcon.png" alt="Blender">
-          <span>Blender</span>
-        </div>
-      </div>
-    </section>
+    <section id="about-section"></section>
   </main>
 
   <footer>
@@ -204,7 +119,62 @@
           location.reload(); // This reloads the page
         });
       });
-      
+    </script>
+
+    <script>
+    async function loadAboutMe() {
+      let currentLang = localStorage.getItem("lang") || "fr";
+
+      try {
+        const res = await fetch(`lang/${currentLang}.json`);
+        if (!res.ok) throw new Error("Erreur de chargement");
+        const data = await res.json();
+
+        const about = data.AboutMe;
+        const section = document.getElementById("about-section");
+
+        // Titre
+        const h2 = document.createElement("h2");
+        h2.textContent = about.Title;
+        section.appendChild(h2);
+
+        // Paragraphes et Skills
+        about.Paragraphs.forEach((para, idx) => {
+          const p = document.createElement("p");
+          p.innerHTML = para;
+          section.appendChild(p);
+
+          if (idx === 1) { // Après "Les skills que j'ai pu développer..."
+            const ul = document.createElement("ul");
+            about.Skills.forEach(skill => {
+              const li = document.createElement("li");
+              li.innerHTML = skill;
+              ul.appendChild(li);
+            });
+            section.appendChild(ul);
+          }
+        });
+
+        // Logiciels
+        const softwareContainer = document.createElement("div");
+        softwareContainer.className = "software-container";
+        about.Software.forEach(soft => {
+          const div = document.createElement("div");
+          div.className = "software-item";
+          div.innerHTML = `
+            <img src="${soft.icon}" alt="${soft.name}">
+            <span>${soft.name}</span>
+          `;
+          softwareContainer.appendChild(div);
+        });
+        section.appendChild(softwareContainer);
+
+      } catch (err) {
+        console.error("Erreur chargement AboutMe:", err);
+      }
+    }
+
+    loadAboutMe();
     </script>
 
 </body>
