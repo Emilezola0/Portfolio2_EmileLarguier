@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
     <!-- Navigation using button IDs to change their text according to their languages -->
     <nav>
       <h1 id="nav-name">Emile</h1>
@@ -24,13 +23,20 @@
         </li>
       </ul>
     </nav>
-  </header>
 
   <main>
     <section>
-      <h2>Mon CV</h2>
-      <a href="assets/pdf/cv.pdf" target="_blank">📄 Télécharger mon CV (PDF)</a>
+      <h2>CVs</h2>
+      <br>
+      <a> --- </a>
+      <br>
+      <a href="assets/pdf/cv.pdf" target="_blank">📄 Download English CV (PDF)</a>
       <iframe src="assets/pdf/cv.pdf" width="100%" height="800px" style="margin-top: 2rem;"></iframe>
+      <br>
+      <a> --- </a>
+      <br>
+      <a href="assets/pdf/FrenchCV.pdf" target="_blank">📄 Télécharger mon CV (PDF)</a>
+      <iframe src="assets/pdf/FrenchCV.pdf" width="100%" height="800px" style="margin-top: 2rem;"></iframe>
     </section>
   </main>
 
@@ -42,6 +48,34 @@
       <a href="mailto:emile@example.com">Email</a>
     </p>
   </footer>
+
+  <!-- Sticky Nav -->
+  <script>
+      let lastScrollTop = 0;
+      const nav = document.querySelector("nav");
+      
+      window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop) {
+          // Scroll vers le bas -> cache le nav
+          nav.classList.add("nav-hidden");
+        } else {
+          // Scroll vers le haut -> montre le nav
+          nav.classList.remove("nav-hidden");
+        }
+        
+        // Ajoute ou retire flou + ombre selon la position
+        if (scrollTop > 10) {
+          nav.classList.add("nav-scrolled");
+        } else {
+          nav.classList.remove("nav-scrolled");
+        }
+        
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
+
+   </script>
 
   <!-- Ripple Effect -->
   <script>

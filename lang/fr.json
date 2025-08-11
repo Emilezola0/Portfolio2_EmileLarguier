@@ -182,11 +182,11 @@
     },
     "MaybeDieLess": {
       "title": "Maybe Die Less",
-      "description": "Game Jam organised by LISAA, created with the ABM team on the theme ‘Stuck in a loop’, made on Unreal Engine in 48 hours.",
+      "description": "Game Jam organisé par LISAA, créé avec l'équipe ABM sur le thème « Stuck in a loop » (Coincé dans une boucle), réalisé sur Unreal Engine en 48 heures.",
       "sections": [
         {
           "title": "Concept",
-          "text": "I had the idea of having to press a button to die and leave a mark on the level design, which ended up being the main mechanics, since in this game you have to sacrifice yourself in order to leave a platform for the slime that follows.<br><br>In the Jam version, the powers are integrated but not as we wanted, because we were supposed to unlock new powers when we finished the 3 levels with a certain number of deaths. When we exceeded a death threshold, we unlocked a new power so that at the end we could do the platforming without dying and get out of the loop.",
+          "text": "J'ai eu l'idée d'appuyer sur un bouton pour mourir et laisser une marque sur le niveau, ce qui est finalement devenu le mécanisme principal, car dans ce jeu, vous devez vous sacrifier afin de laisser une plate-forme au slime qui vous suit. <br><br>Dans la version Jam, les pouvoirs sont intégrés, mais pas comme nous le voulions, car nous étions censés débloquer de nouveaux pouvoirs lorsque nous terminions les 3 niveaux avec un certain nombre de morts. Lorsque nous dépassions un certain nombre de morts, nous débloquions un nouveau pouvoir afin de pouvoir, à la fin, franchir les plateformes sans mourir et sortir de la boucle.",
           "gif": "assets/img/ProjDesc/MDL/MDL_Gameplay.gif"
         }
       ],
@@ -211,16 +211,16 @@
     },
     "Deeplace": {
       "title": "Deeplace",
-      "description": "Bachelor 1 Game at LISAA",
+      "description": "Bachelor 1 Game à LISAA",
       "sections": [
         {
           "title": "Concept",
-          "text": "Accelerated Gameplay",
+          "text": "Gameplay accéléré",
           "videoUrl": "https://youtu.be/_JJQ7WJpuro"
         },
         {
-          "title": "Developpement",
-          "text": "Made on Unreal Engine in 2 months during my Bachelor 1 at LISAA",
+          "title": "Développement",
+          "text": "Réalisé sur Unreal Engine en deux mois pendant ma première année de licence à la LISAA.",
           "image": "assets/img/ProjDesc/Deeplace/MapDeeplace.png"
         }
       ]
@@ -258,7 +258,7 @@
       "sections": [
         {
           "title": "Concept",
-          "text": "Made in 2022/2023 on Unreal Engine in 48 hours during a Jam with my ABM team. Locked inside the arcade terminal by the shop manager, the game consists of managing the games inside an arcade terminal to please the person so that he spends a lot of money and allows you to free yourself. You have to be reactive to change and adapt the game and avoid short-circuiting to avoid this you will have to make mini-games.",
+          "text": "Réalisé en 2022/2023 sur Unreal Engine en 48 heures lors d'un Jam avec mon équipe ABM. Enfermé dans la borne d'arcade par le gérant du magasin, le jeu consiste à gérer les jeux à l'intérieur d'une borne d'arcade afin de satisfaire la personne pour qu'elle dépense beaucoup d'argent et vous permette de vous libérer. Vous devez être réactif pour modifier et adapter le jeu et éviter les courts-circuits. Pour cela, vous devrez créer des mini-jeux.",
           "gif": "assets/img/ProjDesc/ArcadeStalker/ArcadeStalker_GIF.gif"
         }
       ],
@@ -268,7 +268,7 @@
     },
     "revengefantasy": {
       "title": "Revenge Fantasy",
-      "description": "One-year LISAA project with a team of 12 people (4 Game Artists, 4 Tech Artists and 4 Game Designers) carried out during my third year of my Bachelor's degree at LISAA in 2023/2024.",
+      "description": "Projet LISAA d'une durée d'un an mené avec une équipe de 12 personnes (4 artistes jeux vidéo, 4 artistes techniques et 4 concepteurs jeux vidéo) pendant ma troisième année de licence à la LISAA en 2023/2024.",
       "sections": [
         {
           "title": "Concept",
@@ -303,12 +303,12 @@
     "sections": [
       {
         "title": "Concept",
-        "text": "Made in 2022/2023 on Unreal Engine in 48 hours during a Jam with a small GD team (5 people)",
+        "text": "Réalisé en 2022/2023 sur Unreal Engine en 48 heures lors d'un Jam avec une petite équipe GD (5 personnes)",
         "image": "assets/img/ProjDesc/BaggyBag/BaggyBag_Title.png"
       },
       {
         "title": "Concept",
-        "text": "A 2-player game in which each player controls a character, but the two are interconnected because one controls the feet (movement) and the other is in charge of shooting. In the example (gif) just below, when the player jumps, he has to press down to glide and control switches to the person in the bag, which encourages coordination when jumping.",
+        "text": "Un jeu à deux joueurs dans lequel chaque joueur contrôle un personnage, mais les deux sont interconnectés car l'un contrôle les pieds (mouvements) et l'autre est chargé de tirer. Dans l'exemple (gif) ci-dessous, lorsque le joueur saute, il doit appuyer vers le bas pour planer et contrôler les commutateurs de la personne dans le sac, ce qui encourage la coordination lors du saut.",
         "gif": "assets/img/ProjDesc/BaggyBag/BB_LevitationShort.gif"
       },
       {
@@ -317,8 +317,8 @@
         "gif": "assets/img/ProjDesc/BaggyBag/BB_Loot.gif"
       },
       {
-        "title": "What did I take care of?",
-        "text": "I developed the idea of a two-player game, with one character depending on the other, which we reworked as a team. Then, once the game design part was finished, I took care of the FX, the materials and fixed certain bugs.",
+        "title": "De quoi me suis-je occupé ?",
+        "text": "J'ai développé l'idée d'un jeu à deux joueurs, avec un personnage dépendant de l'autre, que nous avons retravaillé en équipe. Ensuite, une fois la conception du jeu terminée, je me suis occupé des effets spéciaux, des matériaux et j'ai corrigé certains bugs.",
         "gif": "assets/img/ProjDesc/BaggyBag/BB_ShootShort.gif"
       }
     ],
@@ -328,24 +328,24 @@
     },
     "MarbleMadness": {
       "title": "Marble Madness : Party Game",
-      "description": "Marble Madness: Party Game is a remake of Marble Madness but with several mini-games instead.",
+      "description": "Marble Madness: Party Game est une nouvelle version de Marble Madness, mais avec plusieurs mini-jeux à la place.",
       "videoUrls": [
         "https://youtu.be/Ibb5-nvUalc"
       ],
       "sections": [
         {
           "title": "Concept",
-          "text": "Personal project with 2-4 people. The game is a party game using the marble physics of marble madness but with different mini-game styles and powers to give special effects to the marbles that come into contact with them.",
+          "text": "Projet personnel avec 2 à 4 personnes. Le jeu est un jeu festif qui utilise la physique des billes de Marble Madness, mais avec différents styles de mini-jeux et pouvoirs qui confèrent des effets spéciaux aux billes qui entrent en contact avec eux.",
           "image": "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen2.png"
         },
         {
           "title": "Image",
-          "text": "Mini-jeu : TNT Tag like",
+          "text": "Mini-jeu : TNT Tag like (comme le jeu du chat, mais celui qui est touché devient le chat)",
           "image": "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen3.png"
         },
         {
           "title": "Image",
-          "text": "Mini-game: Arena, the aim of which is to expel the player from the arena",
+          "text": "Mini-jeu : Arène, dont le but est d'expulser le joueur de l'arène.",
           "image": "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen6.png"
         }
       ],
@@ -355,7 +355,7 @@
     },
     "TockarTournament": {
       "title": "Tockar Tournament",
-      "description": "Personal project completed over one month with three people. I was primarily responsible for game design, balancing, coding (gameplay, multiplayers, tools), and certain materials.",
+      "description": "Projet personnel réalisé en un mois avec trois personnes. J'étais principalement responsable de la conception du jeu, de l'équilibrage, du codage (gameplay, multijoueurs, outils) et de certains éléments.",
       "videoUrls": [
         "https://youtu.be/lPnuasO9970"
       ],
@@ -370,28 +370,28 @@
           }
         },
         {
-          "title": "Map Arena",
-          "text": "To ensure that a mini-game can have multiple gameplay options, we will modify the way players fight. In this example, we are in a small arena where we have to collect the only weapon that spawns in the four corners and allows players to push each other into the void.",
+          "title": "Map (Carte) Arène",
+          "text": "Pour garantir qu'un mini-jeu puisse offrir plusieurs options de gameplay, nous allons modifier la manière dont les joueurs combattent. Dans cet exemple, nous nous trouvons dans une petite arène où nous devons récupérer la seule arme qui apparaît aux quatre coins et qui permet aux joueurs de se pousser les uns les autres dans le vide.",
           "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen7.png"
         },
         {
-          "title": "Map",
-          "text": "In this other map, I deliberately created a tight space because the only weapon in this map is a knife, so you either have to fight hand-to-hand or throw it. I therefore created lines of sight where you can be the target.",
+          "title": "Map (Carte)",
+          "text": "Dans cette autre carte, j'ai délibérément créé un espace restreint, car la seule arme disponible dans cette carte est un couteau. Vous devez donc soit vous battre au corps à corps, soit le lancer. J'ai donc créé des lignes de mire où vous pouvez être la cible.",
           "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen1.png"
         },
         {
           "title": "Modifications",
-          "text": "In this game, you can customise the crosshairs, the colours of the characters, and also the emotes they can perform. To create the emotes, I created a material that acts like a flipbook, in which you can also customise the colour.",
+          "text": "Dans ce jeu, vous pouvez personnaliser le réticule, les couleurs des personnages, ainsi que les émoticônes qu'ils peuvent utiliser. Pour créer les émoticônes, j'ai créé un matériau qui fonctionne comme un flipbook, dont vous pouvez également personnaliser la couleur.",
           "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen5.png"
         },
         {
-          "title": "Map",
-          "text": "This map use only Katana, you can find a Sniper and a Pistol but the main gameplay use Katana",
+          "title": "Map (Carte)",
+          "text": "Cette carte utilise uniquement le katana. Vous pouvez trouver un fusil de précision et un pistolet, mais le gameplay principal utilise le katana.",
           "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen2.png"
         }
       ],
       "links": [
-        { "label": "Try it now on the Itch.io page", "url": "https://tockar-studio.itch.io/tockar-tournament" }
+        { "label": "Essayez-le dès maintenant sur la page Itch.io !", "url": "https://tockar-studio.itch.io/tockar-tournament" }
       ]
     },
     "Weird": {
@@ -403,40 +403,40 @@
     },
     "LittleGames": {
       "title": "Little games",
-      "description": "Games far too small to fit on separate pages",
+      "description": "Jeux beaucoup trop petits pour tenir sur des pages séparées",
       "videoUrls": "",
       "sections": [
         {
           "title": "Dodge Expert",
-          "text": "Made in 1 day on Unity. <br> Gameplay : You have to dodge the balls while collecting points by standing in the centre of the tiles. <br><br>",
+          "text": "Réalisé en 1 jour sur Unity. <br> Gameplay : Vous devez esquiver les balles tout en accumulant des points en vous tenant au centre des tuiles. <br><br>",
           "videoUrl": "https://youtu.be/UyTWprXCLlw",
           "link": {
-            "label": "Play 'Dodge Expert' on my Itch.io page",
+            "label": "Jouez à « Dodge Expert » sur ma page Itch.io !",
             "url": "https://emilezola.itch.io/dodgingexpert"
           }
         },
         {
           "title": "Fast Magic",
-          "text": "Made in 1 day on Unity. <br> Gameplay : You have four buttons, each performing a different action. The objective is to go as far as possible without getting blocked by the environment. To avoid getting stuck, you must use the right powers at the right time. <br><br>",
+          "text": "Réalisé en 1 jour sur Unity. <br> Gameplay : Vous disposez de quatre boutons, chacun permettant d'effectuer une action différente. L'objectif est d'aller le plus loin possible sans être bloqué par l'environnement. Pour éviter de rester coincé, vous devez utiliser les bons pouvoirs au bon moment. <br><br>",
           "videoUrl": "https://youtu.be/e20FELxGQ_Y",
           "link": {
-            "label": "Play 'Fast Magic' on my Itch.io page",
+            "label": "Jouez à « Fast Magic » sur ma page Itch.io !",
             "url": "https://emilezola.itch.io/fast-magic"
           }
         },
         {
           "title": "Try Your Luck",
-          "text": "Made in 1 day on Unity. <br> Gameplay: Very simple gameplay using probabilities and the desire to go further. The objective is that each time you press the button, the probability of losing increases, so you can save a certain number of times so that if you lose, you can resume where you saved, except that the number of saves is limited. It's up to the player to decide when to stop and look at the “false probabilities” of getting that far or when the time runs out to 0. <br><br>",
+          "text": "Réalisé en 1 jour sur Unity. <br> Gameplay : gameplay très simple utilisant les probabilités et l'envie d'aller plus loin. L'objectif est que chaque fois que vous appuyez sur le bouton, la probabilité de perdre augmente, vous pouvez donc enregistrer un certain nombre de fois afin que, si vous perdez, vous puissiez reprendre là où vous avez enregistré, sauf que le nombre d'enregistrements est limité. C'est au joueur de décider quand s'arrêter et regarder les « fausses probabilités » d'aller aussi loin ou quand le temps est écoulé à 0. <br><br>",
           "image": "assets/img/ProjDesc/LittleGames/T_TryYourLuckGameplay.png",
           "link": {
-            "label": "Play 'Try your luck' on my Itch.io page",
+            "label": "Jouez à « Tentez votre chance » sur ma page Itch.io !",
             "url": "https://emilezola.itch.io/try-your-luck"
           }
         }
       ]
     }
   },
-
+  
   "AboutMe": {
   "Title": "À propos de moi",
   "Paragraphs": [
