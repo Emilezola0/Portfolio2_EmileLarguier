@@ -27,44 +27,44 @@
   </nav>
 
   <!-- SECTION D'INTRO -->
-<a href="project.html?id=JusantDLC">
-  <section class="parallax fullscreen" style="background-image: url('assets/img/projects/jusantDLC.png')">
-    <div class="overlay">
-      <h2>Jusant Abysse et Embrun DLC</h2>
-      <p>Projet scolaire avec pour objectif de crée le DLC du jeu d'escalade de Don't Nod</p>
-    </div>
-  </section>
-</a>
+  <a href="project.html?id=JusantDLC">
+    <section class="parallax fullscreen" style="background-image: url('assets/img/projects/jusantDLC.png')">
+      <div class="overlay">
+        <h2>Jusant Abysse et Embrun DLC</h2>
+        <p>Projet scolaire avec pour objectif de crée le DLC du jeu d'escalade de Don't Nod</p>
+      </div>
+    </section>
+  </a>
 
   <!-- PROJET 1 -->
-<a href="project.html?id=spooderdance">
-  <section class="parallax fullscreen spooderdance">
-    <div class="overlay">
-      <h2>SpooderDance</h2>
-      <p>Un jeu musical avec une araignée qui danse !</p>
-    </div>
-  </section>
-</a>
+  <a href="project.html?id=spooderdance">
+    <section class="parallax fullscreen spooderdance">
+      <div class="overlay">
+        <h2>SpooderDance</h2>
+        <p>Un jeu musical avec une araignée qui danse !</p>
+      </div>
+    </section>
+  </a>
 
-<!-- PROJET 2 -->
-<a href="project.html?id=revengefantasy">
-  <section class="parallax fullscreen revengefantasy">
-    <div class="overlay">
-      <h2>RevengeFantasy</h2>
-      <p>Un fast-FPS énergique et stylé.</p>
-    </div>
-  </section>
-</a>
+  <!-- PROJET 2 -->
+  <a href="project.html?id=revengefantasy">
+    <section class="parallax fullscreen revengefantasy">
+      <div class="overlay">
+        <h2>RevengeFantasy</h2>
+        <p>Un fast-FPS énergique et stylé.</p>
+      </div>
+    </section>
+  </a>
 
-<!-- PROJET 3 -->
-<a href="project.html?id=scryptalking">
-  <section class="parallax fullscreen scryptalking">
-    <div class="overlay">
-      <h2>Scryptalking</h2>
-      <p>Discuter. Raisonner. Convaincre.</p>
-    </div>
-  </section>
-</a>
+  <!-- PROJET 3 -->
+  <a href="project.html?id=scryptalking">
+    <section class="parallax fullscreen scryptalking">
+      <div class="overlay">
+        <h2>Scryptalking</h2>
+        <p>Discuter. Raisonner. Convaincre.</p>
+      </div>
+    </section>
+  </a>
 
   <!-- FOOTER -->
   <footer>
@@ -76,12 +76,13 @@
     </p>
   </footer>
 
-    <!-- Audio -->
-    <audio id="clickSound" src="assets/sounds/clickButton.mp3" preload="auto"></audio>
-    <!-- Script -->
-    <script type="module" src="js/main.js"></script>
+  <!-- Audio -->
+  <audio id="clickSound" src="assets/sounds/clickButton.mp3" preload="auto"></audio>
+  <!-- Script -->
+  <script type="module" src="js/main.js"></script>
 
-    <script>
+  <!-- Ripple Effect -->
+  <script>
       document.querySelectorAll('.ripple-button').forEach(button => {
         button.addEventListener('click', function (e) {
           const ripple = document.createElement('span');
@@ -99,7 +100,8 @@
       });
     </script>
     
-    <script>
+  <!-- Sticky Nav -->
+  <script>
       let lastScrollTop = 0;
       const nav = document.querySelector("nav");
       
@@ -126,7 +128,8 @@
 
     </script>
 
-    <script>
+  <!-- Language Selection -->
+  <script>
       let currentLang = localStorage.getItem("lang") || "fr";
       const langButtons = document.querySelectorAll(".lang-btn");
 
@@ -169,8 +172,8 @@
       
     </script>
 
-    <!-- Button like Home, About, Projects, etc. And change their languages -->
-    <script>
+  <!-- Button like Home, About, Projects, etc. And change their languages -->
+  <script>
     async function loadNav() {
       const currentLang = localStorage.getItem("lang") || "fr";
       try {
@@ -192,7 +195,6 @@
 
     loadNav();
     </script>
-
 
 </body>
 </html>

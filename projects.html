@@ -8,8 +8,6 @@
 </head>
 <body>
     <div id="project-container" class="project-page"></div>
-
-    <header>
       <!-- Navigation using button IDs to change their text according to their languages -->
       <nav>
         <h1 id="nav-name">Emile</h1>
@@ -27,8 +25,7 @@
           </li>
         </ul>       
       </nav>
-    </header>
-  
+      
     <main>
       <section>
         <h2>Mes projets</h2>
@@ -59,6 +56,35 @@
 
   <script type="module" src="js/projects.js"></script>
 
+  <!-- Sticky Nav -->
+  <script>
+      let lastScrollTop = 0;
+      const nav = document.querySelector("nav");
+      
+      window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop) {
+          // Scroll vers le bas -> cache le nav
+          nav.classList.add("nav-hidden");
+        } else {
+          // Scroll vers le haut -> montre le nav
+          nav.classList.remove("nav-hidden");
+        }
+        
+        // Ajoute ou retire flou + ombre selon la position
+        if (scrollTop > 10) {
+          nav.classList.add("nav-scrolled");
+        } else {
+          nav.classList.remove("nav-scrolled");
+        }
+        
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
+
+   </script>
+
+   <!-- Ripple Effect -->
   <script>
     document.querySelectorAll('.ripple-button').forEach(button => {
       button.addEventListener('click', function (e) {
@@ -75,8 +101,9 @@
         setTimeout(() => ripple.remove(), 600);
       });
     });
-  </script>
+   </script>
 
+   <!-- Language Selection -->
   <script>
       let currentLang = localStorage.getItem("lang") || "fr";
       const langButtons = document.querySelectorAll(".lang-btn");
