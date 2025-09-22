@@ -7,12 +7,10 @@
     "cv": "CV",
     "contact": "Contact"
   },
-
   "footer": {
     "copyright": "© Emile L.",
     "email": "📧 emile@example.com"
   },
-
   "projects": [
     {
       "id": "spooderdance",
@@ -43,7 +41,7 @@
       "category": "school"
     },
     {
-      "id" : "scryptalking",
+      "id": "scryptalking",
       "title": "Scryptalking",
       "description": "A top-view mystery and puzzle game in which you try to persuade strange characters using words or card battles",
       "image": "assets/img/projects/scryptalking.png",
@@ -105,9 +103,7 @@
       "image": "assets/img/projects/TestImage1.png",
       "category": "perso"
     }
-
   ],
-
   "projectsDescription": {
     "spooderdance": {
       "title": "Spooder Dance",
@@ -128,7 +124,10 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/spooder-dance" }
+        {
+          "label": "Itch.io page",
+          "url": "https://emilelarguier.itch.io/spooder-dance"
+        }
       ]
     },
     "JusantDLC": {
@@ -176,7 +175,10 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/spooder-dance" }
+        {
+          "label": "Itch.io page",
+          "url": "https://emilelarguier.itch.io/spooder-dance"
+        }
       ]
     },
     "MaybeDieLess": {
@@ -190,7 +192,10 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/maybe-die-less" }
+        {
+          "label": "Itch.io page",
+          "url": "https://emilelarguier.itch.io/maybe-die-less"
+        }
       ]
     },
     "Weird2": {
@@ -248,7 +253,10 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/maybe-die-less" }
+        {
+          "label": "Itch.io page",
+          "url": "https://emilelarguier.itch.io/maybe-die-less"
+        }
       ]
     },
     "ArcadeStalker": {
@@ -262,7 +270,10 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/arcade-stalker" }
+        {
+          "label": "Itch.io page",
+          "url": "https://emilelarguier.itch.io/arcade-stalker"
+        }
       ]
     },
     "revengefantasy": {
@@ -297,33 +308,36 @@
       ]
     },
     "BaggyBag": {
-    "title": "Baggy Bag",
-    "description": "Game Jam 2024",
-    "sections": [
-      {
-        "title": "Concept",
-        "text": "Made in 2022/2023 on Unreal Engine in 48 hours during a Jam with a small GD team (5 people)",
-        "image": "assets/img/ProjDesc/BaggyBag/BaggyBag_Title.png"
-      },
-      {
-        "title": "Concept",
-        "text": "A 2-player game in which each player controls a character, but the two are interconnected because one controls the feet (movement) and the other is in charge of shooting. In the example (gif) just below, when the player jumps, he has to press down to glide and control switches to the person in the bag, which encourages coordination when jumping.",
-        "gif": "assets/img/ProjDesc/BaggyBag/BB_LevitationShort.gif"
-      },
-      {
-        "title": "Concept",
-        "text": "If the player in the bag runs out of ammunition, it's up to the player to move or roll it.",
-        "gif": "assets/img/ProjDesc/BaggyBag/BB_Loot.gif"
-      },
-      {
-        "title": "What did I take care of?",
-        "text": "I developed the idea of a two-player game, with one character depending on the other, which we reworked as a team. Then, once the game design part was finished, I took care of the FX, the materials and fixed certain bugs.",
-        "gif": "assets/img/ProjDesc/BaggyBag/BB_ShootShort.gif"
-      }
-    ],
-    "links": [
-      { "label": "Itch.io page", "url": "https://emilezola.itch.io/baggy-bag" }
-    ]
+      "title": "Baggy Bag",
+      "description": "Game Jam 2024",
+      "sections": [
+        {
+          "title": "Concept",
+          "text": "Made in 2022/2023 on Unreal Engine in 48 hours during a Jam with a small GD team (5 people)",
+          "image": "assets/img/ProjDesc/BaggyBag/BaggyBag_Title.png"
+        },
+        {
+          "title": "Concept",
+          "text": "A 2-player game in which each player controls a character, but the two are interconnected because one controls the feet (movement) and the other is in charge of shooting. In the example (gif) just below, when the player jumps, he has to press down to glide and control switches to the person in the bag, which encourages coordination when jumping.",
+          "gif": "assets/img/ProjDesc/BaggyBag/BB_LevitationShort.gif"
+        },
+        {
+          "title": "Concept",
+          "text": "If the player in the bag runs out of ammunition, it's up to the player to move or roll it.",
+          "gif": "assets/img/ProjDesc/BaggyBag/BB_Loot.gif"
+        },
+        {
+          "title": "What did I take care of?",
+          "text": "I developed the idea of a two-player game, with one character depending on the other, which we reworked as a team. Then, once the game design part was finished, I took care of the FX, the materials and fixed certain bugs.",
+          "gif": "assets/img/ProjDesc/BaggyBag/BB_ShootShort.gif"
+        }
+      ],
+      "links": [
+        {
+          "label": "Itch.io page",
+          "url": "https://emilelarguier.itch.io/baggy-bag"
+        }
+      ]
     },
     "MarbleMadness": {
       "title": "Marble Madness : Party Game",
@@ -349,7 +363,10 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/arcade-stalker" }
+        {
+          "label": "Itch.io page",
+          "url": "https://emilelarguier.itch.io/arcade-stalker"
+        }
       ]
     },
     "TockarTournament": {
@@ -390,7 +407,10 @@
         }
       ],
       "links": [
-        { "label": "Try it now on the Itch.io page", "url": "https://tockar-studio.itch.io/tockar-tournament" }
+        {
+          "label": "Try it now on the Itch.io page",
+          "url": "https://tockar-studio.itch.io/tockar-tournament"
+        }
       ]
     },
     "Weird": {
@@ -411,7 +431,7 @@
           "videoUrl": "https://youtu.be/UyTWprXCLlw",
           "link": {
             "label": "Play 'Dodge Expert' on my Itch.io page",
-            "url": "https://emilezola.itch.io/dodgingexpert"
+            "url": "https://emilelarguier.itch.io/dodgingexpert"
           }
         },
         {
@@ -420,7 +440,7 @@
           "videoUrl": "https://youtu.be/e20FELxGQ_Y",
           "link": {
             "label": "Play 'Fast Magic' on my Itch.io page",
-            "url": "https://emilezola.itch.io/fast-magic"
+            "url": "https://emilelarguier.itch.io/fast-magic"
           }
         },
         {
@@ -429,46 +449,86 @@
           "image": "assets/img/ProjDesc/LittleGames/T_TryYourLuckGameplay.png",
           "link": {
             "label": "Play 'Try your luck' on my Itch.io page",
-            "url": "https://emilezola.itch.io/try-your-luck"
+            "url": "https://emilelarguier.itch.io/try-your-luck"
           }
         }
       ]
     }
   },
-
   "AboutMe": {
-  "Title": "About Me",
-  "Paragraphs": [
-    "My name is Emile Larguier. I have been studying Game Design at LISAA for four years, which has allowed me to develop skills in certain areas.<br><br>",
-    "The skills I have developed are:",
-    "<br>I developed these skills through multiple projects, whether academic, jam sessions, or personal projects!",
-    "At the moment, I am continuing to work on several projects, both personal and academic.",
-    "<br><strong>Here are the software programs I know:</strong>"
-  ],
-  "Skills": [
-    "<strong>Level Design</strong>",
-    "<strong>UX design</strong>",
-    "<strong>System Design</strong>",
-    "<strong>Programmation UE5 nodale/blueprint</strong>",
-    "<strong>Narrative Design</strong>",
-    "<strong>Economic Design</strong>"
-  ],
-  "Software": [
-    { "name": "Unity", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" },
-    { "name": "Unreal Engine", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" },
-    { "name": "Miro", "icon": "assets/img/aboutMe/MiroIcon.png" },
-    { "name": "ClickUp", "icon": "assets/img/aboutMe/ClickUpIcon.png" },
-    { "name": "Trello", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" },
-    { "name": "Jira", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
-    { "name": "Photoshop", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" },
-    { "name": "Figma", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-    { "name": "Excel", "icon": "assets/img/aboutMe/GoogleSheetIcon.png" },
-    { "name": "Word", "icon": "assets/img/aboutMe/WordIcon.png" },
-    { "name": "PowerPoint", "icon": "assets/img/aboutMe/PPTIcon.png" },
-    { "name": "Visual Studio Code", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-    { "name": "3ds Max", "icon": "https://www.svgrepo.com/show/303505/3ds-max-full-logo.svg" },
-    { "name": "Blender", "icon": "assets/img/aboutMe/BlenderIcon.png" }
-  ]
+    "Title": "About Me",
+    "Paragraphs": [
+      "My name is Emile Larguier. I have been studying Game Design at LISAA for four years, which has allowed me to develop skills in certain areas.<br><br>",
+      "The skills I have developed are:",
+      "<br>I developed these skills through multiple projects, whether academic, jam sessions, or personal projects!",
+      "At the moment, I am continuing to work on several projects, both personal and academic.",
+      "<br><strong>Here are the software programs I know:</strong>"
+    ],
+    "Skills": [
+      "<strong>Level Design</strong>",
+      "<strong>UX design</strong>",
+      "<strong>System Design</strong>",
+      "<strong>Programmation UE5 nodale/blueprint</strong>",
+      "<strong>Narrative Design</strong>",
+      "<strong>Economic Design</strong>"
+    ],
+    "Software": [
+      {
+        "name": "Unity",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+      },
+      {
+        "name": "Unreal Engine",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg"
+      },
+      {
+        "name": "Miro",
+        "icon": "assets/img/aboutMe/MiroIcon.png"
+      },
+      {
+        "name": "ClickUp",
+        "icon": "assets/img/aboutMe/ClickUpIcon.png"
+      },
+      {
+        "name": "Trello",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+      },
+      {
+        "name": "Jira",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
+      },
+      {
+        "name": "Photoshop",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+      },
+      {
+        "name": "Figma",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+      },
+      {
+        "name": "Excel",
+        "icon": "assets/img/aboutMe/GoogleSheetIcon.png"
+      },
+      {
+        "name": "Word",
+        "icon": "assets/img/aboutMe/WordIcon.png"
+      },
+      {
+        "name": "PowerPoint",
+        "icon": "assets/img/aboutMe/PPTIcon.png"
+      },
+      {
+        "name": "Visual Studio Code",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+      },
+      {
+        "name": "3ds Max",
+        "icon": "https://www.svgrepo.com/show/303505/3ds-max-full-logo.svg"
+      },
+      {
+        "name": "Blender",
+        "icon": "assets/img/aboutMe/BlenderIcon.png"
+      }
+    ]
   }
-
 }

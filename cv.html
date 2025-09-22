@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV - Emile LARGUIER</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <!-- Navigation using button IDs to change their text according to their languages -->
-    <nav>
-      <h1 id="nav-name">Emile</h1>
-      <h1 id="nav-currentPage"></h1>
-      <ul>
-        <li><a id="nav-home" href="index.html" class="juicy-hover ripple-button press-button">Accueil</a></li>
-        <li><a id="nav-about" href="about.html" class="juicy-hover ripple-button press-button">À propos</a></li>
-        <li><a id="nav-projects" href="projects.html" class="juicy-hover ripple-button press-button">Projets</a></li>
-        <li>
-          <div class="language-toggle juicy-hover">
-            <button id="lang-fr" class="lang-btn">FR</button>
-            <button id="lang-en" class="lang-btn">EN</button>
-          </div>
-        </li>
-      </ul>
-    </nav>
+  <!-- Navigation using button IDs to change their text according to their languages -->
+  <nav>
+    <h1 id="nav-name">Emile</h1>
+    <h1 id="nav-currentPage"></h1>
+    <ul>
+      <li><a id="nav-home" href="index.html" class="juicy-hover ripple-button press-button">Accueil</a></li>
+      <li><a id="nav-about" href="about.html" class="juicy-hover ripple-button press-button">À propos</a></li>
+      <li><a id="nav-projects" href="projects.html" class="juicy-hover ripple-button press-button">Projets</a></li>
+      <li>
+        <div class="language-toggle juicy-hover">
+          <button id="lang-fr" class="lang-btn">FR</button>
+          <button id="lang-en" class="lang-btn">EN</button>
+        </div>
+      </li>
+    </ul>
+  </nav>
 
   <main>
     <section>
@@ -46,38 +48,38 @@
     <p>Contact : emilelarguier2@gmail.com — 06 49 42 21 37</p>
     <p>
       <a href="https://linkedin.com/in/tonprofil">LinkedIn</a> |
-      <a href="https://emilezola.itch.io/">itch.io</a> |
+      <a href="https://emilelarguier.itch.io/">itch.io</a> |
       <a href="mailto:emilelarguier2@gmail.com">Email</a>
     </p>
   </footer>
 
   <!-- Sticky Nav -->
   <script>
-      let lastScrollTop = 0;
-      const nav = document.querySelector("nav");
-      
-      window.addEventListener("scroll", () => {
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        
-        if (scrollTop > lastScrollTop) {
-          // Scroll vers le bas -> cache le nav
-          nav.classList.add("nav-hidden");
-        } else {
-          // Scroll vers le haut -> montre le nav
-          nav.classList.remove("nav-hidden");
-        }
-        
-        // Ajoute ou retire flou + ombre selon la position
-        if (scrollTop > 10) {
-          nav.classList.add("nav-scrolled");
-        } else {
-          nav.classList.remove("nav-scrolled");
-        }
-        
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-      });
+    let lastScrollTop = 0;
+    const nav = document.querySelector("nav");
 
-   </script>
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        // Scroll vers le bas -> cache le nav
+        nav.classList.add("nav-hidden");
+      } else {
+        // Scroll vers le haut -> montre le nav
+        nav.classList.remove("nav-hidden");
+      }
+
+      // Ajoute ou retire flou + ombre selon la position
+      if (scrollTop > 10) {
+        nav.classList.add("nav-scrolled");
+      } else {
+        nav.classList.remove("nav-scrolled");
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+
+  </script>
 
   <!-- Ripple Effect -->
   <script>
@@ -85,13 +87,13 @@
       button.addEventListener('click', function (e) {
         const ripple = document.createElement('span');
         ripple.classList.add('ripple');
-  
+
         const rect = button.getBoundingClientRect();
         const size = Math.max(rect.width, rect.height);
         ripple.style.width = ripple.style.height = `${size}px`;
         ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
         ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
-  
+
         this.appendChild(ripple);
         setTimeout(() => ripple.remove(), 600);
       });
@@ -100,50 +102,50 @@
 
   <!-- Language -->
   <script>
-      let currentLang = localStorage.getItem("lang") || "fr";
-      const langButtons = document.querySelectorAll(".lang-btn");
+    let currentLang = localStorage.getItem("lang") || "fr";
+    const langButtons = document.querySelectorAll(".lang-btn");
 
-      function updateLangUI() {
-        langButtons.forEach(btn => {
-          btn.classList.remove("active");
-          const isActive = (btn.id === "lang-fr" && currentLang === "fr") ||
-                          (btn.id === "lang-en" && currentLang === "en");
-          if (isActive) btn.classList.add("active");
-        });
-      }
-
-      function switchLanguage(lang) {
-        currentLang = lang;
-        localStorage.setItem("lang", lang);
-        if (typeof renderProjects === "function") {
-          renderProjects(); // will load new language + update project list
-        }
-        updateLangUI();
-      }
-
+    function updateLangUI() {
       langButtons.forEach(btn => {
-        btn.addEventListener("click", () => {
-          const lang = btn.id === "lang-fr" ? "fr" : "en";
-          switchLanguage(lang);
-        });
+        btn.classList.remove("active");
+        const isActive = (btn.id === "lang-fr" && currentLang === "fr") ||
+          (btn.id === "lang-en" && currentLang === "en");
+        if (isActive) btn.classList.add("active");
       });
+    }
 
-      // On initial load
-      switchLanguage(currentLang);
+    function switchLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem("lang", lang);
+      if (typeof renderProjects === "function") {
+        renderProjects(); // will load new language + update project list
+      }
+      updateLangUI();
+    }
 
-      // Reload page
-      document.querySelectorAll(".lang-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-          currentLang = btn.id === "lang-fr" ? "fr" : "en";
-          localStorage.setItem("lang", currentLang);
-          location.reload(); // This reloads the page
-        });
+    langButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const lang = btn.id === "lang-fr" ? "fr" : "en";
+        switchLanguage(lang);
       });
-      
-    </script>
+    });
 
-    <!-- Button like Home, About, Projects, etc. And change their languages -->
-    <script>
+    // On initial load
+    switchLanguage(currentLang);
+
+    // Reload page
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        currentLang = btn.id === "lang-fr" ? "fr" : "en";
+        localStorage.setItem("lang", currentLang);
+        location.reload(); // This reloads the page
+      });
+    });
+
+  </script>
+
+  <!-- Button like Home, About, Projects, etc. And change their languages -->
+  <script>
     async function loadNav() {
       const currentLang = localStorage.getItem("lang") || "fr";
       try {
@@ -164,7 +166,8 @@
     }
 
     loadNav();
-    </script>
+  </script>
 
 </body>
+
 </html>

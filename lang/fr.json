@@ -129,7 +129,7 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/spooder-dance" }
+        { "label": "Itch.io page", "url": "https://emilelarguier.itch.io/spooder-dance" }
       ]
     },
     "JusantDLC": {
@@ -177,7 +177,7 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/spooder-dance" }
+        { "label": "Itch.io page", "url": "https://emilelarguier.itch.io/spooder-dance" }
       ]
     },
     "MaybeDieLess": {
@@ -191,7 +191,7 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/maybe-die-less" }
+        { "label": "Itch.io page", "url": "https://emilelarguier.itch.io/maybe-die-less" }
       ]
     },
     "Weird2": {
@@ -249,7 +249,7 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/maybe-die-less" }
+        { "label": "Itch.io page", "url": "https://emilelarguier.itch.io/maybe-die-less" }
       ]
     },
     "ArcadeStalker": {
@@ -263,7 +263,7 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/arcade-stalker" }
+        { "label": "Itch.io page", "url": "https://emilelarguier.itch.io/arcade-stalker" }
       ]
     },
     "revengefantasy": {
@@ -323,7 +323,7 @@
       }
     ],
     "links": [
-      { "label": "Itch.io page", "url": "https://emilezola.itch.io/baggy-bag" }
+      { "label": "Itch.io page", "url": "https://emilelarguier.itch.io/baggy-bag" }
     ]
     },
     "MarbleMadness": {
@@ -350,7 +350,7 @@
         }
       ],
       "links": [
-        { "label": "Itch.io page", "url": "https://emilezola.itch.io/arcade-stalker" }
+        { "label": "Itch.io page", "url": "https://emilelarguier.itch.io/arcade-stalker" }
       ]
     },
     "TockarTournament": {
@@ -412,7 +412,7 @@
           "videoUrl": "https://youtu.be/UyTWprXCLlw",
           "link": {
             "label": "Jouez à « Dodge Expert » sur ma page Itch.io !",
-            "url": "https://emilezola.itch.io/dodgingexpert"
+            "url": "https://emilelarguier.itch.io/dodgingexpert"
           }
         },
         {
@@ -421,7 +421,7 @@
           "videoUrl": "https://youtu.be/e20FELxGQ_Y",
           "link": {
             "label": "Jouez à « Fast Magic » sur ma page Itch.io !",
-            "url": "https://emilezola.itch.io/fast-magic"
+            "url": "https://emilelarguier.itch.io/fast-magic"
           }
         },
         {
@@ -430,7 +430,7 @@
           "image": "assets/img/ProjDesc/LittleGames/T_TryYourLuckGameplay.png",
           "link": {
             "label": "Jouez à « Tentez votre chance » sur ma page Itch.io !",
-            "url": "https://emilezola.itch.io/try-your-luck"
+            "url": "https://emilelarguier.itch.io/try-your-luck"
           }
         }
       ]
