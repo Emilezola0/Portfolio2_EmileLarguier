@@ -15,13 +15,15 @@ body {
 }
 
 /* CONTAINERS */
-main, header, footer {
+main,
+header,
+footer {
   max-width: 1250px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* NAV */ 
+/* NAV */
 nav {
   background-color: #ffffff;
   padding: 1rem 2rem;
@@ -35,7 +37,8 @@ nav {
   z-index: 1000;
   transition: transform 0.3s ease;
   justify-content: space-between;
-  flex-wrap: wrap; /* allow wrapping on small screens */
+  flex-wrap: wrap;
+  /* allow wrapping on small screens */
 }
 
 /* Left name */
@@ -50,7 +53,8 @@ nav {
   transform: translateX(-50%);
   font-weight: bold;
   text-align: center;
-  white-space: nowrap; /* prevent breaking */
+  white-space: nowrap;
+  /* prevent breaking */
 }
 
 /* Classe ajoutée dynamiquement via JS */
@@ -61,7 +65,8 @@ nav {
 .nav-scrolled {
   backdrop-filter: blur(8px);
   box-shadow: 0 6px 12px rgb(0.3, 0.3, 0.3);
-  background-color: rgba(255, 255, 255, 0.95); /* transparent blanc */
+  background-color: rgba(255, 255, 255, 0.95);
+  /* transparent blanc */
 }
 
 nav h1 {
@@ -76,7 +81,8 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
-  flex-wrap: wrap; /* wrap buttons if needed */
+  flex-wrap: wrap;
+  /* wrap buttons if needed */
 }
 
 
@@ -90,12 +96,16 @@ nav ul li a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  padding: 0.7rem 1.2rem; /* slightly more vertical padding */
+  padding: 0.7rem 1.2rem;
+  /* slightly more vertical padding */
   border-radius: 8px;
   transition: all 0.3s ease;
-  line-height: 1.5; /* ensures vertical centering */
-  display: inline-flex; /* makes the link align like a button */
-  align-items: center;  /* centers text vertically */
+  line-height: 1.5;
+  /* ensures vertical centering */
+  display: inline-flex;
+  /* makes the link align like a button */
+  align-items: center;
+  /* centers text vertically */
 }
 
 
@@ -122,7 +132,8 @@ nav ul li a.juicy-hover:hover {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column; /* stack items */
+    flex-direction: column;
+    /* stack items */
     align-items: center;
     padding: 1rem;
   }
@@ -132,17 +143,23 @@ nav ul li a.juicy-hover:hover {
   }
 
   #nav-currentPage {
-    position: static; /* remove absolute centering */
+    position: static;
+    /* remove absolute centering */
     transform: none;
-    margin: 0.5rem 0; /* spacing between name and buttons */
+    margin: 0.5rem 0;
+    /* spacing between name and buttons */
   }
 
   nav ul {
     flex: 0 0 auto;
-    max-width: 100%; /* full width on mobile */
-    justify-content: center; /* center buttons under text */
-    flex-wrap: wrap; /* wrap if too many */
-    gap: 0.8rem; /* smaller gap for mobile */
+    max-width: 100%;
+    /* full width on mobile */
+    justify-content: center;
+    /* center buttons under text */
+    flex-wrap: wrap;
+    /* wrap if too many */
+    gap: 0.8rem;
+    /* smaller gap for mobile */
     margin-top: 0.5rem;
   }
 
@@ -243,13 +260,15 @@ a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: outline 0.4s ease; /* pour un effet de contour doux */
+  transition: outline 0.4s ease;
+  /* pour un effet de contour doux */
 }
 
 /* Effet de hover plus subtil : contour au lieu de zoom */
 .parallax:hover,
 .fullscreen:hover {
-  outline: 4px solid rgba(0, 119, 204, 0.4); /* contour coloré subtil */
+  outline: 4px solid rgba(0, 119, 204, 0.4);
+  /* contour coloré subtil */
   outline-offset: -10px;
 }
 
@@ -259,7 +278,8 @@ a:hover::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0); /* transparent par défaut */
+  background-color: rgba(0, 0, 0, 0);
+  /* transparent par défaut */
   transition: background-color 0.4s ease;
   z-index: 1;
 }
@@ -270,13 +290,14 @@ a:hover::after {
 }
 
 /* ---------------- Lien contenant une section parallax ---------------- */
-a > section.parallax {
+a>section.parallax {
   transition: filter 0.4s ease;
   display: block;
 }
 
-a > section.parallax:hover {
-  filter: brightness(1.05); /* léger éclaircissement sans scale */
+a>section.parallax:hover {
+  filter: brightness(1.05);
+  /* léger éclaircissement sans scale */
   cursor: pointer;
 }
 
@@ -285,34 +306,35 @@ a > section.parallax:hover {
 .parallax-main {
   background-image: url("../assets/img/jusantDLC.png");
 }
-  
-  /* Video */
-  video {
-    max-width: 100%;
-    margin: 2rem auto;
-    display: block;
-  }
 
-  .video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Ratio 16:9 */
-    height: 0;
-    margin: 2rem 0;
-  }
-  
-  .video-container iframe,
-  .video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+/* Video */
+video {
+  max-width: 100%;
+  margin: 2rem auto;
+  display: block;
+}
 
-  .video-container iframe:hover,
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* Ratio 16:9 */
+  height: 0;
+  margin: 2rem 0;
+}
+
+.video-container iframe,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe:hover,
 .video-container video:hover {
   transform: scale(1.02);
   transition: transform 0.3s ease;
@@ -320,117 +342,117 @@ a > section.parallax:hover {
 
 /* Project */
 
-  .project-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .project {
-    position: relative;
-    min-height: 80vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  
-  .project-info {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    width: 100%;
-    padding: 2rem;
-    box-sizing: border-box;
-  }
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
-  /* Projects */
-  .project-detail {
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  
-  .project-detail img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin: 2rem 0;
-  }
-  
-  img.gif {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  
-  .project-detail a {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 1rem 2rem;
-    background: #333;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-  }
+.project {
+  position: relative;
+  min-height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  overflow: hidden;
+}
 
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-  .project-card {
-    text-decoration: none;
-    color: inherit;
-    background: #f9f9f9;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 2px solid transparent;
-    transition: transform 0.3s ease, box-shadow 0.4s ease, border-color 0.3s ease;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  .project-card:hover {
-    transform: scale(1.03);
-    border-color: #0077cc;
-    box-shadow: 0 0 12px rgba(0, 119, 204, 0.4), 0 0 24px rgba(0, 119, 204, 0.2);
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .project-card .info {
-    padding: 1rem;
-  }
+.project-info {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
 
-  /* Section */
-  .section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
-  
-  .section .text {
-    flex: 1 1 300px;
-  }
-  
-  .section img {
-    max-width: 100%;
-    border-radius: 12px;
-    flex: 1 1 300px;
-    object-fit: cover;
-  }
+/* Projects */
+.project-detail {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.project-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+img.gif {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project-detail a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project-card {
+  text-decoration: none;
+  color: inherit;
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  border-color: #0077cc;
+  box-shadow: 0 0 12px rgba(0, 119, 204, 0.4), 0 0 24px rgba(0, 119, 204, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card .info {
+  padding: 1rem;
+}
+
+/* Section */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.section .text {
+  flex: 1 1 300px;
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 12px;
+  flex: 1 1 300px;
+  object-fit: cover;
+}
 
 /* Container des boutons */
 .filters {
@@ -471,85 +493,83 @@ a > section.parallax:hover {
   transform: translateY(-2px);
 }
 
-  /* Footer */
-  footer {
-    text-align: center;
-    margin-top: 4rem;
-    padding: 2rem;
-    font-size: 0.9rem;
-    color: #888;
-  }
-  
-  footer a {
-    color: #0077cc;
-    text-decoration: none;
-    margin: 0 0.5rem;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }  
-  
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+}
 
-  /* Projet SpooderDance */
+footer a {
+  color: #0077cc;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Projet SpooderDance */
 .spooderdance {
-    background-image: url("../assets/img/projects/spooderdance.png");
-  }
+  background-image: url("../assets/img/projects/spooderdance.png");
+}
 
 /* Projet RevengeFantasy */
 .revengefantasy {
-    background-image: url("../assets/img/projects/revengeFantasy.png");
-  }
+  background-image: url("../assets/img/projects/revengeFantasy.png");
+}
 
 /* Scryptalking */
 .scryptalking {
-    background-image: url("../assets/img/projects/scryptalking.png");
-  }
+  background-image: url("../assets/img/projects/scryptalking.png");
+}
 
-  /* Projects full description */
-  .filters {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+/* Projects full description */
+.filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
-  /* Juicy Button (desactivated per default */
-  .juicy-hover {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .juicy-hover:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Appuie réaliste : on remplace scale par translateY */
-  .press-button:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Ripple */
-  .ripple-button {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .ripple-button .ripple {
-    position: absolute;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    transform: scale(0);
-    animation: ripple-animation 600ms ease-out;
-    pointer-events: none;
-  }
-  
-  @keyframes ripple-animation {
-    to {
-      transform: scale(4);
-      opacity: 0;
-    }
-  }
+/* Juicy Button (desactivated per default */
+.juicy-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+}
 
-  
+.juicy-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Appuie réaliste : on remplace scale par translateY */
+.press-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ripple */
+.ripple-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-button .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0);
+  animation: ripple-animation 600ms ease-out;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
