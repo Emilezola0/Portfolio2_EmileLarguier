@@ -1,0 +1,195 @@
+{
+  "owner": {
+    "name": "Emile LARGUIER",
+    "email": "emilelarguier2@gmail.com",
+    "phone": "06 49 42 21 37",
+    "linkedin": "https://www.linkedin.com/in/emile-larguier-961667253/",
+    "itch": "https://emilelarguier.itch.io/",
+    "year": 2025
+  },
+  "ui": {
+    "nav": {
+      "home": {
+        "fr": "Accueil",
+        "en": "Home"
+      },
+      "about": {
+        "fr": "À propos de moi",
+        "en": "About me"
+      },
+      "projects": {
+        "fr": "Projets",
+        "en": "Projects"
+      },
+      "cv": {
+        "fr": "CV",
+        "en": "CV"
+      }
+    },
+    "projectsTitle": {
+      "fr": "Mes projets",
+      "en": "My projects"
+    },
+    "categories": {
+      "all": {
+        "fr": "Tous",
+        "en": "All"
+      },
+      "jam": {
+        "fr": "Game Jam",
+        "en": "Game Jam"
+      },
+      "school": {
+        "fr": "École",
+        "en": "School"
+      },
+      "perso": {
+        "fr": "Perso",
+        "en": "Personal"
+      }
+    },
+    "itchPage": {
+      "fr": "Page Itch.io",
+      "en": "Itch.io page"
+    },
+    "externalLink": {
+      "fr": "Lien externe",
+      "en": "External link"
+    },
+    "videoTitle": {
+      "fr": "Vidéo du projet",
+      "en": "Project video"
+    },
+    "projectNotFound": {
+      "fr": "Projet introuvable.",
+      "en": "Project not found."
+    },
+    "loadError": {
+      "fr": "Erreur lors du chargement du contenu.",
+      "en": "Error while loading content."
+    },
+    "backToProjects": {
+      "fr": "← Tous les projets",
+      "en": "← All projects"
+    }
+  },
+  "home": {
+    "featured": [
+      "JusantDLC",
+      "spooderdance",
+      "revengefantasy",
+      "scryptalking"
+    ]
+  },
+  "about": {
+    "intro": {
+      "fr": "Je m'appelle Emile Larguier. J'étudie le Game Design à la LISAA depuis quatre ans, ce qui m'a permis de développer des compétences dans certains domaines.",
+      "en": "My name is Emile Larguier. I have been studying Game Design at LISAA for four years, which has allowed me to develop skills in certain areas."
+    },
+    "skillsTitle": {
+      "fr": "Les compétences que j’ai pu développer sont :",
+      "en": "The skills I have developed are:"
+    },
+    "skills": [
+      "Level Design",
+      "UX design",
+      "System Design",
+      {
+        "fr": "Programmation UE5 nodale (Blueprint)",
+        "en": "UE5 visual scripting (Blueprint)"
+      },
+      "Narrative Design",
+      "Economic Design"
+    ],
+    "outro": [
+      {
+        "fr": "J’ai développé ces compétences à travers de multiples projets, qu’ils soient scolaires, de game jam ou personnels !",
+        "en": "I developed these skills through many projects: school projects, game jams and personal projects!"
+      },
+      {
+        "fr": "En ce moment, je continue à travailler sur plusieurs projets, aussi bien personnels que scolaires.",
+        "en": "At the moment, I am continuing to work on several projects, both personal and academic."
+      }
+    ],
+    "softwareTitle": {
+      "fr": "Voici les logiciels que je connais :",
+      "en": "Here are the software programs I know:"
+    },
+    "software": [
+      {
+        "name": "Unity",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+      },
+      {
+        "name": "Unreal Engine",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg"
+      },
+      {
+        "name": "Miro",
+        "icon": "assets/img/aboutMe/MiroIcon.png"
+      },
+      {
+        "name": "ClickUp",
+        "icon": "assets/img/aboutMe/ClickUpIcon.png"
+      },
+      {
+        "name": "Trello",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+      },
+      {
+        "name": "Jira",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
+      },
+      {
+        "name": "Photoshop",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+      },
+      {
+        "name": "Figma",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+      },
+      {
+        "name": "Excel",
+        "icon": "assets/img/aboutMe/GoogleSheetIcon.png"
+      },
+      {
+        "name": "Word",
+        "icon": "assets/img/aboutMe/WordIcon.png"
+      },
+      {
+        "name": "PowerPoint",
+        "icon": "assets/img/aboutMe/PPTIcon.png"
+      },
+      {
+        "name": "Visual Studio Code",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+      },
+      {
+        "name": "3ds Max",
+        "icon": "https://www.svgrepo.com/show/303505/3ds-max-full-logo.svg"
+      },
+      {
+        "name": "Blender",
+        "icon": "assets/img/aboutMe/BlenderIcon.png"
+      }
+    ]
+  },
+  "cv": [
+    {
+      "label": {
+        "fr": "📄 Télécharger mon CV en français (PDF)",
+        "en": "📄 Download my French CV (PDF)"
+      },
+      "file": "assets/pdf/FrenchCV.pdf",
+      "lang": "fr"
+    },
+    {
+      "label": {
+        "fr": "📄 Télécharger mon CV en anglais (PDF)",
+        "en": "📄 Download my English CV (PDF)"
+      },
+      "file": "assets/pdf/cv.pdf",
+      "lang": "en"
+    }
+  ]
+}

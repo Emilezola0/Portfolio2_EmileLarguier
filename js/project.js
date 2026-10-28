@@ -1,152 +1,78 @@
-const params = new URLSearchParams(location.search);
-const id = params.get("id");
+import { initPage, loadProjects, t, youtubeEmbed } from "./common.js";
 
+const site = await initPage("project");
 const container = document.getElementById("project-container");
-let currentLang = localStorage.getItem("lang") || "fr";
+const id = new URLSearchParams(location.search).get("id");
 
-async function loadProjects(lang) {
-  try {
-    // Charge le JSON de projets selon la langue (ex: lang/en/projects.json)
-    const res = await fetch(`lang/${lang}.json`);
-    if (!res.ok) throw new Error("Erreur de chargement des projets");
-    
-    const projectsData = await res.json();
-
-    // Accède au projet selon l'id
-    const data = projectsData.projectsDescription[id];
-
-    if (data) {
-      displayProject(data);
-    } else {
-      container.innerHTML = `<p>Projet introuvable.</p>`;
-    }
-  } catch (err) {
-    container.innerHTML = `<p>Erreur lors du chargement des projets.</p>`;
+try {
+  const project = (await loadProjects()).find(p => p.id === id);
+  if (project) {
+    displayProject(project);
+  } else {
+    container.innerHTML = `<p>${t(site.ui.projectNotFound)}</p>`;
   }
+} catch (err) {
+  console.error(err);
+  container.innerHTML = `<p>${t(site.ui.loadError)}</p>`;
 }
 
-function displayProject(data) {
-  container.innerHTML = ""; // Vide le container avant ajout
+// Vidéo YouTube (iframe) ou fichier vidéo (mp4)
+function videoHTML(url) {
+  const embed = youtubeEmbed(url);
+  const media = embed
+    ? `<iframe src="${embed}" title="${t(site.ui.videoTitle)}" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen loading="lazy"></iframe>`
+    : `<video controls><source src="${url}" type="video/mp4"></video>`;
+  return `<div class="video-container">${media}</div>`;
+}
 
-  // 1. Titre
-  const title = document.createElement("h2");
-  title.textContent = data.title;
-  container.appendChild(title);
+// Bouton de lien. Sans "label", on affiche "Page Itch.io" pour un lien itch.io, sinon "Lien externe".
+function linkHTML(link) {
+  const label = link.label
+    ? t(link.label)
+    : t(link.url.includes("itch.io") ? site.ui.itchPage : site.ui.externalLink);
+  return `<a class="button" href="${link.url}" target="_blank" rel="noopener">${label}</a>`;
+}
 
-  // 1.5 Description
-  const description = document.createElement("h3");
-  description.textContent = data.description;
-  container.appendChild(description);
+function displayProject(project) {
+  const title = t(project.pageTitle || project.title);
+  document.title = `${title} - ${site.owner.name}`;
 
-  // 2. Vidéos
-  if (data.videoUrls && Array.isArray(data.videoUrls)) {
-    data.videoUrls.forEach(videoUrl => {
-      const videoContainer = document.createElement("div");
-      videoContainer.classList.add("video-container");
+  let html = `
+    <a class="back-link" href="projects.html">${t(site.ui.backToProjects)}</a>
+    <h2>${title}</h2>
+    <h3>${t(project.description)}</h3>
+  `;
 
-      const embedUrl = convertToEmbedUrl(videoUrl);
-
-      if (embedUrl.includes("youtube.com") || embedUrl.includes("vimeo.com")) {
-        videoContainer.innerHTML = `
-          <iframe 
-            width="100%" 
-            height="480" 
-            src="${embedUrl}" 
-            title="Vidéo du projet"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        `;
-      } else {
-        videoContainer.innerHTML = `
-          <video controls width="100%">
-            <source src="${embedUrl}" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture vidéo.
-          </video>
-        `;
-      }
-
-      container.appendChild(videoContainer);
-    });
-  }
-
-  // 3. Sections
-  data.sections.forEach(section => {
-    const sectionDiv = document.createElement("div");
-    sectionDiv.classList.add("section");
-
-    let media = "";
-
-    if (section.image) {
-      media = `<img src="${section.image}" alt="${section.title}">`;
-    } else if (section.gif) {
-      media = `<img src="${section.gif}" alt="${section.title}" class="gif">`;
-    } else if (section.video) {
-      media = `
-        <div class="video-container">
-          <video controls>
-            <source src="${section.video}" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture vidéo.
-          </video>
-        </div>
-      `;
-    } else if (section.videoUrl) {
-      const embedUrl = convertToEmbedUrl(section.videoUrl);
-      media = `
-        <div class="video-container">
-          <iframe 
-            src="${embedUrl}" 
-            title="Vidéo de la section"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-      `;
-    }
-
-    // Lien optionnel
-    let sectionLink = "";
-    if (section.link && section.link.url) {
-      const label = section.link.label || "Lien externe";
-      sectionLink = `<a class="button" href="${section.link.url}" target="_blank">${label}</a>`;
-    }
-
-    sectionDiv.innerHTML = `
-      <div class="text">
-        <h3>${section.title}</h3>
-        <p>${section.text}</p>
-        ${sectionLink}
-      </div>
-      ${media}
-    `;
-
-    container.appendChild(sectionDiv);
+  (project.videos || []).forEach(url => {
+    html += videoHTML(url);
   });
 
-  // 4. Liens externes
-  if (data.links && Array.isArray(data.links)) {
-    data.links.forEach(linkObj => {
-      const linkBtn = document.createElement("a");
-      linkBtn.href = linkObj.url;
-      linkBtn.target = "_blank";
-      linkBtn.className = "button";
-      linkBtn.textContent = linkObj.label || "Lien externe";
-      container.appendChild(linkBtn);
-    });
-  }
-}
+  (project.sections || []).forEach(section => {
+    const sectionTitle = t(section.title);
+    let media = "";
+    if (section.image) {
+      media = `<img src="${section.image}" alt="${sectionTitle}" loading="lazy">`;
+    } else if (section.video) {
+      media = `<div class="media">${videoHTML(section.video)}</div>`;
+    }
 
-function convertToEmbedUrl(url) {
-  if (url.includes("youtu.be/")) {
-    const id = url.split("youtu.be/")[1];
-    return `https://www.youtube.com/embed/${id}`;
-  } else if (url.includes("youtube.com/watch?v=")) {
-    return url.replace("watch?v=", "embed/");
-  }
-  return url;
-}
+    html += `
+      <div class="section">
+        <div class="text">
+          <h3>${sectionTitle}</h3>
+          <p>${t(section.text)}</p>
+          ${section.link ? linkHTML(section.link) : ""}
+        </div>
+        ${media}
+      </div>
+    `;
+  });
 
-// Lance le chargement des projets selon la langue courante
-loadProjects(currentLang);
+  if (project.links && project.links.length) {
+    html += `<div class="project-links">${project.links.map(linkHTML).join("")}</div>`;
+  }
+
+  container.innerHTML = html;
+}

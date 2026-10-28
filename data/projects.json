@@ -1,0 +1,655 @@
+[
+  {
+    "id": "spooderdance",
+    "category": "jam",
+    "thumbnail": "assets/img/projects/spooderDance.png",
+    "title": "Spooder Dance",
+    "summary": {
+      "fr": "Un jeu musical avec une araignée et beaucoup, beaucoup d'effets spéciaux.",
+      "en": "A musical game with a spider and lots and lots of special effects."
+    },
+    "tagline": {
+      "fr": "Un jeu musical avec une araignée qui danse !",
+      "en": "A rhythm game with a dancing spider!"
+    },
+    "description": {
+      "fr": "Un jeu de game jam réalisé en 2024/2025, où l'on contrôle quatre pattes d'araignée pour reproduire des poses de danse.",
+      "en": "A game jam project made in 2024/2025 where you control four spider legs to match dance poses."
+    },
+    "videos": [
+      "https://youtu.be/auoZptSXZ7I"
+    ],
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Spooder Dance est un jeu de rythme où l'on contrôle les pattes (4 seulement) d'une araignée pour reproduire les mouvements de danse d'un humain. L'objectif est que les pattes soient bien placées avant que la figure arrive dans le cercle en bas au centre de l'écran.",
+          "en": "Spooder Dance is a rhythm game where you control the legs (only 4) of a spider to match the dance moves of a human. The goal is to position the legs correctly before the figure reaches the circle at the bottom centre of the screen."
+        },
+        "image": "assets/img/ProjDesc/SpooderDance/spooderDanceScreen1.png"
+      },
+      {
+        "title": {
+          "fr": "Développement",
+          "en": "Development"
+        },
+        "text": {
+          "fr": "Réalisé en 48 h pendant une game jam sur Unreal Engine, avec une équipe de 7 personnes.",
+          "en": "Made in 48 hours during a Game Jam with Unreal Engine with a team of 7 people."
+        },
+        "image": "assets/img/ProjDesc/SpooderDance/spooderDanceCredit.png"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://emilelarguier.itch.io/spooder-dance"
+      }
+    ]
+  },
+  {
+    "id": "JusantDLC",
+    "category": "school",
+    "thumbnail": "assets/img/projects/jusantDLC.png",
+    "title": "Jusant DLC",
+    "pageTitle": {
+      "fr": "Jusant : Abysse et Embrun DLC",
+      "en": "Jusant: Abysse & Embrun DLC"
+    },
+    "summary": {
+      "fr": "Jouez à la suite de Jusant : traversez et escaladez des endroits dangereux.",
+      "en": "Play the sequel to Jusant: cross and climb dangerous places."
+    },
+    "tagline": {
+      "fr": "Projet scolaire avec pour objectif de créer le DLC du jeu d'escalade de Don't Nod",
+      "en": "School project: creating a DLC for Don't Nod's climbing game"
+    },
+    "description": {
+      "fr": "Escaladez accompagné de votre compagnon Rak dans la suite du jeu Jusant, proposée par les Mastère 1 de LISAA.",
+      "en": "Climb accompanied by your companion Rak in the sequel to the game Jusant, created by LISAA Master's 1 students."
+    },
+    "videos": [
+      "https://youtu.be/VVF55Wm70GU"
+    ],
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Jusant est un jeu d'escalade.",
+          "en": "Jusant is a climbing game."
+        },
+        "image": "assets/img/ProjDesc/JusantDLC/jusantDLC.png"
+      },
+      {
+        "title": {
+          "fr": "Développement",
+          "en": "Development"
+        },
+        "text": {
+          "fr": "Réalisé sur Unreal Engine en 2 mois lors de mon Mastère 1.",
+          "en": "Made on Unreal Engine in two months during my first year of Master's."
+        },
+        "image": "assets/img/ProjDesc/JusantDLC/jusantEmbrun.png"
+      },
+      {
+        "title": {
+          "fr": "Ce que j'ai fait",
+          "en": "What I did"
+        },
+        "text": {
+          "fr": "Je me suis occupé du Game Design, du Level Design (LD), du System Design et du Gameplay Programming (escalade, prises), ainsi que de certains outils pour faciliter la mise en place du LD.",
+          "en": "I was responsible for game design, level design (LD), system design, and gameplay programming (climbing, holds), as well as certain tools to facilitate the implementation of LD."
+        },
+        "image": "assets/img/ProjDesc/JusantDLC/jusantEmbrun.png"
+      },
+      {
+        "title": "Narration",
+        "text": {
+          "fr": "On suit l'aventure aux côtés de Rak.",
+          "en": "You follow the adventure alongside Rak."
+        },
+        "image": "assets/img/ProjDesc/JusantDLC/jusantRak.png"
+      }
+    ]
+  },
+  {
+    "id": "TockarTournament",
+    "category": "perso",
+    "thumbnail": "assets/img/projects/tockarTournament.png",
+    "title": "Tockar Tournament",
+    "summary": {
+      "fr": "Un jeu multijoueur où l'on affronte ses amis dans des arènes avec différentes armes. Les déplacements sont rapides et variés (Wall Run, Slide, Bumper, Katana).",
+      "en": "A multiplayer game where you play with your friends to compete in arenas with different weapons. In this game, movements are fast and varied (Wall Run, Slide, Bumper, Katana)"
+    },
+    "description": {
+      "fr": "Projet personnel réalisé en un mois à trois. J'étais principalement responsable du game design, de l'équilibrage, de la programmation (gameplay, multijoueur, outils) et de certains matériaux.",
+      "en": "Personal project completed over one month with three people. I was primarily responsible for game design, balancing, coding (gameplay, multiplayers, tools), and certain materials."
+    },
+    "videos": [
+      "https://youtu.be/lPnuasO9970"
+    ],
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Un projet personnel réalisé en un mois à trois, dans lequel on s'affronte sur différentes cartes. Chaque carte a son propre style de gameplay grâce à différents spawners d'armes et à des éléments comme le vide, le Wall Run, les Bumpers ou les ascenseurs. <br><br> J'ai développé le jeu pour que l'idée de base, pouvoir créer plusieurs mini-jeux, soit réalisable, et qu'il soit facile d'en intégrer de nouveaux dans la suite du développement.",
+          "en": "A personal project made over a month by three people, in which players compete on different maps. Each map has its own gameplay style thanks to different weapon spawners and elements such as the void, Wall Run, Bumpers and Elevators. <br><br> I developed the game so that the core idea, being able to create several mini-games, was feasible, making it easy to add new mini-games later in development."
+        },
+        "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen3.png",
+        "link": {
+          "label": {
+            "fr": "Page Itch.io",
+            "en": "Itch.io page"
+          },
+          "url": "https://tockar-studio.itch.io/tockar-tournament"
+        }
+      },
+      {
+        "title": {
+          "fr": "Carte : Arène",
+          "en": "Map: Arena"
+        },
+        "text": {
+          "fr": "Pour garantir qu'un mini-jeu puisse offrir plusieurs options de gameplay, nous allons modifier la manière dont les joueurs combattent. Dans cet exemple, nous nous trouvons dans une petite arène où nous devons récupérer la seule arme qui apparaît aux quatre coins et qui permet aux joueurs de se pousser les uns les autres dans le vide.",
+          "en": "To ensure that a mini-game can have multiple gameplay options, we will modify the way players fight. In this example, we are in a small arena where we have to collect the only weapon that spawns in the four corners and allows players to push each other into the void."
+        },
+        "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen7.png"
+      },
+      {
+        "title": {
+          "fr": "Carte : Couteau",
+          "en": "Map: Knife"
+        },
+        "text": {
+          "fr": "Dans cette autre carte, j'ai volontairement créé un espace restreint, car la seule arme disponible est un couteau : il faut donc soit se battre au corps à corps, soit le lancer. J'ai donc créé des lignes de vue où l'on peut être pris pour cible.",
+          "en": "In this other map, I deliberately created a tight space because the only weapon in this map is a knife, so you either have to fight hand-to-hand or throw it. I therefore created lines of sight where you can be the target."
+        },
+        "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen1.png"
+      },
+      {
+        "title": {
+          "fr": "Personnalisation",
+          "en": "Customisation"
+        },
+        "text": {
+          "fr": "Dans ce jeu, vous pouvez personnaliser le réticule, les couleurs des personnages, ainsi que les émoticônes qu'ils peuvent utiliser. Pour créer les émoticônes, j'ai créé un matériau qui fonctionne comme un flipbook, dont vous pouvez également personnaliser la couleur.",
+          "en": "In this game, you can customise the crosshairs, the colours of the characters, and also the emotes they can perform. To create the emotes, I created a material that acts like a flipbook, in which you can also customise the colour."
+        },
+        "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen5.png"
+      },
+      {
+        "title": {
+          "fr": "Carte : Katana",
+          "en": "Map: Katana"
+        },
+        "text": {
+          "fr": "Cette carte utilise uniquement le katana. Vous pouvez trouver un fusil de précision et un pistolet, mais le gameplay principal utilise le katana.",
+          "en": "This map only uses the katana. You can find a sniper rifle and a pistol, but the core gameplay revolves around the katana."
+        },
+        "image": "assets/img/ProjDesc/TockarTournament/TockarTournamentScreen2.png"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://tockar-studio.itch.io/tockar-tournament",
+        "label": {
+          "fr": "Essayez-le dès maintenant sur la page Itch.io !",
+          "en": "Try it now on the Itch.io page"
+        }
+      }
+    ]
+  },
+  {
+    "id": "revengefantasy",
+    "category": "school",
+    "thumbnail": "assets/img/projects/revengeFantasy.png",
+    "title": "Revenge Fantasy",
+    "summary": {
+      "fr": "Un fast FPS mêlant combat et plateforme, dans un style unique.",
+      "en": "A fast-paced FPS with combat and platforming in a unique style"
+    },
+    "tagline": {
+      "fr": "Un fast-FPS énergique et stylé.",
+      "en": "An energetic and stylish fast-paced FPS."
+    },
+    "description": {
+      "fr": "Projet LISAA d'une durée d'un an, mené avec une équipe de 12 personnes (4 Game Artists, 4 Tech Artists et 4 Game Designers) pendant ma troisième année de Bachelor à LISAA en 2023/2024.",
+      "en": "One-year LISAA project with a team of 12 people (4 Game Artists, 4 Tech Artists and 4 Game Designers) carried out during my third year of my Bachelor's degree at LISAA in 2023/2024."
+    },
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Le jeu est développé sur Unreal Engine. C'est un fast FPS dans lequel on se bat avec des armes débloquées au fil de la progression, et où l'on enchaîne des phases de plateforme grâce aux mécaniques suivantes : saut, Wall Run, Wall Climb, ainsi que les capacités secondaires des armes.",
+          "en": "The game is built on Unreal Engine. It is a fast-paced FPS where you will have to fight using weapons that you unlock as you progress, and perform platforming using the following mechanics: Jump, Wall Run, Wall Climb, as well as secondary weapon abilities."
+        },
+        "video": "https://youtu.be/SPM8yLMVjl0"
+      },
+      {
+        "title": {
+          "fr": "Combat",
+          "en": "Shooting"
+        },
+        "text": {
+          "fr": "Le level design propose des arènes dans lesquelles il faut combattre des ennemis pour pouvoir continuer.",
+          "en": "The level design features arenas where you will have to fight mobs in order to continue."
+        },
+        "image": "assets/img/ProjDesc/revengeFantasy/RF_ArenaSlowMo.gif"
+      },
+      {
+        "title": {
+          "fr": "Déplacements",
+          "en": "Movement"
+        },
+        "text": {
+          "fr": "Exemple de Wall Run : on ne peut faire du Wall Run et du Wall Climb que sur certains murs, comme celui du GIF.",
+          "en": "Example of wall running: you can only wall run and wall climb on certain walls, such as the one in the GIF."
+        },
+        "image": "assets/img/ProjDesc/revengeFantasy/RF_wallRun.gif"
+      },
+      {
+        "title": "Chaos",
+        "text": {
+          "fr": "J'ai intégré Chaos (le système de destruction d'Unreal) pour avoir des objets d'environnement plus intéressants et plus impactants, en accord avec l'aspect fast FPS.",
+          "en": "I integrated Chaos (Unreal's destruction system) to make environmental objects more interesting and impactful, in line with the fast FPS feel."
+        },
+        "image": "assets/img/ProjDesc/revengeFantasy/RF_chaos.gif"
+      },
+      {
+        "title": "Concept/Transition",
+        "text": {
+          "fr": "Le jeu traite du traumatisme : nous avons donc divisé le gameplay en deux parties, dont une expérimentale. Ces deux parties sont le monde des rêves (la partie fast FPS) et de courtes scènes en FMV (Full Motion Video), dans lesquelles nos choix ont un impact visuel et sur le gameplay du « rêve » suivant. Le premier niveau sert de tutoriel et se termine par une fin scriptée où l'on perd quelque chose, ce qui crée une transition vers l'idée du monde « réel ».",
+          "en": "The game deals with trauma, so we split the gameplay into two parts, one of which is experimental: the dream world (the fast FPS part) and short FMV (Full Motion Video) scenes in which our choices have a visual and gameplay impact on the next “dream”. The first level acts as a tutorial and has a scripted ending where you lose something, creating a transition to the idea of the “real” world."
+        },
+        "image": "assets/img/ProjDesc/revengeFantasy/RF_FMV_Transition.gif"
+      }
+    ]
+  },
+  {
+    "id": "scryptalking",
+    "category": "school",
+    "thumbnail": "assets/img/projects/scryptalking.png",
+    "title": "Scryptalking",
+    "summary": {
+      "fr": "Un jeu de mystère et d'énigmes en vue du dessus, dans lequel vous essayez de persuader d'étranges personnages par la parole ou par des combats de cartes.",
+      "en": "A top-view mystery and puzzle game in which you try to persuade strange characters using words or card battles"
+    },
+    "tagline": {
+      "fr": "Discuter. Raisonner. Convaincre.",
+      "en": "Talk. Reason. Persuade."
+    },
+    "description": {
+      "fr": "Jeu scolaire réalisé en 2022/2023",
+      "en": "School game made in 2022/2023"
+    },
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Absorbé par un ordinateur alors que vous et des amis étiez à la recherche d'élèves disparus, vous vous retrouvez dans un univers de zéros et de uns dépassant votre entendement. Percez le mystère autour de la disparition des élèves dans ce RPG en vue du dessus grâce au système de persuasion, un jeu de carte basé sur la personnalité de votre personnage",
+          "en": "Absorbed by a computer while you and your friends were searching for missing students, you find yourself in a world of zeros and ones beyond your comprehension. Unravel the mystery surrounding the students' disappearance in this top-down RPG using the persuasion system, a card game based on your character's personality"
+        },
+        "image": "assets/img/ProjDesc/Scryptalking/scryptalking.png"
+      },
+      {
+        "title": {
+          "fr": "Développement / Ce que j'ai fait",
+          "en": "Development / What I did"
+        },
+        "text": {
+          "fr": "Fait sur Unreal Engine en 2 mois en 2022/2023 lors de mon Bachelor 2 à LISAA. Je me suis occupé de la partie Game Design, System Design et Level Design ainsi que l'intégralité de la partie programmation du jeu",
+          "en": "Created on Unreal Engine in two months in 2022/2023 during my second year of my Bachelor's degree at LISAA. I was responsible for the game design, system design and level design, as well as all of the game's programming"
+        },
+        "image": "assets/img/ProjDesc/Scryptalking/scryptalking.png"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://emilelarguier.itch.io/spooder-dance"
+      }
+    ]
+  },
+  {
+    "id": "MaybeDieLess",
+    "category": "jam",
+    "thumbnail": "assets/img/projects/mdl.png",
+    "title": "Maybe Die Less",
+    "summary": {
+      "fr": "Un jeu de plateforme 2D où vous contrôlez un slime.",
+      "en": "A 2D platform game where you control a slime"
+    },
+    "description": {
+      "fr": "Game Jam organisé par LISAA, créé avec l'équipe ABM sur le thème « Stuck in a loop » (Coincé dans une boucle), réalisé sur Unreal Engine en 48 heures.",
+      "en": "Game Jam organised by LISAA, created with the ABM team on the theme ‘Stuck in a loop’, made on Unreal Engine in 48 hours."
+    },
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "J'ai eu l'idée d'appuyer sur un bouton pour mourir et laisser une marque sur le niveau, ce qui est finalement devenu le mécanisme principal, car dans ce jeu, vous devez vous sacrifier afin de laisser une plate-forme au slime qui vous suit. <br><br>Dans la version Jam, les pouvoirs sont intégrés, mais pas comme nous le voulions, car nous étions censés débloquer de nouveaux pouvoirs lorsque nous terminions les 3 niveaux avec un certain nombre de morts. Lorsque nous dépassions un certain nombre de morts, nous débloquions un nouveau pouvoir afin de pouvoir, à la fin, franchir les plateformes sans mourir et sortir de la boucle.",
+          "en": "I came up with the idea of pressing a button to die and leave a mark on the level, which ended up being the main mechanic: in this game you have to sacrifice yourself to leave a platform for the slime that follows you.<br><br>In the Jam version, the powers are in the game but not the way we wanted: we were supposed to unlock new powers after finishing the 3 levels with a certain number of deaths. Each time you exceeded a death threshold, you unlocked a new power, so that by the end you could get through the platforming without dying and escape the loop."
+        },
+        "image": "assets/img/ProjDesc/MDL/MDL_Gameplay.gif"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://emilelarguier.itch.io/maybe-die-less"
+      }
+    ]
+  },
+  {
+    "id": "Weird2",
+    "category": "jam",
+    "thumbnail": "assets/img/projects/weird2.png",
+    "title": "Weird 2",
+    "summary": {
+      "fr": "Découvrez le prologue de Weird 1 dans ce FMV (Full Motion Video) avec des mini-jeux, réalisé lors d'une game jam.",
+      "en": "Discover the prologue to Weird 1 in this FMV (Full Motion Video) featuring mini-games, produced during a jam session"
+    },
+    "description": {
+      "fr": "Jeu de game jam réalisé en 2023/2024 avec l'équipe ABM",
+      "en": "Jam game created in 2023/2024 with the ABM team"
+    },
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Il s'agit d'une vidéo en plein écran (FMV) qui se déroule dans l'école, dans laquelle vous devez faire des choix à la fin de la séquence vidéo. Ces choix sont présentés sous forme d'instructions et mènent à une nouvelle séquence entrecoupée d'un mini-jeu.",
+          "en": "It's a full motion video (FMV) that takes place in the school, in which you have to make choices at the end of the video sequence. These choices are presented by directions and lead to a new sequence interspersed with a mini-game."
+        },
+        "image": "assets/img/ProjDesc/Weird2/Weird2.gif"
+      },
+      {
+        "title": {
+          "fr": "Développement",
+          "en": "Development"
+        },
+        "text": {
+          "fr": "Après avoir conçu le jeu à partir de l'idée initiale, je me suis attaqué à son développement, ce qui représentait un nouveau défi pour moi, car nous venions tout juste d'apprendre à utiliser Unreal Engine et je découvrais comment utiliser les MP4 (vidéos) dans ce logiciel.",
+          "en": "After working on the game design from the initial idea, I took on the development of the game. It was a new challenge for me, since we had only just learned Unreal Engine and I was discovering how to use MP4 videos in it."
+        }
+      }
+    ]
+  },
+  {
+    "id": "Deeplace",
+    "category": "school",
+    "thumbnail": "assets/img/projects/deeplace.png",
+    "title": "Deeplace",
+    "summary": {
+      "fr": "Jeu d'horreur à la première personne où vous devez retrouver vos collègues perdus dans un bunker abandonné où résident des créatures.",
+      "en": "First-person horror game in which you must find your colleagues lost in this abandoned bunker where creatures reside"
+    },
+    "description": {
+      "fr": "Jeu de Bachelor 1 à LISAA",
+      "en": "Bachelor 1 Game at LISAA"
+    },
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Gameplay accéléré",
+          "en": "Sped-up gameplay"
+        },
+        "video": "https://youtu.be/_JJQ7WJpuro"
+      },
+      {
+        "title": {
+          "fr": "Développement",
+          "en": "Development"
+        },
+        "text": {
+          "fr": "Réalisé sur Unreal Engine en deux mois pendant ma première année de licence à la LISAA.",
+          "en": "Made on Unreal Engine in two months during my first year of Bachelor's at LISAA."
+        },
+        "image": "assets/img/ProjDesc/Deeplace/MapDeeplace.png"
+      }
+    ]
+  },
+  {
+    "id": "SlasherHigh",
+    "category": "jam",
+    "thumbnail": "assets/img/projects/slasherHigh.png",
+    "title": "Slasher High",
+    "pageTitle": "Slasher Highschool",
+    "summary": {
+      "fr": "Préparez votre scène en plaçant les archétypes de personnages de films d'horreur pour définir leur emplacement et l'ordre dans lequel le tueur devra les éliminer.",
+      "en": "Prepare your scene by setting up the horror film character archetypes to define their locations and the order in which the killer will kill them"
+    },
+    "description": {
+      "fr": "Réalisé en 2022/2023, Slasher Highschool est un jeu de game jam dans lequel vous placez des personnages dans des chambres, puis incarnez le tueur et devez gérer votre rythme pour tous les éliminer.",
+      "en": "Made in 2022/2023, Slasher Highschool is a Jam game in which you must place characters in rooms and then play as the killer, pacing yourself to kill them all"
+    },
+    "videos": [
+      "https://youtu.be/9Xp4UimFgMk"
+    ],
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Réalisé sur Unreal Engine en 48 h lors d'une game jam avec mon équipe ABM.",
+          "en": "Made on Unreal Engine in 48 hours during a Jam with my ABM team"
+        },
+        "image": "assets/img/ProjDesc/SlasherHigh/SlasherHigh1.png"
+      },
+      {
+        "title": "Images",
+        "image": "assets/img/ProjDesc/SlasherHigh/SlasherHigh2.png"
+      },
+      {
+        "title": "Images",
+        "image": "assets/img/ProjDesc/SlasherHigh/SlasherHigh5.png"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://emilelarguier.itch.io/maybe-die-less"
+      }
+    ]
+  },
+  {
+    "id": "BaggyBag",
+    "category": "jam",
+    "thumbnail": "assets/img/projects/baggyBag.png",
+    "title": "Baggy Bag",
+    "summary": {
+      "fr": "Jeu à 2 joueurs : l'un contrôle les jambes, l'autre le protège.",
+      "en": "2-player game: one player controls the legs, the other protects them"
+    },
+    "description": "Game Jam 2024",
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Réalisé en 2022/2023 sur Unreal Engine en 48 heures lors d'une game jam, avec une petite équipe de Game Designers (5 personnes).",
+          "en": "Made in 2022/2023 on Unreal Engine in 48 hours during a Jam with a small GD team (5 people)"
+        },
+        "image": "assets/img/ProjDesc/BaggyBag/BaggyBag_Title.png"
+      },
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Un jeu à deux joueurs dans lequel chacun contrôle un personnage, mais les deux sont liés : l'un contrôle les pieds (déplacements) et l'autre s'occupe de tirer. Dans le GIF ci-dessous, lorsque le joueur saute, il doit maintenir vers le bas pour planer, ce qui donne le contrôle à la personne dans le sac et encourage la coordination pendant le saut.",
+          "en": "A 2-player game in which each player controls a character, but the two are linked: one controls the feet (movement) and the other is in charge of shooting. In the GIF below, when the player jumps, they have to hold down to glide, which switches control to the person in the bag and encourages coordination when jumping."
+        },
+        "image": "assets/img/ProjDesc/BaggyBag/BB_LevitationShort.gif"
+      },
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Si le joueur dans le sac n'a plus de munitions, c'est à l'autre joueur de se déplacer ou de rouler pour en récupérer.",
+          "en": "If the player in the bag runs out of ammunition, it's up to the other player to move or roll to pick some up."
+        },
+        "image": "assets/img/ProjDesc/BaggyBag/BB_Loot.gif"
+      },
+      {
+        "title": {
+          "fr": "De quoi me suis-je occupé ?",
+          "en": "What did I work on?"
+        },
+        "text": {
+          "fr": "J'ai développé l'idée d'un jeu à deux joueurs, avec un personnage dépendant de l'autre, que nous avons retravaillé en équipe. Ensuite, une fois la conception du jeu terminée, je me suis occupé des effets spéciaux, des matériaux et j'ai corrigé certains bugs.",
+          "en": "I came up with the idea of a two-player game where one character depends on the other, which we then reworked as a team. Once the game design was done, I took care of the FX and materials and fixed some bugs."
+        },
+        "image": "assets/img/ProjDesc/BaggyBag/BB_ShootShort.gif"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://emilelarguier.itch.io/baggy-bag"
+      }
+    ]
+  },
+  {
+    "id": "ArcadeStalker",
+    "category": "jam",
+    "thumbnail": "assets/img/projects/arcadeStalker.png",
+    "title": "Arcade Stalker",
+    "summary": {
+      "fr": "Enfermé dans une borne d'arcade, vous devez gérer la machine pour qu'elle plaise aux joueurs, générer un maximum d'argent et pouvoir être libéré.",
+      "en": "Locked inside an arcade machine, you must manage the machine in such a way that people enjoy it, in order to generate as much money as possible and be released"
+    },
+    "description": "Game Jam 2023",
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Réalisé en 2022/2023 sur Unreal Engine en 48 heures lors d'un Jam avec mon équipe ABM. Enfermé dans la borne d'arcade par le gérant du magasin, le jeu consiste à gérer les jeux à l'intérieur d'une borne d'arcade afin de satisfaire la personne pour qu'elle dépense beaucoup d'argent et vous permette de vous libérer. Vous devez être réactif pour modifier et adapter le jeu et éviter les courts-circuits. Pour cela, vous devrez créer des mini-jeux.",
+          "en": "Made in 2022/2023 on Unreal Engine in 48 hours during a Jam with my ABM team. Locked inside an arcade machine by the shop manager, you have to manage the games inside it to please the player so that they spend lots of money and you can be set free. You have to react quickly to change and adapt the game and avoid short circuits, which you do by playing mini-games."
+        },
+        "image": "assets/img/ProjDesc/ArcadeStalker/ArcadeStalker_GIF.gif"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://emilelarguier.itch.io/arcade-stalker"
+      }
+    ]
+  },
+  {
+    "id": "MarbleMadness",
+    "category": "perso",
+    "thumbnail": "assets/img/projects/marbleMadness.png",
+    "title": "Marble Madness",
+    "pageTitle": "Marble Madness : Party Game",
+    "summary": {
+      "fr": "Mini-jeu à 4 joueurs dans lequel on contrôle une bille dans différents modes de jeu, en équipe ou en solo, avec des pouvoirs à récupérer.",
+      "en": "A 4-player mini game in which you control a ball in different game modes, either in a team or alone, and can collect powers"
+    },
+    "description": {
+      "fr": "Marble Madness: Party Game est une nouvelle version de Marble Madness, mais avec plusieurs mini-jeux à la place.",
+      "en": "Marble Madness: Party Game is a remake of Marble Madness but with several mini-games instead."
+    },
+    "videos": [
+      "https://youtu.be/Ibb5-nvUalc"
+    ],
+    "sections": [
+      {
+        "title": "Concept",
+        "text": {
+          "fr": "Projet personnel avec 2 à 4 personnes. Le jeu est un jeu festif qui utilise la physique des billes de Marble Madness, mais avec différents styles de mini-jeux et pouvoirs qui confèrent des effets spéciaux aux billes qui entrent en contact avec eux.",
+          "en": "Personal project with 2 to 4 players. It's a party game that uses the marble physics of Marble Madness, with different mini-game styles and power-ups that give special effects to the marbles that touch them."
+        },
+        "image": "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen2.png"
+      },
+      {
+        "title": {
+          "fr": "Mini-jeu : TNT Tag",
+          "en": "Mini-game: TNT Tag"
+        },
+        "text": {
+          "fr": "Mini-jeu : TNT Tag like (comme le jeu du chat, mais celui qui est touché devient le chat)",
+          "en": "A TNT Tag-like mini-game (like tag, except the player who gets touched becomes “it”)."
+        },
+        "image": "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen3.png"
+      },
+      {
+        "title": {
+          "fr": "Mini-jeu : Arène",
+          "en": "Mini-game: Arena"
+        },
+        "text": {
+          "fr": "Mini-jeu : Arène, dont le but est d'expulser le joueur de l'arène.",
+          "en": "Arena mini-game: the goal is to push the other players out of the arena."
+        },
+        "image": "assets/img/ProjDesc/MarbleMadness/marbleMadnessScreen6.png"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://emilelarguier.itch.io/arcade-stalker"
+      }
+    ]
+  },
+  {
+    "id": "LittleGames",
+    "category": "perso",
+    "thumbnail": "assets/img/projects/TestImage1.png",
+    "title": "Little Games",
+    "summary": {
+      "fr": "Jeux beaucoup trop petits pour tenir sur des pages séparées",
+      "en": "Games far too small to fit on separate pages"
+    },
+    "description": {
+      "fr": "Jeux beaucoup trop petits pour tenir sur des pages séparées",
+      "en": "Games far too small to fit on separate pages"
+    },
+    "sections": [
+      {
+        "title": "Dodge Expert",
+        "text": {
+          "fr": "Réalisé en 1 jour sur Unity. <br> Gameplay : Vous devez esquiver les balles tout en accumulant des points en vous tenant au centre des tuiles. <br><br>",
+          "en": "Made in 1 day on Unity. <br> Gameplay : You have to dodge the balls while collecting points by standing in the centre of the tiles. <br><br>"
+        },
+        "video": "https://youtu.be/UyTWprXCLlw",
+        "link": {
+          "label": {
+            "fr": "Jouez à « Dodge Expert » sur ma page Itch.io !",
+            "en": "Play 'Dodge Expert' on my Itch.io page"
+          },
+          "url": "https://emilelarguier.itch.io/dodgingexpert"
+        }
+      },
+      {
+        "title": "Fast Magic",
+        "text": {
+          "fr": "Réalisé en 1 jour sur Unity. <br> Gameplay : Vous disposez de quatre boutons, chacun permettant d'effectuer une action différente. L'objectif est d'aller le plus loin possible sans être bloqué par l'environnement. Pour éviter de rester coincé, vous devez utiliser les bons pouvoirs au bon moment. <br><br>",
+          "en": "Made in 1 day on Unity. <br> Gameplay : You have four buttons, each performing a different action. The objective is to go as far as possible without getting blocked by the environment. To avoid getting stuck, you must use the right powers at the right time. <br><br>"
+        },
+        "video": "https://youtu.be/e20FELxGQ_Y",
+        "link": {
+          "label": {
+            "fr": "Jouez à « Fast Magic » sur ma page Itch.io !",
+            "en": "Play 'Fast Magic' on my Itch.io page"
+          },
+          "url": "https://emilelarguier.itch.io/fast-magic"
+        }
+      },
+      {
+        "title": "Try Your Luck",
+        "text": {
+          "fr": "Réalisé en 1 jour sur Unity. <br> Gameplay : gameplay très simple utilisant les probabilités et l'envie d'aller plus loin. L'objectif est que chaque fois que vous appuyez sur le bouton, la probabilité de perdre augmente, vous pouvez donc enregistrer un certain nombre de fois afin que, si vous perdez, vous puissiez reprendre là où vous avez enregistré, sauf que le nombre d'enregistrements est limité. C'est au joueur de décider quand s'arrêter et regarder les « fausses probabilités » d'aller aussi loin ou quand le temps est écoulé à 0. <br><br>",
+          "en": "Made in 1 day on Unity. <br> Gameplay: Very simple gameplay using probabilities and the desire to go further. The objective is that each time you press the button, the probability of losing increases, so you can save a certain number of times so that if you lose, you can resume where you saved, except that the number of saves is limited. It's up to the player to decide when to stop and look at the “false probabilities” of getting that far or when the time runs out to 0. <br><br>"
+        },
+        "image": "assets/img/ProjDesc/LittleGames/T_TryYourLuckGameplay.png",
+        "link": {
+          "label": {
+            "fr": "Jouez à « Try Your Luck » sur ma page Itch.io !",
+            "en": "Play 'Try Your Luck' on my Itch.io page"
+          },
+          "url": "https://emilelarguier.itch.io/try-your-luck"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Weird",
+    "category": "jam",
+    "hidden": true,
+    "title": "Weird",
+    "description": "Game Jam 2022",
+    "videos": [
+      "https://youtu.be/RfX5XzAFn4Y"
+    ]
+  }
+]

@@ -485,6 +485,15 @@ a.button:hover {
   transform: translateY(-2px);
 }
 
+a.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
 /* Section */
 .section {
   display: flex;
@@ -499,6 +508,14 @@ a.button:hover {
 
 .section .text {
   flex: 1 1 300px;
+}
+
+.section .media {
+  flex: 1 1 300px;
+}
+
+.section .media .video-container {
+  margin: 0;
 }
 
 .section img {
@@ -567,25 +584,61 @@ footer a:hover {
 }
 
 
-/* Projet SpooderDance */
-.spooderdance {
-  background-image: url("../assets/img/projects/spooderDance.png");
+/* Page À propos */
+.about-subtitle {
+  margin-top: 1rem;
 }
 
-/* Projet RevengeFantasy */
-.revengefantasy {
-  background-image: url("../assets/img/projects/revengeFantasy.png");
+.skills {
+  margin: 0.5rem 0 1rem 1.5rem;
 }
 
-/* Scryptalking */
-.scryptalking {
-  background-image: url("../assets/img/projects/scryptalking.png");
+.software-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-/* Projects full description */
-.filters {
+.software-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.software-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.software-item span {
+  margin-top: 5px;
   text-align: center;
-  margin-bottom: 2rem;
+  font-size: 14px;
+}
+
+/* Page CV */
+.cv-item {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+.cv-item iframe {
+  display: block;
+  width: 100%;
+  height: 800px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .cv-item iframe {
+    height: 500px;
+  }
 }
 
 /* Juicy Button (desactivated per default */
