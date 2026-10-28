@@ -64,3 +64,15 @@ Ajouter son `id` dans `site.json` → `home.featured`. L'ordre de la liste est l
 ## Changer un lien ou une info de contact
 
 Email, téléphone, LinkedIn et itch.io : `site.json` → `owner`. Le footer de toutes les pages se met à jour automatiquement.
+
+## Thèmes (clair, sombre, gris…)
+
+Le visiteur choisit le thème avec le bouton ◐ du menu. Son choix est mémorisé dans le navigateur. « Automatique » suit le réglage clair/sombre de l'appareil.
+
+Pour ajouter un thème, par exemple « sepia » :
+
+1. Dans `css/style.css`, copier un bloc `:root[data-theme="..."] { ... }` en haut du fichier, le renommer `:root[data-theme="sepia"]` et changer les couleurs.
+2. Dans le même fichier, ajouter sa pastille : `.theme-swatch[data-theme-swatch="sepia"] { background: #...; }`.
+3. Dans `site.json` → `ui.themes`, ajouter `"sepia": { "fr": "Sépia", "en": "Sepia" }`.
+
+Pour changer une couleur sur tout le site, il suffit de modifier la variable correspondante (par exemple `--accent` pour la couleur des boutons et des liens).

@@ -61,6 +61,7 @@ function renderNav(site, currentPage) {
     <h1 id="nav-currentPage">${t(ui[titleKey])}</h1>
     <ul>
       ${links}
+      <li>${themePickerHTML(site)}</li>
       <li>
         <div class="language-toggle juicy-hover">
           ${LANGS.map(l => `<button class="lang-btn${l === lang ? " active" : ""}" data-lang="${l}">${l.toUpperCase()}</button>`).join("")}
@@ -76,6 +77,76 @@ function renderNav(site, currentPage) {
       } catch { }
       location.reload();
     });
+  });
+
+  setupThemePicker(nav);
+}
+
+// ---------------- Thèmes ----------------
+// Les thèmes disponibles sont ceux listés dans data/site.json -> ui.themes,
+// leurs couleurs sont dans css/style.css (:root[data-theme="..."]).
+// Le thème est appliqué au chargement par js/theme-init.js.
+
+const THEME_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+  <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>`;
+
+function themePickerHTML(site) {
+  const current = document.documentElement.dataset.theme || "auto";
+  const label = t(site.ui.themeLabel);
+  const options = Object.entries(site.ui.themes).map(([key, name]) => `
+    <button type="button" role="menuitemradio" aria-checked="${key === current}"
+      class="${key === current ? "active" : ""}" data-theme-choice="${key}">
+      <span class="theme-swatch" data-theme-swatch="${key}"></span>${t(name)}
+    </button>`).join("");
+
+  return `
+    <div class="theme-picker">
+      <button type="button" class="theme-btn juicy-hover" aria-haspopup="menu" aria-expanded="false"
+        title="${label}" aria-label="${label}">${THEME_ICON}</button>
+      <div class="theme-menu" role="menu" hidden>${options}</div>
+    </div>
+  `;
+}
+
+function setTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  try {
+    localStorage.setItem("theme", theme);
+  } catch { }
+}
+
+function setupThemePicker(nav) {
+  const button = nav.querySelector(".theme-btn");
+  const menu = nav.querySelector(".theme-menu");
+
+  const toggleMenu = open => {
+    menu.hidden = !open;
+    button.setAttribute("aria-expanded", open);
+  };
+
+  button.addEventListener("click", e => {
+    e.stopPropagation();
+    toggleMenu(menu.hidden);
+  });
+
+  menu.querySelectorAll("[data-theme-choice]").forEach(option => {
+    option.addEventListener("click", () => {
+      setTheme(option.dataset.themeChoice);
+      menu.querySelectorAll("[data-theme-choice]").forEach(o => {
+        const active = o === option;
+        o.classList.toggle("active", active);
+        o.setAttribute("aria-checked", active);
+      });
+      toggleMenu(false);
+    });
+  });
+
+  // Ferme le menu en cliquant ailleurs ou avec Échap
+  document.addEventListener("click", e => {
+    if (!menu.hidden && !menu.contains(e.target)) toggleMenu(false);
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") toggleMenu(false);
   });
 }
 

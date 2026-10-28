@@ -26,6 +26,32 @@
         "en": "CV"
       }
     },
+    "themeLabel": {
+      "fr": "Changer de thème",
+      "en": "Change theme"
+    },
+    "themes": {
+      "auto": {
+        "fr": "Automatique",
+        "en": "System"
+      },
+      "light": {
+        "fr": "Clair",
+        "en": "Light"
+      },
+      "dark": {
+        "fr": "Sombre",
+        "en": "Dark"
+      },
+      "gray": {
+        "fr": "Gris",
+        "en": "Gray"
+      },
+      "graphite": {
+        "fr": "Gris foncé",
+        "en": "Graphite"
+      }
+    },
     "projectsTitle": {
       "fr": "Mes projets",
       "en": "My projects"

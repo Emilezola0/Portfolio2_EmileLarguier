@@ -5,13 +5,126 @@
   box-sizing: border-box;
 }
 
+/* ---------------- Thèmes ----------------
+   Le thème est choisi dans le menu (js/common.js) et stocké sur <html data-theme="...">.
+   Pour ajouter un thème : copier un bloc ci-dessous avec un nouveau nom,
+   puis ajouter son libellé dans data/site.json -> ui.themes. */
+
+/* Clair (par défaut) */
+:root {
+  color-scheme: light;
+  --bg: #f9f9f9;
+  --surface: #ffffff;
+  --surface-alt: #f0f0f0;
+  --surface-hover: #e0e0e0;
+  --card: #f9f9f9;
+  --border: #dddddd;
+  --text: #1f1f1f;
+  --text-strong: #333333;
+  --text-muted: #555555;
+  --text-faint: #888888;
+  --accent: #0077cc;
+  --accent-hover: #005fa3;
+  --accent-rgb: 0 119 204;
+  --accent-contrast: #ffffff;
+  --nav-scrolled: rgba(255, 255, 255, 0.95);
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+/* Sombre */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121417;
+  --surface: #1c1f24;
+  --surface-alt: #262a31;
+  --surface-hover: #30353d;
+  --card: #1c1f24;
+  --border: #363b44;
+  --text: #e4e6ea;
+  --text-strong: #f2f3f5;
+  --text-muted: #b3b8c0;
+  --text-faint: #8b919a;
+  --accent: #4da3ff;
+  --accent-hover: #80bdff;
+  --accent-rgb: 77 163 255;
+  --accent-contrast: #0b1626;
+  --nav-scrolled: rgba(28, 31, 36, 0.95);
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+
+/* Automatique : suit le réglage clair/sombre de l'appareil (mêmes valeurs que "Sombre") */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] {
+    color-scheme: dark;
+    --bg: #121417;
+    --surface: #1c1f24;
+    --surface-alt: #262a31;
+    --surface-hover: #30353d;
+    --card: #1c1f24;
+    --border: #363b44;
+    --text: #e4e6ea;
+    --text-strong: #f2f3f5;
+    --text-muted: #b3b8c0;
+    --text-faint: #8b919a;
+    --accent: #4da3ff;
+    --accent-hover: #80bdff;
+    --accent-rgb: 77 163 255;
+    --accent-contrast: #0b1626;
+    --nav-scrolled: rgba(28, 31, 36, 0.95);
+    --shadow: rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* Gris : neutre et doux, accent ardoise */
+:root[data-theme="gray"] {
+  color-scheme: light;
+  --bg: #dfe1e4;
+  --surface: #eceef0;
+  --surface-alt: #d3d6da;
+  --surface-hover: #c5c9ce;
+  --card: #eceef0;
+  --border: #b9bec4;
+  --text: #24272b;
+  --text-strong: #2d3136;
+  --text-muted: #4b5058;
+  --text-faint: #5f646c;
+  --accent: #475569;
+  --accent-hover: #334155;
+  --accent-rgb: 71 85 105;
+  --accent-contrast: #ffffff;
+  --nav-scrolled: rgba(236, 238, 240, 0.95);
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* Gris foncé : sombre mais moins contrasté */
+:root[data-theme="graphite"] {
+  color-scheme: dark;
+  --bg: #2b2d31;
+  --surface: #36393f;
+  --surface-alt: #40444b;
+  --surface-hover: #4a4e56;
+  --card: #36393f;
+  --border: #4f545c;
+  --text: #dcddde;
+  --text-strong: #f0f0f1;
+  --text-muted: #b9bbbe;
+  --text-faint: #96989d;
+  --accent: #8ea1e1;
+  --accent-hover: #aebcf0;
+  --accent-rgb: 142 161 225;
+  --accent-contrast: #1e2130;
+  --nav-scrolled: rgba(54, 57, 63, 0.95);
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
 /* MAIN TYPO */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #1f1f1f;
-  background-color: #f9f9f9;
+  color: var(--text);
+  background-color: var(--bg);
   line-height: 1.6;
   padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* CONTAINERS */
@@ -25,10 +138,10 @@ footer {
 
 /* NAV */
 nav {
-  background-color: #ffffff;
+  background-color: var(--surface);
   padding: 1rem 2rem;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px var(--shadow);
   border-radius: 12px;
   margin-bottom: 2rem;
   position: sticky;
@@ -62,13 +175,13 @@ nav {
 .nav-scrolled {
   backdrop-filter: blur(8px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: var(--nav-scrolled);
   /* transparent blanc */
 }
 
 nav h1 {
   font-size: 1.8rem;
-  color: #333;
+  color: var(--text-strong);
 }
 
 nav ul {
@@ -89,7 +202,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-strong);
   font-weight: 500;
   padding: 0.7rem 1.2rem;
   /* slightly more vertical padding */
@@ -105,12 +218,12 @@ nav ul li a {
 
 
 nav ul li a:hover {
-  background-color: #0077cc;
-  color: #fff;
+  background-color: var(--accent);
+  color: var(--accent-contrast);
 }
 
 nav ul li a.juicy-hover {
-  background-color: #f0f0f0;
+  background-color: var(--surface-alt);
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   border: 2px solid transparent;
@@ -119,9 +232,9 @@ nav ul li a.juicy-hover {
 }
 
 nav ul li a.juicy-hover:hover {
-  background-color: #e0e0e0;
-  border-color: #0077cc;
-  color: #0077cc;
+  background-color: var(--surface-hover);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* Écrans moyens : on empile nom, page et boutons */
@@ -185,29 +298,123 @@ nav ul li a.juicy-hover:hover {
   display: flex;
   border-radius: 8px;
   overflow: hidden;
-  border: 2px solid #ddd;
+  border: 2px solid var(--border);
 }
 
 .lang-btn {
   padding: 0.5rem 1rem;
   border: none;
-  background: white;
-  color: #333;
+  background: var(--surface);
+  color: var(--text-strong);
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .lang-btn.active {
-  background-color: #333;
-  color: white;
+  background-color: var(--text-strong);
+  color: var(--surface);
 }
 
+
+/* Sélecteur de thème */
+.theme-picker {
+  position: relative;
+}
+
+.theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text-strong);
+  cursor: pointer;
+}
+
+.theme-btn svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.theme-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  min-width: 11rem;
+  padding: 0.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  z-index: 1100;
+}
+
+.theme-menu[hidden] {
+  display: none;
+}
+
+.theme-menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  color: var(--text-strong);
+  font: inherit;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.theme-menu button:hover {
+  background: var(--surface-alt);
+}
+
+.theme-menu button.active {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Pastille de couleur de chaque thème (couleurs fixes, indépendantes du thème actif) */
+.theme-swatch {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  flex: none;
+}
+
+.theme-swatch[data-theme-swatch="auto"] {
+  background: linear-gradient(135deg, #f9f9f9 50%, #121417 50%);
+}
+
+.theme-swatch[data-theme-swatch="light"] {
+  background: #f9f9f9;
+}
+
+.theme-swatch[data-theme-swatch="dark"] {
+  background: #121417;
+}
+
+.theme-swatch[data-theme-swatch="gray"] {
+  background: #b9bec4;
+}
+
+.theme-swatch[data-theme-swatch="graphite"] {
+  background: #36393f;
+}
 
 /* Effect for link */
 /* Liens classiques dans le contenu */
 a {
-  color: #0077cc;
+  color: var(--accent);
   text-decoration: none;
   position: relative;
   font-weight: 500;
@@ -222,14 +429,14 @@ a:not(.juicy-hover):not(.project-card):not(.button):not(:has(> section))::after 
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background-color: #0077cc;
+  background-color: var(--accent);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 
 a:hover {
-  color: #005fa3;
+  color: var(--accent-hover);
 }
 
 a:hover::after {
@@ -278,7 +485,7 @@ a:hover::after {
 /* Effet de hover plus subtil : contour au lieu de zoom */
 .parallax:hover,
 .fullscreen:hover {
-  outline: 4px solid rgba(0, 119, 204, 0.4);
+  outline: 4px solid rgb(var(--accent-rgb) / 0.4);
   /* contour coloré subtil */
   outline-offset: -10px;
 }
@@ -417,8 +624,8 @@ img.gif {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 2rem;
-  background: #333;
-  color: #fff;
+  background: var(--text-strong);
+  color: var(--accent-contrast);
   border-radius: 8px;
   text-decoration: none;
 }
@@ -433,18 +640,18 @@ img.gif {
 .project-card {
   text-decoration: none;
   color: inherit;
-  background: #f9f9f9;
+  background: var(--card);
   border-radius: 10px;
   overflow: hidden;
   border: 2px solid transparent;
   transition: transform 0.3s ease, box-shadow 0.4s ease, border-color 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px var(--shadow);
 }
 
 .project-card:hover {
   transform: scale(1.03);
-  border-color: #0077cc;
-  box-shadow: 0 0 12px rgba(0, 119, 204, 0.4), 0 0 24px rgba(0, 119, 204, 0.2);
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgb(var(--accent-rgb) / 0.4), 0 0 24px rgb(var(--accent-rgb) / 0.2);
 }
 
 .project-card img {
@@ -465,23 +672,23 @@ img.gif {
 
 .project-page>h3 {
   font-weight: 400;
-  color: #555;
+  color: var(--text-muted);
 }
 
 a.button {
   display: inline-block;
   margin: 1.5rem 0.5rem 0 0;
   padding: 0.7rem 1.4rem;
-  background-color: #0077cc;
-  color: #fff;
+  background-color: var(--accent);
+  color: var(--accent-contrast);
   border-radius: 8px;
   font-weight: 600;
   transition: background-color 0.25s ease, transform 0.2s ease;
 }
 
 a.button:hover {
-  background-color: #005fa3;
-  color: #fff;
+  background-color: var(--accent-hover);
+  color: var(--accent-contrast);
   transform: translateY(-2px);
 }
 
@@ -500,10 +707,10 @@ a.back-link {
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
-  background: #fff;
+  background: var(--surface);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px var(--shadow);
 }
 
 .section .text {
@@ -537,30 +744,30 @@ a.back-link {
 /* Bouton de filtre */
 .filters button {
   padding: 0.6rem 1.2rem;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: var(--surface-alt);
+  color: var(--text-strong);
   border: 2px solid transparent;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px var(--shadow);
 }
 
 /* Hover visuel plus doux */
 .filters button:hover {
-  background-color: #e0e0e0;
-  border-color: #0077cc;
-  color: #0077cc;
+  background-color: var(--surface-hover);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* Bouton actif : état sélectionné (tu l'ajoutes en JS) */
 .filters button.active {
-  background-color: #0077cc;
-  color: white;
-  border-color: #005fa3;
-  box-shadow: 0 4px 12px rgba(0, 119, 204, 0.3);
+  background-color: var(--accent);
+  color: var(--accent-contrast);
+  border-color: var(--accent-hover);
+  box-shadow: 0 4px 12px rgb(var(--accent-rgb) / 0.3);
   transform: translateY(-2px);
 }
 
@@ -570,11 +777,11 @@ footer {
   margin-top: 4rem;
   padding: 2rem;
   font-size: 0.9rem;
-  color: #888;
+  color: var(--text-faint);
 }
 
 footer a {
-  color: #0077cc;
+  color: var(--accent);
   text-decoration: none;
   margin: 0 0.5rem;
 }
@@ -607,10 +814,15 @@ footer a:hover {
   width: 80px;
 }
 
+/* Tuile blanche : certains logos sont noirs ou ont un fond blanc, illisibles en thème sombre */
 .software-item img {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
+  padding: 6px;
   object-fit: contain;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px var(--shadow);
 }
 
 .software-item span {
@@ -623,7 +835,7 @@ footer a:hover {
 .cv-item {
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--border);
 }
 
 .cv-item iframe {
