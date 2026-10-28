@@ -2,7 +2,7 @@ const params = new URLSearchParams(location.search);
 const id = params.get("id");
 
 const container = document.getElementById("project-container");
-let currentLang = localStorage.getItem("lang") || "en";
+let currentLang = localStorage.getItem("lang") || "fr";
 
 async function loadProjects(lang) {
   try {

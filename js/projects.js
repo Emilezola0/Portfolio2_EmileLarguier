@@ -1,5 +1,5 @@
 const grid = document.getElementById("project-grid");
-let currentLang = localStorage.getItem("lang") || "en";
+let currentLang = localStorage.getItem("lang") || "fr";
 let translations = {};
 
 async function loadTranslations(lang) {
@@ -57,15 +57,9 @@ async function renderProjects(filter = "all") {
     grid.appendChild(card);
   });
 
-  const filterButtons = document.querySelectorAll(".filters button");
-  const allButton = document.querySelector('[data-filter="all"]');
-  if (allButton) allButton.classList.add("active");
-
-  filterButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      filterButtons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-    });
+  // Met en surbrillance le filtre actif
+  document.querySelectorAll(".filters button").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.filter === filter);
   });
 }
 
