@@ -76,3 +76,21 @@ Pour ajouter un thème, par exemple « sepia » :
 3. Dans `site.json` → `ui.themes`, ajouter `"sepia": { "fr": "Sépia", "en": "Sepia" }`.
 
 Pour changer une couleur sur tout le site, il suffit de modifier la variable correspondante (par exemple `--accent` pour la couleur des boutons et des liens).
+
+## Mise à jour du site (versioning)
+
+À chaque mise en ligne, augmenter le numéro dans `version.json` (à la racine du site) :
+
+```json
+{
+  "version": "1.2.0",
+  "notes": { "fr": "Ajout du projet X", "en": "Added project X" }
+}
+```
+
+Les visiteurs qui ont déjà vu une version précédente voient alors un popup « Nouvelle version du site ! ». Le bouton « Mettre à jour » re-télécharge les fichiers et recharge la page : plus besoin de Ctrl+F5.
+
+- `notes` est optionnel : c'est le petit texte affiché dans le popup.
+- Si le numéro ne change pas, aucun popup n'apparaît.
+- Les fichiers `data/*.json` sont toujours revérifiés auprès du serveur : une modification de texte ou de lien apparaît donc sans même avoir besoin du popup.
+- Si vous ajoutez un nouveau fichier JS, ajoutez-le à la liste `ASSETS` dans `js/update.js`.

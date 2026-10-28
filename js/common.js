@@ -1,3 +1,5 @@
+import { setupUpdateCheck } from "./update.js";
+
 // Code partagé par toutes les pages : langue, chargement des données, menu et footer.
 // Les contenus (textes, liens, projets) sont dans data/site.json et data/projects.json.
 
@@ -23,7 +25,8 @@ export function t(value) {
 }
 
 async function loadJSON(path) {
-  const res = await fetch(path);
+  // "no-cache" : le navigateur vérifie toujours auprès du serveur que le fichier n'a pas changé
+  const res = await fetch(path, { cache: "no-cache" });
   if (!res.ok) throw new Error(`Erreur de chargement ${path} : ${res.status}`);
   return res.json();
 }
@@ -91,7 +94,7 @@ const THEME_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" s
   <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>`;
 
 function themePickerHTML(site) {
-  const current = document.documentElement.dataset.theme || "auto";
+  const current = storedTheme();
   const label = t(site.ui.themeLabel);
   const options = Object.entries(site.ui.themes).map(([key, name]) => `
     <button type="button" role="menuitemradio" aria-checked="${key === current}"
@@ -108,11 +111,41 @@ function themePickerHTML(site) {
   `;
 }
 
+function storedTheme() {
+  try {
+    return localStorage.getItem("theme") || "auto";
+  } catch {
+    return "auto";
+  }
+}
+
 function setTheme(theme) {
-  document.documentElement.dataset.theme = theme;
   try {
     localStorage.setItem("theme", theme);
   } catch { }
+  applyTheme(theme);
+}
+
+// Applique le thème et met à jour la coche dans le menu
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  document.querySelectorAll("[data-theme-choice]").forEach(option => {
+    const active = option.dataset.themeChoice === theme;
+    option.classList.toggle("active", active);
+    option.setAttribute("aria-checked", active);
+  });
+}
+
+// Réapplique le thème mémorisé :
+// - au chargement (même si la page en cache n'a pas js/theme-init.js),
+// - au retour arrière du navigateur (la page est restaurée telle quelle depuis la mémoire),
+// - quand le thème est changé dans un autre onglet.
+function setupThemeSync() {
+  applyTheme(storedTheme());
+  window.addEventListener("pageshow", () => applyTheme(storedTheme()));
+  window.addEventListener("storage", e => {
+    if (e.key === "theme") applyTheme(storedTheme());
+  });
 }
 
 function setupThemePicker(nav) {
@@ -132,11 +165,6 @@ function setupThemePicker(nav) {
   menu.querySelectorAll("[data-theme-choice]").forEach(option => {
     option.addEventListener("click", () => {
       setTheme(option.dataset.themeChoice);
-      menu.querySelectorAll("[data-theme-choice]").forEach(o => {
-        const active = o === option;
-        o.classList.toggle("active", active);
-        o.setAttribute("aria-checked", active);
-      });
       toggleMenu(false);
     });
   });
@@ -201,9 +229,11 @@ export async function initPage(currentPage) {
   const site = await loadSite();
 
   renderNav(site, currentPage);
+  setupThemeSync();
   renderFooter(site);
   setupStickyNav();
   setupRipple();
+  setupUpdateCheck(site, t);
 
   const titleKey = currentPage === "project" ? "projects" : currentPage;
   document.title = `${t(site.ui.nav[titleKey])} - ${site.owner.name}`;

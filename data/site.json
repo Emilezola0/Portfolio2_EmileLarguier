@@ -97,6 +97,24 @@
     "backToProjects": {
       "fr": "← Tous les projets",
       "en": "← All projects"
+    },
+    "update": {
+      "title": {
+        "fr": "Nouvelle version du site !",
+        "en": "New version available!"
+      },
+      "button": {
+        "fr": "Mettre à jour",
+        "en": "Update"
+      },
+      "later": {
+        "fr": "Plus tard",
+        "en": "Later"
+      },
+      "loading": {
+        "fr": "Mise à jour…",
+        "en": "Updating…"
+      }
     }
   },
   "home": {
